@@ -1,6 +1,6 @@
 ---
 title: "LGBTQ+ Tulum Guidebook: Free Recommendations From the Founder of a Queer Tour Agency"
-description: "Free LGBTQ+ Tulum recommendations from the founder of a queer Tulum tour and group trip agency. A favorite pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
+description: "Free LGBTQ+ Tulum recommendations from a queer local: a pre-Hispanic restaurant, specialty coffee, a queer-friendly bar and how to get around."
 keyword: "lgbtq tulum"
 pubDate: 2026-01-25
 draft: false

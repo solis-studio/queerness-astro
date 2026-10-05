@@ -1,6 +1,6 @@
 ---
 title: "Is Tulum LGBTQ+ Friendly? A Queer & Trans Local's Honest Answer"
-description: "Is Tulum safe and LGBTQ+ friendly? Practical tips for LGBTQIA+, queer, and trans people traveling to Tulum, from a queer, nonbinary, Mexican local who's called it home for 10 years: safety, language, recommendations, and what it's actually like."
+description: "Is Tulum LGBTQ+ friendly? Yes. A queer, nonbinary Mexican local in Tulum since 2017 shares safety tips, Spanish pronouns and where you'll feel at home."
 keyword: "is tulum lgbtq friendly"
 pubDate: 2026-01-20
 updatedDate: 2026-09-13
