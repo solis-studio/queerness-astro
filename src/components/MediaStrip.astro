@@ -1,0 +1,52 @@
+---
+const { items = [], id = 'media-strip', label = 'Photos from our trips' } = Astro.props;
+---
+<section class="media-strip" aria-label={label}>
+  <div class="media-strip-track" id={id}>
+    {items.map((it) => it.video ? (
+      <video class="strip-video" width="640" height="640" src={it.video} poster={it.poster} autoplay muted loop playsinline preload="metadata" aria-label={it.alt}></video>
+    ) : (
+      <img src={it.src} alt={it.alt} width="900" height="900" loading="lazy" decoding="async" style={it.pos ? `object-position:${it.pos};` : undefined} />
+    ))}
+  </div>
+  <div class="media-strip-nav">
+    <button type="button" class="scroll-arrow" aria-label="Scroll photos left" data-dir="-1">←</button>
+    <button type="button" class="scroll-arrow" aria-label="Scroll photos right" data-dir="1">→</button>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.media-strip').forEach((sec) => {
+    const track = sec.querySelector('.media-strip-track') as HTMLElement;
+    sec.querySelectorAll('.scroll-arrow').forEach((b) => b.addEventListener('click', () => {
+      track.scrollBy({ left: Number((b as HTMLElement).dataset.dir) * 300, behavior: 'smooth' });
+    }));
+    const nav = sec.querySelector('.media-strip-nav') as HTMLElement;
+    const fit = () => { nav.style.display = track.scrollWidth <= track.clientWidth + 2 ? 'none' : ''; };
+    fit(); window.addEventListener('resize', fit);
+    track.querySelectorAll('video').forEach((v) => {
+      const vid = v as HTMLVideoElement;
+      const tryPlay = () => { vid.muted = true; const p = vid.play(); if (p) p.catch(() => {}); };
+      // Start fetching shortly before the clip scrolls into view, then play once it is visible.
+      new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) vid.preload = 'auto'; }), { rootMargin: '400px' }).observe(vid);
+      new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) tryPlay(); else vid.pause(); }), { threshold: 0.3 }).observe(vid);
+      // If a device blocks autoplay (low-power mode), the poster still shows and a tap plays the clip.
+      vid.addEventListener('click', () => { if (vid.paused) tryPlay(); else vid.pause(); });
+    });
+  });
+</script>
+
+<style is:global>
+.media-strip{background:var(--bone);padding:var(--s-sm) 0 var(--s-sm);border-top:3px solid var(--dark);border-bottom:3px solid var(--dark);}
+.media-strip-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--s-sm);padding:4px var(--s-sm) 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.media-strip-track::-webkit-scrollbar{display:none;}
+.media-strip-track > :first-child{margin-left:auto;}
+.media-strip-track > :last-child{margin-right:auto;}
+.media-strip-track img,.media-strip-track video{flex:0 0 72%;max-width:300px;height:auto;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);scroll-snap-align:start;background:var(--bone);}
+.media-strip-nav{display:flex;justify-content:flex-end;gap:16px;padding:var(--s-xs, 8px) var(--s-sm) 0;}
+@media(min-width:900px){
+  .media-strip-track{padding:4px 40px 8px;scroll-padding:0 40px;}
+  .media-strip-track img,.media-strip-track video{flex:0 0 280px;max-width:none;width:280px;height:auto;}
+  .media-strip-nav{padding:var(--s-xs, 8px) 40px 0;}
+}
+</style>

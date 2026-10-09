@@ -1,8 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import WhyUs from '../components/WhyUs.astro';
+import Highlights from '../components/Highlights.astro';
+import MediaStrip from '../components/MediaStrip.astro';
+const stripCamp = [
+  { video: '/images/queer-camp-tulum-voguing-clip.mp4', poster: '/images/queer-camp-tulum-voguing-poster.jpg', alt: 'Two people voguing together under a palapa on a Camp Queerness trip in Tulum' },
+  { src: '/images/tulum-kayak-sunset-lagoon.jpg', alt: 'Two friends kayaking toward a bright orange sunset over the lagoon near Tulum' },
+  { src: '/images/tulum-friends-laughing-lagoon.jpg', alt: 'Two friends laughing together by a lagoon near Tulum' },
+  { src: '/images/tulum-cenote-rope-ladder.jpg', alt: 'Climbing down a rope ladder into a cenote near Tulum' },
+];
+const stripWater = [
+  { video: '/images/tulum-lagoon-boat-ride-clip.mp4', poster: '/images/tulum-lagoon-boat-ride-poster.jpg', alt: 'Riding a small boat across a turquoise lagoon near Tulum' },
+  { src: '/images/muyil-river-float-group.jpg', alt: 'Friends laughing together in a selfie on a river float near Tulum', pos: 'center 30%' },
+  { src: '/images/muyil-mangrove-swim.jpg', alt: 'Two friends floating in the lagoon near Tulum' },
+  { src: '/images/punta-laguna-canoes.jpg', alt: 'Green canoes tied up at a lagoon near Tulum' },
+];
+const stripFood = [
+  { video: '/images/tulum-tacos-de-canasta-clip.mp4', poster: '/images/tulum-tacos-de-canasta-poster.jpg', alt: 'Building a plate of tacos de canasta with salsas at a local restaurant near Tulum' },
+  { src: '/images/tulum-negro-huitlacoche-blue-corn-quesadilla.jpg', alt: 'Grilled corn, a cocktail and a blue corn quesadilla on a clay-and-wood table in Tulum' },
+  { src: '/images/tulum-cocktail-night-out.jpg', alt: 'A smiling traveler raising a craft cocktail at a night out in Tulum' },
+  { src: '/images/tulum-street-art-mural-walk.jpg', alt: 'A traveler looking up at a large Maya woman mural on a street art walk in Tulum' },
+];
+const stripArt = [
+  { src: '/images/tulum-watercolor-painting-mangroves.jpg', alt: 'A friend painting with watercolors at a picnic table in the mangroves near Tulum' },
+  { src: '/images/tulum-la-guarida-cultural-workshop.jpg', alt: 'A group gathered for a cultural workshop at La Guarida in Tulum' },
+  { src: '/images/tulum-watercolor-picnic-fresh-fruit.jpg', alt: 'Friends painting together over a spread of fresh fruit in the jungle near Tulum' },
+];
+const stripNature = [
+  { src: '/images/tulum-birdwatching-lagoon.jpg', alt: 'Birdwatching with binoculars at a lagoon near Tulum' },
+  { src: '/images/tulum-mangrove-boardwalk-walk.jpeg', alt: 'Walking through the mangrove boardwalk in Tulum' },
+  { src: '/images/tulum-lagoon-dock-friends.jpg', alt: 'Two friends heading to the dock at a lagoon near Tulum' },
+];
+const stripAdventure = [
+  { video: '/images/tulum-cenote-dive-clip.mp4', poster: '/images/tulum-cenote-dive-poster.jpg', alt: 'A jump and splash into a turquoise cenote near Tulum' },
+  { src: '/images/group-trips-photo.jpg', alt: 'A group smiling together on a Queerness Experiences trip in Tulum' },
+  { src: '/images/tulum-mangrove-swim-friends.jpeg', alt: 'Friends swimming through the mangroves in Tulum' },
+  { src: '/images/tulum-friends-sunset-dock.jpeg', alt: 'Friends at sunset on a dock in Tulum' },
+];
 ---
-<Layout title="Queer Group Trips in Tulum, Camp-Style | Queerness Experiences" description={"Bring 3 or more friends or join the waitlist. Adventure, dance, family and team camps in Tulum with cenotes, local food and a queer local guide. Starting at $4,000 per person for 4 days and 5 nights."}>
+<Layout title="Queer Group Trips in Tulum, Camp-Style | Queerness Experiences" description={"Bring 3 or more friends or join the waitlist. Adventure, dance, family and team camps in Tulum with cenotes, local food and a queer local guide. Starting at $4,000 USD per person for 4 days and 5 nights."}>
 
 <header class="head">
   <div class="head-top">
@@ -14,10 +50,12 @@ import WhyUs from '../components/WhyUs.astro';
   <div class="head-left">
   <p class="head-body">Summer camp, reimagined for sapphic, queer, and trans grownups, with Mexican flair. Every trip is personalized and every activity is mix and match. Bring your friends and I'll build the itinerary, or join the waitlist for our bigger camps.</p>
   <div class="head-chips">
+    <span class="head-chip">Every camp focuses on slow travel</span>
+    <span class="head-chip">Exploring cenotes</span>
     <span class="head-chip">Kayaking the biosphere</span>
     <span class="head-chip">Dancing</span>
     <span class="head-chip">Singing</span>
-    <span class="head-chip">Painting</span>
+    <span class="head-chip">Watercoloring</span>
     <span class="head-chip">Birdwatching</span>
     <span class="head-chip">Pre-Hispanic and Mexican food</span>
     <span class="head-chip">Stories with people who get it</span>
@@ -25,13 +63,19 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
   <div class="hero-grid">
     <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
-    <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
-    <img src="/images/IMG_3762-crop.jpeg" alt="Birdwatching with binoculars near a lagoon in Tulum">
-    <img src="/images/22943efe-94cd-4c5a-b7bd-48c4afb5ba28.jpg" alt="Friends laughing together over drinks in Tulum">
+    <img src="/images/tulum-cenote-swing-camp-queerness.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
+    <img src="/images/tulum-lagoon-birdwatching-binoculars.jpeg" alt="Birdwatching with binoculars near a lagoon in Tulum">
+    <img src="/images/tulum-friends-laughing-over-drinks.jpg" alt="Friends laughing together over drinks in Tulum">
   </div>
 
   </div>
 </header>
+
+<section class="trips-special">
+  <Highlights kind="trips" />
+</section>
+
+<MediaStrip items={stripCamp} id="strip-camp" />
 
 <section class="start-now">
   <div class="start-now-inner">
@@ -51,30 +95,22 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 </section>
 
-<section class="photo-strip" aria-label="Photos from our trips">
-  <div class="photo-strip-track">
-    <img src="/images/muyil-river-float-group.jpg" alt="Friends laughing together in a selfie on a river float near Tulum" style="object-position:center 30%;" loading="lazy">
-    <img src="/images/hero-grid-cenote-friends.jpg" alt="Three friends laughing together by the water near Tulum" style="object-position:center 30%;" loading="lazy">
-    <img src="/images/dance-class-alt.jpg" alt="Dancers moving together in a dance studio in Tulum" loading="lazy">
-    <img src="/images/luxury-lesbians-lagoon.jpg" alt="Hammocks over turquoise lagoon water near Tulum" loading="lazy">
-    <img src="/images/punta-laguna-canoes.jpg" alt="Green canoes tied up at a lagoon near Tulum" loading="lazy">
-    <img src="/images/monkey-spotting-lagoon.jpg" alt="A person standing among mangrove roots at a lagoon near Tulum" loading="lazy">
-    <img src="/images/muyil-mangrove-swim.jpg" alt="Two friends floating in the lagoon near Tulum" loading="lazy">
-  </div>
-</section>
+<MediaStrip items={stripWater} id="strip-water" label="Lagoon and river moments from our trips" />
 
 <section class="glance" aria-label="Camp at a glance">
   <div class="glance-grid">
-    <div><span class="glance-k">From</span><span class="glance-v">$4,000 per person</span></div>
+    <div><span class="glance-k">From</span><span class="glance-v">$4,000 USD per person</span></div>
     <div><span class="glance-k">Length</span><span class="glance-v">4 days, 5 nights</span></div>
     <div><span class="glance-k">Group size</span><span class="glance-v">3 to 13 people</span></div>
     <div><span class="glance-k">Stay</span><span class="glance-v">Private villa with a pool</span></div>
     <div><span class="glance-k">Includes</span><span class="glance-v">Airport pickups, most meals, all activities and classes</span></div>
-    <div><span class="glance-k">Not included</span><span class="glance-v">Flights and alcohol (bring your own or buy any you like)</span></div>
+    <div><span class="glance-k">Not included</span><span class="glance-v">Flights and alcohol</span></div>
   </div>
 </section>
 
 <WhyUs />
+
+<MediaStrip items={stripFood} id="strip-food" label="Food and moments from our trips" />
 
 <section class="reviews" id="reviews">
   <div class="reviews-inner">
@@ -108,6 +144,8 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 </section>
 
+<MediaStrip items={stripAdventure} id="strip-adventure" label="Adventure moments from our trips" />
+
 <!-- PICK YOUR CAMP -->
 <section class="camp-types" id="camps">
   <p class="sec-eye">Step 1: Pick your camp</p>
@@ -125,7 +163,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="camp-type camp-type-adventure">
       <img class="camp-type-photo" src="/images/monkey-canoe-paddle.jpg" alt="Santi smiling while paddling a canoe on a lagoon near Tulum" style="object-position:center 30%;">
       <h3>Adventure Camp</h3>
-      <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
+      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>More time outdoors, in the jungle and biosphere reserve.</p>
       <ul>
         <li>Kayak at sunset on the lagoon</li>
@@ -137,7 +175,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="camp-type camp-type-dance">
       <video class="camp-type-photo" src="/images/dance-class-clip.mp4" poster="/images/dance-class-pose.jpg" autoplay muted loop playsinline preload="auto" aria-label="Dancers stepping together in a dance class near Tulum" style="object-position:center 50%;"></video>
       <h3>Dance Camp</h3>
-      <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
+      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>Explore your body through dance, with no gender roles.</p>
       <ul>
         <li>Salsa, bachata, vogue, and waacking</li>
@@ -149,7 +187,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="camp-type camp-type-family">
       <img class="camp-type-photo" src="/images/tours-gallery-picnic.jpg" alt="Three friends at a picnic table with fresh fruit and watercolors near Tulum" style="object-position:center 25%;">
       <h3>Family Camp</h3>
-      <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
+      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>For queer families, at a pace that works for every age.</p>
       <ul>
         <li>Picnics and easy outdoor days</li>
@@ -161,7 +199,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="camp-type camp-type-team">
       <img class="camp-type-photo" src="/images/hero-jungle-group.jpg" alt="A group of friends smiling together on a jungle trail near Tulum" style="object-position:center 30%;">
       <h3>Team Bonding Camp</h3>
-      <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
+      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>For businesses and organizations, built around your team.</p>
       <ul>
         <li>Shared activities and shared meals</li>
@@ -183,7 +221,7 @@ import WhyUs from '../components/WhyUs.astro';
   <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-top:var(--s-sm);">Mix and match across every camp. Here are a few examples.</p>
 
   <div class="activity-group activity-group-do">
-  <label for="act1" class="act-cover"><img src="/images/IMG_0101.jpeg" alt="Two friends kayaking toward a bright orange sunset over the lagoon near Tulum" style="object-position:center 45%;" loading="lazy"></label>
+  <label for="act1" class="act-cover"><img src="/images/tulum-lagoon-kayak-sunset-peace-sign.jpeg" alt="A kayaker raising both arms in a peace sign at sunset on the lagoon near Tulum" style="object-position:center 55%;" loading="lazy"></label>
   <input type="checkbox" class="act-toggle" id="act1">
   <label for="act1" class="activity-group-h">Things you'll do</label>
   <div class="activity-boxes">
@@ -230,7 +268,7 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
   </div>
   <div class="activity-group activity-group-comfort comfort">
-    <div class="act-cover"><img src="/images/IMG_1187.jpeg" alt="A friend posing while another sketches a live drawing in Tulum" style="object-position:center 33%;" loading="lazy"></div>
+    <div class="act-cover"><img src="/images/tulum-live-drawing-session-comfort-zone.jpeg" alt="A friend posing while another sketches a live drawing in Tulum" style="object-position:center 44%;" loading="lazy"></div>
     <p class="comfort-h">Expand your comfort zone</p>
     <p class="comfort-p">Totally optional. Try something new, with people who get it.</p>
     <div class="stay-chips">
@@ -241,6 +279,8 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 </section>
 
+<MediaStrip items={stripArt} id="strip-art" label="Art and slow travel moments from our trips" />
+
 <!-- SAMPLE WEEK -->
 <section class="faq" id="sample-week">
   <p class="sec-eye">Step 3: What 4 days can look like</p>
@@ -250,22 +290,22 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="faq-item">
       <input type="checkbox" id="wk1">
       <label class="faq-q" for="wk1">Arrival night<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Airport pickup, settle into the villa, and a welcome dinner with stories and introductions.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Airport pickup, settle into the villa, and taco night: a delicious meal cooked by a private chef.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk2">
-      <label class="faq-q" for="wk2">Day 1: Cenotes<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Explore a cenote, then a picnic with seasonal fruit.</div></div>
+      <label class="faq-q" for="wk2">Day 1: Cenote + traditional Mayan feast<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Swim in a cenote, then share a traditional Mayan feast.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk3">
-      <label class="faq-q" for="wk3">Day 2: Water and food<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Float down a river, with time to relax and nap. In the evening, a hands-on cooking class and a shared meal of local food.</div></div>
+      <label class="faq-q" for="wk3">Day 2: River float + cooking class<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Float down canals built by the ancient Mayans, with time to relax and nap. In the evening, a hands-on cooking class and a shared meal of local food.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk4">
       <label class="faq-q" for="wk4">Day 3: Free day and special activities<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Explore Tulum on your own or add a special activity. Rest, play, or try something new.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Hang out by the pool, explore Tulum on your own, or add a special activity. Rest, play, or try something new.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk5">
@@ -283,6 +323,8 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 </section>
 
+<MediaStrip items={stripNature} id="strip-nature" label="Nature and slow travel moments from our trips" />
+
 <section class="bleed" style="--bleed:var(--bone);background:var(--bone);padding:var(--s-md) var(--s-sm) var(--s-md);max-width:1120px;margin:0 auto;">
   <p class="sec-eye">Home base</p>
   <h2>Where<br>you'll stay</h2>
@@ -298,16 +340,6 @@ import WhyUs from '../components/WhyUs.astro';
 
 <!-- CAMP QUEERNESS — the whole page is this, not boxed as one card among others -->
 <section class="bleed" style="--bleed:var(--white);background:var(--white);padding:var(--s-sm) var(--s-sm);max-width:1120px;margin:0 auto;">
-  <div class="trips-about-scroll" id="photo-strip" style="margin:0 0 var(--s-sm);">
-    <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
-    <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
-    <img src="/images/IMG_2677.jpeg" alt="Friends at sunset on a dock in Tulum">
-    <img src="/images/IMG_2244.jpeg" alt="Walking through the mangrove boardwalk in Tulum">
-  </div>
-  <div class="strip-nav">
-    <button type="button" class="strip-arrow" aria-label="Scroll photos left" onclick="document.getElementById('photo-strip').scrollBy({left:-300,behavior:'smooth'})">←</button>
-    <button type="button" class="strip-arrow" aria-label="Scroll photos right" onclick="document.getElementById('photo-strip').scrollBy({left:300,behavior:'smooth'})">→</button>
-  </div>
   <div class="give-back">
     <p class="sec-eye">We give back</p>
     <p>Every trip donates to a social, cultural, or environmental project in Tulum.</p>
@@ -358,7 +390,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq-price">
       <label class="faq-q" for="gfaq-price">How much does a camp cost?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Camps start at $4,000 per person for 4 days and 5 nights, flights not included. That covers your private villa with a private pool, most meals, airport pickup and drop-off, local transport, and your activities. Everything is flexible: we can add or remove nights, and the final price depends on your dates, your group size, and the activities you pick. Group rates are available. Tell us about your group and we'll send you a quote.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Camps start at $4,000 USD per person for 4 days and 5 nights, flights not included. That covers your private villa with a private pool, most meals, airport pickup and drop-off, local transport, and your activities. Everything is flexible: we can add or remove nights, and the final price depends on your dates, your group size, and the activities you pick. Group rates are available. Tell us about your group and we'll send you a quote.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-incl">
@@ -674,6 +706,11 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 .activity-group-comfort .comfort-h{font-family:var(--ff);font-size:24px;line-height:1.1;font-weight:400;text-transform:uppercase;color:var(--dark);margin:0 0 8px;}
 .activity-group-comfort .comfort-p{font-size:17px;line-height:1.6;color:var(--muted);margin:0 0 var(--s-sm);}
 .activity-group-comfort .act-cover{cursor:default;}
+.activity-group-comfort .act-cover img{aspect-ratio:1/1;}
+@media(min-width:720px){.activity-group-comfort .act-cover img{aspect-ratio:1/1;}}
+.trips-special{background:var(--bone);padding:var(--s-md) var(--s-sm);}
+.trips-special .expect-wrap{margin-bottom:0;}
+@media(min-width:720px){.trips-special{padding:var(--s-md) 40px;}}
 .photo-strip{background:var(--bone);padding:var(--s-sm) 0;border-bottom:3px solid var(--dark);}
 .photo-strip-track{display:flex;align-items:flex-start;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--s-sm);padding:4px var(--s-sm) 8px;-webkit-overflow-scrolling:touch;}
 .photo-strip-track img{flex:0 0 72%;max-width:320px;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--terra);scroll-snap-align:start;}

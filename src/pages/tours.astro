@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import WhyUs from '../components/WhyUs.astro';
+import Highlights from '../components/Highlights.astro';
 ---
 <Layout title="Small-Group Tulum Tours With a Queer Local Guide | Queerness Experiences" description={"Small-group cenote, river float, and food tours in Tulum with a queer local guide. Your own pace, often just your group. 5.0★ on Google."}>
 
@@ -25,33 +26,7 @@ import WhyUs from '../components/WhyUs.astro';
 </header>
 
 <section class="tours">
-  <div class="expect-wrap">
-    <h2 class="expect-h">What makes these tours special</h2>
-    <div class="expect-box">
-      <div class="expect-row">
-        <p class="expect-k">Vetted for you</p>
-        <p class="expect-line">Every tour is vetted so queer, trans, and gender diverse people can just focus on enjoying the day.</p>
-      </div>
-      <div class="expect-row">
-        <p class="expect-k">Eating deliciously is a priority</p>
-        <div class="food-chips">
-          <span class="food-chip">Local bakeries</span>
-          <span class="food-chip">Locally-owned restaurants</span>
-          <span class="food-chip">Food by an amazing private chef</span>
-          <span class="food-chip">Seasonal local fruit</span>
-          <span class="food-chip">Tailored to dietary restrictions and allergies</span>
-        </div>
-      </div>
-      <div class="expect-row">
-        <p class="expect-k">On these tours, we talk about</p>
-        <div class="food-chips">
-          <span class="food-chip">Cultural nuances</span>
-          <span class="food-chip">Mexican ingenuity</span>
-          <span class="food-chip">Queer activism in Latin America</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Highlights kind="tours" />
 
   <p class="tours-hint"><strong>Mix and match for the perfect vacation.</strong> Booking more than one tour? Ask about a multi-tour rate.</p>
 
@@ -306,7 +281,7 @@ import WhyUs from '../components/WhyUs.astro';
           <span class="meta-pill">Food &amp; drinks included</span>
           <span class="meta-pill">Walking</span>
         </div>
-        <img class="tour-addon-photo" src="/images/IMG_2627.jpeg" alt="Exploring a mural on the Stories Behind the Storefronts tour in Tulum" style="aspect-ratio:3/4;object-position:center 25%;">
+        <img class="tour-addon-photo" src="/images/tulum-street-art-mural-stories-behind-storefronts.jpeg" alt="Exploring a mural on the Stories Behind the Storefronts tour in Tulum" style="aspect-ratio:3/4;object-position:center 25%;">
         <div class="tour-itin">
           <p class="tour-itin-h">Sample Itinerary</p>
           <ul class="tour-itin-list">
@@ -465,7 +440,7 @@ import WhyUs from '../components/WhyUs.astro';
 
 <section style="background:var(--bone);padding:var(--s-md) var(--s-sm);text-align:center;">
   <p class="sec-eye" style="justify-content:center;">Bigger group or more than a day?</p>
-  <p style="font-size:17px;line-height:1.65;color:var(--dark);max-width:560px;margin:var(--s-sm) auto var(--s-md);">Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group. Want more than a day? Plan a private camp: 4 days and 5 nights in Tulum, starting at $4,000 per person, with a private villa and pool, airport pickup, and most meals included.</p>
+  <p style="font-size:17px;line-height:1.65;color:var(--dark);max-width:560px;margin:var(--s-sm) auto var(--s-md);">Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group. Want more than a day? Plan a private camp: 4 days and 5 nights in Tulum, starting at $4,000 USD per person, with a private villa and pool, airport pickup, and most meals included.</p>
   <a href="/group-trips" class="btn-p" style="display:inline-block;">See group camps →</a>
 </section>
 
@@ -635,13 +610,6 @@ footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px sol
 .head p.head-private{font-size:16px;line-height:1.55;margin:var(--s-sm) 0 0;}
 .head-photos{display:none;}
 .head-btn{display:inline-block;margin-top:var(--s-sm);}
-.expect-wrap{max-width:1120px;margin:0 auto var(--s-md);padding:0;}
-.expect-h{font-family:var(--ff);font-size:22px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin:0 0 var(--s-sm);}
-.expect-line{font-size:16px;line-height:1.5;color:var(--dark);margin:10px 0 0;}
-.expect-box{background:transparent;border:0;border-top:2px solid rgba(0,0,0,0.12);box-shadow:none;padding:var(--s-sm) 0 0;display:flex;flex-direction:column;gap:var(--s-sm);}
-.expect-k{font-family:var(--fb);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:0;}
-.expect-box .food-chips{margin-top:10px;}
-.expect-box .food-chip{background:transparent;border:2px solid var(--dark);}
 .tours-hint{max-width:1120px;margin:0 auto var(--s-md);padding:0;font-size:16px;line-height:1.5;color:var(--muted);}
 .tours-hint strong{color:var(--dark);}
 @media(min-width:900px){
@@ -649,9 +617,6 @@ footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .head-photos{display:grid;margin:0;width:100%;}
   .head-photos img{aspect-ratio:3/2;}
   .head-left .head-body{font-size:21px;}
-  .expect-h{font-size:30px;}
-  .expect-box{flex-direction:row;gap:var(--s-md);}
-  .expect-row{flex:1;}
 }
 .head .head-top{padding-bottom:var(--s-xs, 12px) !important;}
 .head h1{margin-bottom:0 !important;}

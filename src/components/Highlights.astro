@@ -1,0 +1,47 @@
+---
+const { kind = 'tours' } = Astro.props;
+const noun = kind === 'trips' ? 'trip' : 'tour';
+const enjoy = kind === 'trips' ? 'their trip' : 'the day';
+---
+<div class="expect-wrap">
+  <h2 class="expect-h">What makes these {noun}s special</h2>
+  <div class="expect-box">
+    <div class="expect-row">
+      <p class="expect-k">Created for you</p>
+      <p class="expect-line">Every {noun} is vetted so queer, trans, and gender diverse people can just focus on enjoying {enjoy}.</p>
+    </div>
+    <div class="expect-row">
+      <p class="expect-k">Eating deliciously is a priority</p>
+      <div class="food-chips">
+        <span class="food-chip">Local bakeries</span>
+        <span class="food-chip">Locally-owned restaurants</span>
+        <span class="food-chip">Food by an amazing private chef</span>
+        <span class="food-chip">Seasonal local fruit</span>
+        <span class="food-chip">Tailored to dietary restrictions and allergies</span>
+      </div>
+    </div>
+    <div class="expect-row">
+      <p class="expect-k">On these {noun}s, we talk about</p>
+      <div class="food-chips">
+        <span class="food-chip">Cultural nuances</span>
+        <span class="food-chip">Mexican ingenuity</span>
+        <span class="food-chip">Queer activism in Latin America</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style is:global>
+.expect-wrap{max-width:1120px;margin:0 auto var(--s-md);padding:0;}
+.expect-h{font-family:var(--ff);font-size:22px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin:0 0 var(--s-sm);}
+.expect-line{font-size:16px;line-height:1.5;color:var(--dark);margin:10px 0 0;}
+.expect-box{background:transparent;border:0;border-top:2px solid rgba(0,0,0,0.12);box-shadow:none;padding:var(--s-sm) 0 0;display:flex;flex-direction:column;gap:var(--s-sm);}
+.expect-k{font-family:var(--fb);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:0;}
+.expect-box .food-chips{margin-top:10px;}
+.expect-box .food-chip{background:transparent;border:2px solid var(--dark);}
+@media(min-width:900px){
+  .expect-h{font-size:30px;}
+  .expect-box{flex-direction:row;gap:var(--s-md);}
+  .expect-row{flex:1;}
+}
+</style>
