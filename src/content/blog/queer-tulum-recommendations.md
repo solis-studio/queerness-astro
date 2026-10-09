@@ -115,7 +115,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
 </div>
 
 <a href="/tours" style="display:block;background:var(--blue);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:24px;margin:var(--s-md) 0;text-decoration:none;text-align:center;">
-  <img src="/images/secret-cenote-entrance.jpg" alt="Stepping down a wooden ladder into a hidden cenote entrance covered in ferns near Tulum" style="display:block;width:calc(100% + 48px);max-width:none;margin:-24px -24px 18px;aspect-ratio:4/3;object-fit:cover;object-position:center 85%;border-bottom:3px solid var(--dark);" loading="lazy">
+  <img class="post-card-cover" src="/images/secret-cenote-entrance.jpg" alt="Stepping down a wooden ladder into a hidden cenote entrance covered in ferns near Tulum" style="display:block;width:calc(100% + 48px);max-width:none;margin:-24px -24px 18px;aspect-ratio:4/3;object-fit:cover;object-position:center 85%;border-bottom:3px solid var(--dark);" loading="lazy">
   <p style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">Want a local guide to take you to secret spots?</p>
   <span style="display:inline-block;background:var(--yellow);color:var(--dark);padding:12px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;">See the Tours →</span>
 </a>
