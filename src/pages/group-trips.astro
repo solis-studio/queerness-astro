@@ -29,7 +29,6 @@ import WhyUs from '../components/WhyUs.astro';
     <img src="/images/IMG_3762-crop.jpeg" alt="Birdwatching with binoculars near a lagoon in Tulum">
     <img src="/images/22943efe-94cd-4c5a-b7bd-48c4afb5ba28.jpg" alt="Friends laughing together over drinks in Tulum">
   </div>
-  <p class="head-credit">Created by Santi Solis, a queer, bilingual, bicultural UCLA-trained biologist. Born in Mexico, living in Tulum since 2017.</p>
 
   </div>
 </header>
@@ -39,13 +38,28 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="start-now-text">
       <p class="sec-eye" style="color:var(--dark);">Now booking for winter</p>
       <h2>Groups of 3 or more<br>can plan a private<br>group trip now.</h2>
-      <p>Pick your camp, pick your dates, and we'll build the itinerary around your group. Camps start at $4,000 per person for 4 days and 5 nights, with group rates available. Book 3 or more months ahead and ask about an early-booking rate. Dates for our open camps are coming soon.</p>
+      <p>We'll build the itinerary around your group.</p>
+      <div class="start-chips">
+        <span class="start-chip">Group rates available</span>
+        <span class="start-chip">Booking 3+ months ahead? Ask about an early-booking rate</span>
+        <span class="start-chip">Open camp dates coming soon</span>
+      </div>
     </div>
     <div class="start-now-cta">
       <a href="/bring-your-group" class="btn-groups">Plan a Group Trip →</a>
-      <a href="mailto:info@queernessexperiences.com?subject=Book%20a%20call%20about%20a%20camp" class="start-now-link">Or email me to book a call →</a>
-      <a href="/waitlist" class="start-now-link">Or join the waitlist for open camps →</a>
     </div>
+  </div>
+</section>
+
+<section class="photo-strip" aria-label="Photos from our trips">
+  <div class="photo-strip-track">
+    <img src="/images/muyil-river-float-group.jpg" alt="Friends laughing together in a selfie on a river float near Tulum" style="object-position:center 30%;" loading="lazy">
+    <img src="/images/hero-grid-cenote-friends.jpg" alt="Three friends laughing together by the water near Tulum" style="object-position:center 30%;" loading="lazy">
+    <img src="/images/dance-class-alt.jpg" alt="Dancers moving together in a dance studio in Tulum" loading="lazy">
+    <img src="/images/luxury-lesbians-lagoon.jpg" alt="Hammocks over turquoise lagoon water near Tulum" loading="lazy">
+    <img src="/images/punta-laguna-canoes.jpg" alt="Green canoes tied up at a lagoon near Tulum" loading="lazy">
+    <img src="/images/monkey-spotting-lagoon.jpg" alt="A person standing among mangrove roots at a lagoon near Tulum" loading="lazy">
+    <img src="/images/muyil-mangrove-swim.jpg" alt="Two friends floating in the lagoon near Tulum" loading="lazy">
   </div>
 </section>
 
@@ -56,6 +70,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div><span class="glance-k">Group size</span><span class="glance-v">3 to 13 people</span></div>
     <div><span class="glance-k">Stay</span><span class="glance-v">Private villa with a pool</span></div>
     <div><span class="glance-k">Includes</span><span class="glance-v">Airport pickups, most meals, all activities and classes</span></div>
+    <div><span class="glance-k">Not included</span><span class="glance-v">Flights and alcohol (bring your own or buy any you like)</span></div>
   </div>
 </section>
 
@@ -69,23 +84,23 @@ import WhyUs from '../components/WhyUs.astro';
   <div class="review-scroll">
     <div class="rcard">
       <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="grev1" class="rev-toggle">
-      <p class="rtext">Ay ay ay, what a time!!! Santi was a dream. The entire tour, start to finish, through Tulum and into the jungle and down into the cenote was better than I ever could've imagined.</p>
-      <label for="grev1" class="rev-more">Read more</label>
-      <p class="rname">Corinna Harris, Google review</p>
+      <input type="checkbox" id="grev2" class="rev-toggle">
+      <p class="rtext">My partner and I booked two tours with Santi during our trip to Tulum, Street Food in the evening and Cenotes the next day. Before the trip, Santi was incredibly communicative and helpful as I planned, offering amazing local recs.</p>
+      <label for="grev2" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
+      <p class="rname">Madge Dietrich, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="grev2" class="rev-toggle">
-      <p class="rtext">My partner and I booked two tours with Santi during our trip to Tulum, Street Food in the evening and Cenotes the next day. Before the trip, Santi was incredibly communicative and helpful as I planned, offering amazing local recs.</p>
-      <label for="grev2" class="rev-more">Read more</label>
-      <p class="rname">Madge Dietrich, Google review</p>
+      <input type="checkbox" id="grev1" class="rev-toggle">
+      <p class="rtext">Ay ay ay, what a time!!! Santi was a dream. The entire tour, start to finish, through Tulum and into the jungle and down into the cenote was better than I ever could've imagined.</p>
+      <label for="grev1" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
+      <p class="rname">Corinna Harris, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="grev3" class="rev-toggle">
       <p class="rtext">We found Santi on Reddit while looking for queer experiences in Tulum and had a great tailored tour of the Muyil river. During the tour, they use their extensive knowledge in marine biology to share facts about the river.</p>
-      <label for="grev3" class="rev-more">Read more</label>
+      <label for="grev3" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
       <p class="rname">Diana Ledesma, Google review</p>
     </div>
   </div>
@@ -97,13 +112,21 @@ import WhyUs from '../components/WhyUs.astro';
 <section class="camp-types" id="camps">
   <p class="sec-eye">Step 1: Pick your camp</p>
   <h2>Queer camps tailored<br>to your group</h2>
-  <p class="camp-types-lead">A private group camp is a trip built around your group: 3 to 13 people, one villa, and a queer Tulum local planning every day. The camp you pick sets the focus. Every camp includes cenotes, great local food, and time to explore Tulum, and you can mix and match activities from any of them.</p>
+  <p class="camp-types-lead">The camp you pick sets the focus. Mix and match activities from any of them.</p>
+  <div class="camp-inc">
+    <span class="camp-inc-k">Every camp has</span>
+    <span class="start-chip">3 to 13 people</span>
+    <span class="start-chip">One private villa</span>
+    <span class="start-chip">Cenotes</span>
+    <span class="start-chip">Great local food</span>
+    <span class="start-chip">A queer Tulum local planning every day</span>
+  </div>
   <div class="camp-type-grid">
     <div class="camp-type camp-type-adventure">
       <img class="camp-type-photo" src="/images/monkey-canoe-paddle.jpg" alt="Santi smiling while paddling a canoe on a lagoon near Tulum" style="object-position:center 30%;">
       <h3>Adventure Camp</h3>
       <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
-      <p>More time outside, in the jungle and the biosphere reserve, on top of the cenotes and great food every camp has.</p>
+      <p>More time outdoors, in the jungle and biosphere reserve.</p>
       <ul>
         <li>Kayak at sunset on the lagoon</li>
         <li>Row a Mayan canoe with a local team</li>
@@ -112,10 +135,10 @@ import WhyUs from '../components/WhyUs.astro';
       <a href="#activities" class="camp-type-link">See all possible activities ↓</a>
     </div>
     <div class="camp-type camp-type-dance">
-      <video class="camp-type-photo" src="/images/dance-class-clip.mp4" poster="/images/dance-class-pose.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Dancers stepping together in a dance class near Tulum" style="object-position:center 50%;"></video>
+      <video class="camp-type-photo" src="/images/dance-class-clip.mp4" poster="/images/dance-class-pose.jpg" autoplay muted loop playsinline preload="auto" aria-label="Dancers stepping together in a dance class near Tulum" style="object-position:center 50%;"></video>
       <h3>Dance Camp</h3>
       <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
-      <p>A safe place to explore your body through dance, with no gender roles. Connect with your body and your breath.</p>
+      <p>Explore your body through dance, with no gender roles.</p>
       <ul>
         <li>Salsa, bachata, vogue, and waacking</li>
         <li>Contemporary, folk, and African dance</li>
@@ -127,7 +150,7 @@ import WhyUs from '../components/WhyUs.astro';
       <img class="camp-type-photo" src="/images/tours-gallery-picnic.jpg" alt="Three friends at a picnic table with fresh fruit and watercolors near Tulum" style="object-position:center 25%;">
       <h3>Family Camp</h3>
       <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
-      <p>For queer families with kids, teens, and young adults, at a pace that works for every age.</p>
+      <p>For queer families, at a pace that works for every age.</p>
       <ul>
         <li>Picnics and easy outdoor days</li>
         <li>Birdwatching and wildlife spotting</li>
@@ -139,7 +162,7 @@ import WhyUs from '../components/WhyUs.astro';
       <img class="camp-type-photo" src="/images/hero-jungle-group.jpg" alt="A group of friends smiling together on a jungle trail near Tulum" style="object-position:center 30%;">
       <h3>Team Bonding Camp</h3>
       <p class="camp-price"><strong>From $4,000 per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
-      <p>For businesses and organizations. Time together away from the office, built around your team.</p>
+      <p>For businesses and organizations, built around your team.</p>
       <ul>
         <li>Shared activities and shared meals</li>
         <li>Cultural experiences with a local guide</li>
@@ -157,10 +180,10 @@ import WhyUs from '../components/WhyUs.astro';
 <section class="bleed" id="activities" style="--bleed:var(--white);background:var(--white);padding:var(--s-sm) var(--s-sm) var(--s-sm);max-width:1120px;margin:0 auto;">
   <p class="sec-eye">Step 2: Mix and match</p>
   <h2>Pick your<br>activities</h2>
-  <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-top:var(--s-sm);">Everything below can be mixed and matched across every camp, depending on what your group is into. Here are a few examples.</p>
+  <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-top:var(--s-sm);">Mix and match across every camp. Here are a few examples.</p>
 
   <div class="activity-group activity-group-do">
-  <label for="act1" class="act-cover"><img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum" style="object-position:center 60%;"></label>
+  <label for="act1" class="act-cover"><img src="/images/IMG_0101.jpeg" alt="Two friends kayaking toward a bright orange sunset over the lagoon near Tulum" style="object-position:center 45%;" loading="lazy"></label>
   <input type="checkbox" class="act-toggle" id="act1">
   <label for="act1" class="activity-group-h">Things you'll do</label>
   <div class="activity-boxes">
@@ -171,6 +194,7 @@ import WhyUs from '../components/WhyUs.astro';
     <input type="checkbox" id="more-do" class="more-toggle">
     <div class="more-wrap">
       <div class="activity-box">Learn new dance moves</div>
+      <div class="activity-box">Yoga</div>
       <div class="activity-box">Pre-Hispanic cooking class &amp; mezcal tasting</div>
       <div class="activity-box">Rappel into a cenote</div>
       <div class="activity-box">Cliff jump into a cenote</div>
@@ -183,7 +207,7 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 
   <div class="activity-group activity-group-eat">
-  <label for="act2" class="act-cover"><img src="/images/food-feature-mango.jpg" alt="A friend holding fresh mangoes at a local fruit market in Tulum" style="object-position:center 35%;"></label>
+  <label for="act2" class="act-cover act-cover-tall"><img src="/images/food-feature-mango.jpg" alt="A friend holding fresh mangoes at a local fruit market in Tulum" style="object-position:center 50%;"></label>
   <input type="checkbox" class="act-toggle" id="act2">
   <label for="act2" class="activity-group-h">Things you'll eat</label>
   <div class="activity-boxes">
@@ -205,8 +229,8 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="activity-box activity-box-custom">Custom: anything you want. Tell me and we'll build it in.</div>
   </div>
   </div>
-  <div class="comfort">
-    <img class="activity-photo comfort-photo" src="/images/la-guarida-workshop-group.jpg" alt="A group workshop at La Guarida, a local cultural center in Tulum" style="object-position:center 40%;">
+  <div class="activity-group activity-group-comfort comfort">
+    <div class="act-cover"><img src="/images/IMG_1187.jpeg" alt="A friend posing while another sketches a live drawing in Tulum" style="object-position:center 33%;" loading="lazy"></div>
     <p class="comfort-h">Expand your comfort zone</p>
     <p class="comfort-p">Totally optional. Try something new, with people who get it.</p>
     <div class="stay-chips">
@@ -259,7 +283,7 @@ import WhyUs from '../components/WhyUs.astro';
   </div>
 </section>
 
-<section class="bleed" style="--bleed:var(--bone);background:var(--bone);padding:var(--s-sm) var(--s-sm);max-width:1120px;margin:0 auto;">
+<section class="bleed" style="--bleed:var(--bone);background:var(--bone);padding:var(--s-md) var(--s-sm) var(--s-md);max-width:1120px;margin:0 auto;">
   <p class="sec-eye">Home base</p>
   <h2>Where<br>you'll stay</h2>
   <p class="stay-lead">We choose the villa based on your group size.</p>
@@ -300,7 +324,12 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="partner-text">
       <p class="sec-eye">For trip hosts and agencies</p>
       <h2>Already host trips?</h2>
-      <p>Interested in giving your group an authentic, local experience in Tulum? Plenty of amazing companies already run trips for queer and trans travelers, and we'd love to work with you. We can plan the Tulum part, connect you with local businesses and private chefs, or co-host with you.</p>
+      <p>We'd love to work with you on the Tulum part of your trip.</p>
+      <div class="start-chips">
+        <span class="start-chip">Plan the Tulum part</span>
+        <span class="start-chip">Connect you with local businesses and private chefs</span>
+        <span class="start-chip">Co-host with you</span>
+      </div>
     </div>
     <a href="/bring-your-group" class="btn-p partner-btn">Let's Work Together →</a>
   </div>
@@ -314,7 +343,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq6">
       <label class="faq-q" for="gfaq6">Is Tulum safe and welcoming for queer and trans people?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Yes. Tulum is a genuinely inclusive town where queer and trans people can just exist, not just visit. For the full, honest breakdown, read <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></div></div>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Tulum is an inclusive town where queer and trans people can just exist, not just visit. For the full, honest breakdown, read <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq3">
@@ -337,6 +366,11 @@ import WhyUs from '../components/WhyUs.astro';
       <div class="faq-a"><div class="faq-a-inner">Most meals (some from a private chef, others at local restaurants and small businesses run by friends of ours), airport pickup and drop-off, your place to stay (a private villa with a private pool, picked for your group size), local transport, and all activities. Every activity is optional, and we personalize the trip to your group. Not included: flights and travel insurance. Tell us about dietary restrictions and allergies and we'll plan around them.</div></div>
     </div>
     <div class="faq-item">
+      <input type="checkbox" id="gfaq-diet">
+      <label class="faq-q" for="gfaq-diet">Do you adjust for dietary restrictions?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Tell us about any dietary restrictions, like gluten-free, when you book, and we'll adjust.</div></div>
+    </div>
+    <div class="faq-item">
       <input type="checkbox" id="gfaq1">
       <label class="faq-q" for="gfaq1">Who can join Camp Queerness?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Camp Queerness is specifically for queer, sapphic, and trans travelers.</div></div>
@@ -344,7 +378,7 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq-reserve">
       <label class="faq-q" for="gfaq-reserve">How do I reserve my spot?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">I like to talk with everyone before they book, so we'll hop on a quick chat first (you can ask me anything then). From there, I'll send you the deposit info to lock in your spot.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">I like to talk with everyone before they book, so we'll hop on a quick chat first (you can ask me anything then). From there, I'll send you the deposit info to lock in your spot. We highly recommend travel insurance.</div></div>
     </div>
   </div>
   <p class="policy-link"><a href="/policies">Policies and disclaimers, including the liability release →</a></p>
@@ -355,6 +389,19 @@ import WhyUs from '../components/WhyUs.astro';
 </section>
 
 <!-- HOST CTA moved to /bring-your-group -->
+
+<script>
+  // Some browsers (iOS Safari, low-power mode) won't autoplay a clip inside a
+  // swipe carousel until it's on screen, so nudge it to play when it scrolls in.
+  document.querySelectorAll('video.camp-type-photo').forEach((v) => {
+    const vid = v as HTMLVideoElement;
+    const tryPlay = () => { vid.muted = true; const p = vid.play(); if (p) p.catch(() => {}); };
+    new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) tryPlay(); });
+    }, { threshold: 0.3 }).observe(vid);
+    ['touchstart', 'click', 'scroll'].forEach((ev) => window.addEventListener(ev, () => { if (vid.paused) tryPlay(); }, { once: true, passive: true }));
+  });
+</script>
 
 </Layout>
 
@@ -456,14 +503,14 @@ footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px sol
 .glance-grid div{display:flex;flex-direction:column;gap:2px;}
 .glance-k{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--yellow);}
 .glance-v{font-family:var(--fb);font-size:15px;font-weight:700;color:var(--white);line-height:1.3;}
-@media(min-width:900px){.glance{padding:var(--s-sm) 40px;}.glance-grid{grid-template-columns:repeat(5,1fr);}}
+@media(min-width:900px){.glance{padding:var(--s-sm) 40px;}.glance-grid{grid-template-columns:repeat(3,1fr);}}
 .more-toggle{position:absolute;opacity:0;pointer-events:none;}
 .more-wrap{display:none;}
 .more-toggle:checked ~ .more-wrap{display:contents;}
 .more-btn{grid-column:1 / -1;cursor:pointer;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);padding:6px 0;}
 .more-btn::before{content:'See more activities +';}
 .more-toggle:checked ~ .more-btn::before{content:'See fewer activities \2212';}
-#sample-week{padding-bottom:var(--s-sm) !important;}
+#sample-week{padding-bottom:var(--s-md) !important;}
 .comfort-photo{margin:0 0 var(--s-sm);box-shadow:6px 6px 0 var(--yellow);}
 .activity-group{display:block !important;}
 .act-cover{display:block;cursor:pointer;margin:0 0 var(--s-sm);}
@@ -533,6 +580,8 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 .start-now h2{font-family:var(--ff);font-size:28px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin:0 0 var(--s-sm);}
 .start-now p{font-size:17px;line-height:1.6;color:var(--dark);max-width:560px;}
 .start-now .sec-eye{color:var(--dark);}
+.start-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--s-sm);}
+.start-chip{background:var(--white);border:2px solid var(--dark);border-radius:999px;padding:6px 14px;font-family:var(--fb);font-size:14px;font-weight:700;line-height:1.3;color:var(--dark);}
 .start-now-cta{display:flex;flex-direction:column;gap:12px;align-items:flex-start;}
 .start-now-cta .btn-groups{display:inline-block;background:var(--dark);color:var(--white);border-color:var(--dark);box-shadow:5px 5px 0 var(--magenta);}
 .start-now-link{font-size:14.5px;font-weight:700;color:var(--dark);text-decoration:underline;}
@@ -606,12 +655,27 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 @media(min-width:900px){
   .head{--pad:max(40px,calc((100vw - 1120px) / 2));padding-left:var(--pad);padding-right:var(--pad);}
   .head-top{margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1);padding-left:var(--pad);padding-right:var(--pad);}
-  .head-cols{display:grid;grid-template-columns:1fr 400px;grid-template-rows:1fr auto;column-gap:48px;align-items:center;}
-  .head-left{grid-column:1;grid-row:1;align-self:center;}
+  .head-cols{display:grid;grid-template-columns:1fr 400px;grid-template-rows:auto;column-gap:48px;align-items:start;padding-top:var(--s-sm);}
+  .head-left{grid-column:1;grid-row:1;align-self:start;}
+  .head-left .head-body{font-size:21px;}
+  .head-cols .hero-grid img{aspect-ratio:4/3;}
   .head-credit{grid-column:1;grid-row:2;align-self:end;margin-top:var(--s-sm) !important;}
   .head-top{padding-top:var(--s-md) !important;}
   .head{padding-bottom:var(--s-md) !important;}
     .head-cols .hero-grid{grid-column:2;grid-row:1 / span 2;margin-top:0;margin-bottom:0;width:100%;max-width:none;}
   .head-kayak{aspect-ratio:21/8;}
 }
+
+.camp-inc{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px;margin:var(--s-md) 0 var(--s-lg);padding:var(--s-sm);background:var(--white);border:2px solid var(--dark);box-shadow:5px 5px 0 var(--terra);max-width:760px;}
+.camp-inc-k{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--terra);width:100%;margin-bottom:2px;}
+.camp-types-lead{max-width:560px;}
+.act-cover-tall img{aspect-ratio:3/2 !important;}
+.activity-group-comfort{--accent:var(--yellow);}
+.activity-group-comfort .comfort-h{font-family:var(--ff);font-size:24px;line-height:1.1;font-weight:400;text-transform:uppercase;color:var(--dark);margin:0 0 8px;}
+.activity-group-comfort .comfort-p{font-size:17px;line-height:1.6;color:var(--muted);margin:0 0 var(--s-sm);}
+.activity-group-comfort .act-cover{cursor:default;}
+.photo-strip{background:var(--bone);padding:var(--s-sm) 0;border-bottom:3px solid var(--dark);}
+.photo-strip-track{display:flex;align-items:flex-start;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--s-sm);padding:4px var(--s-sm) 8px;-webkit-overflow-scrolling:touch;}
+.photo-strip-track img{flex:0 0 72%;max-width:320px;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--terra);scroll-snap-align:start;}
+@media(min-width:900px){.photo-strip-track{padding:4px 40px 8px;scroll-padding:0 40px;}.photo-strip-track img{flex:0 0 280px;width:280px;height:210px;aspect-ratio:auto;max-width:none;}}
 </style>

@@ -7,8 +7,8 @@ import Layout from '../layouts/Layout.astro';
   <div class="host-inner">
     <div class="host-text">
       <p class="host-eye">Bringing your group to Tulum?</p>
-      <h1>Let's plan it<br>together</h1>
-      <p>Have a group of 3 or more? I can plan the whole camp-style trip around your group, or consult on things to do, focused on local businesses and local experiences. Every activity is mix and match. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
+      <h1>Book your<br>group trip</h1>
+      <p>Have a group of 3 or more? Tell me what you're dreaming up and I'll plan the trip around your group, or help you plan your own. Send the form and I'll get back to you to start planning.</p>
       <form class="form" name="group-plan" method="POST" data-netlify="true" action="/thank-you">
         <input type="hidden" name="form-name" value="group-plan" />
         <div style="display:flex;gap:12px;">
@@ -30,7 +30,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div><label class="fl">Rough dates</label><input class="fi" type="text" name="dates" placeholder="When are you thinking"></div>
         <div><label class="fl">Tell me about your group</label><textarea class="fi" name="message" rows="4" placeholder="What you're hoping to plan or do" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
-        <button type="submit" class="fsub">Let's Talk →</button>
+        <button type="submit" class="fsub">Get excited for your trip →</button>
+        <p class="call-alt">Prefer to talk first? <a href="mailto:info@queernessexperiences.com?subject=Book%20a%20call%20about%20a%20group%20trip">Book a call</a></p>
       </form>
     </div>
   </div>
@@ -56,6 +57,8 @@ import Layout from '../layouts/Layout.astro';
 @media(max-width:479px){.camp-checks{grid-template-columns:1fr;}}
 .camp-check{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--dark);padding:11px 14px;font-family:var(--fb);font-size:14.5px;color:var(--dark);cursor:pointer;}
 .camp-check input{width:18px;height:18px;accent-color:var(--magenta);flex-shrink:0;cursor:pointer;}
+.call-alt{font-size:15px !important;color:rgba(255,255,255,0.85) !important;margin:var(--s-sm) 0 0 !important;text-align:center;}
+.call-alt a{color:var(--yellow);font-weight:700;text-decoration:underline;}
 .host-inner{display:flex;flex-direction:column;gap:var(--s-md);}
 
 @media(min-width:720px){

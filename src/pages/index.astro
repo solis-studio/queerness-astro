@@ -38,14 +38,14 @@ const orgSchema = {
       <p class="hero-lead">For sapphic, queer, and trans travelers who prioritize local businesses and want to:</p>
       <div class="hero-chips">
         <span class="hero-chip">Understand the culture from an insider</span>
-        <span class="hero-chip">Experience the outdoors and great food</span>
+        <span class="hero-chip">Enjoy the outdoors and great food</span>
         <span class="hero-chip">Experience everyday life in Tulum</span>
         <span class="hero-chip">Feel affirmed for who they are</span>
       </div>
     </div>
     <div class="cta-stack">
       <a href="#tours" class="btn-p">See the Tours →</a>
-      <a href="/group-trips" class="btn-s">Plan a Group Trip →</a>
+      <a href="/group-trips" class="btn-s">Camp-Style Group Trips →</a>
     </div>
     <a href="#reviews" class="hero-social-proof">
       <span class="stars">★★★★★</span>
@@ -58,9 +58,7 @@ const orgSchema = {
 <section class="qbar">
   <p class="qbar-h">Tulum is queer and trans friendly, and that surprises people.</p>
   <div class="qbar-grid">
-    <div class="qtile"><strong>Part of everyday life</strong><span>You'll see queer and gender-diverse people any time you walk out on the street.</span></div>
-    <div class="qtile"><strong>Everywhere you go</strong><span>Queer life is woven through everyday places all over town, not just one spot.</span></div>
-    <div class="qtile"><strong>Local, not just visiting</strong><span>We live and run businesses here, so we're part of daily life in Tulum.</span></div>
+    <div class="qtile"><strong>Queer friendly, not queer centric</strong><span>Tulum isn't built around one queer scene, but it is queer friendly. You'll see queer and gender-diverse people any time you walk around town. Tulum even has its own Pride, organized by local activists, and the town hall is lit up in Pride colors every June, for all of June.</span></div>
   </div>
   <p class="qbar-partner">Travel agent, trip host, or group leader? <a href="#partner">Partner with us →</a></p>
 </section>
@@ -102,7 +100,7 @@ const orgSchema = {
   .groups p.gline{font-size:15.5px;line-height:1.5;margin:0 0 var(--s-sm);max-width:560px;}
   .groups p.gsub{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--yellow);margin:0 0 8px;}
   .gcamps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 var(--s-sm);max-width:560px;}
-  .gcamp{border-left:4px solid var(--yellow);background:rgba(255,255,255,0.1);padding:10px 12px;display:flex;flex-direction:column;gap:2px;}
+  .gcamp{justify-content:center;border-left:4px solid var(--yellow);background:rgba(255,255,255,0.1);padding:10px 12px;display:flex;flex-direction:column;gap:2px;}
   .gcamp strong{font-family:var(--fb);font-size:15px;color:var(--white);}
   .gcamp span{font-size:13.5px;line-height:1.4;color:rgba(255,255,255,0.88);}
   .gbtns{display:flex;flex-wrap:wrap;gap:12px;}
@@ -123,7 +121,7 @@ const orgSchema = {
   .qtile{background:var(--white);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);padding:12px 14px;display:flex;flex-direction:column;gap:4px;}
   .qtile strong{font-family:var(--fb);font-size:15px;color:var(--dark);}
   .qtile span{font-size:14.5px;line-height:1.5;color:var(--dark);}
-  @media(min-width:720px){.qbar{padding:var(--s-md) 40px;}.qbar-grid{grid-template-columns:repeat(3,1fr);gap:16px;}.qbar-h{font-size:26px;}}
+  @media(min-width:720px){.qbar{padding:var(--s-md) 40px;}.qbar-grid{grid-template-columns:1fr;}.qbar-h{font-size:26px;}}
   .agency{background:var(--blue);padding:var(--s-sm);}
   .agency-inner{max-width:1120px;margin:0 auto;}
   .agency-toggle{position:absolute;opacity:0;pointer-events:none;}
@@ -163,13 +161,12 @@ const orgSchema = {
       <p class="small bridge-facts-label">Fun facts about me</p>
       <ul class="bridge-facts-list" aria-label="Fun facts">
         <li><span class="bfl-num">01</span><span class="bfl-text"><strong>Former UCLA Wildlife Biologist</strong>: I studied marmots. Let's get nerdy about the plants and animals along the way.</span></li>
-        <li><span class="bfl-num">02</span><span class="bfl-text"><strong>Pattie Gonia Scholarship</strong>: Queer Outdoor Expedition recipient, 2023.</span></li>
-        <li><span class="bfl-num">03</span><span class="bfl-text"><strong>Local Nonprofit Committee Member</strong>: On the committee for Los Amigos de la Esquina (LADLE), which runs art, wellbeing, and life-skills programs for Mayan and local Mexican kids. Started as a volunteer, later general manager.</span></li>
+        <li><span class="bfl-num">02</span><span class="bfl-text"><strong>Local Nonprofit Committee Member</strong>: On the committee for Los Amigos de la Esquina (LADLE), which runs art, wellbeing, and life-skills programs for Mayan and local Mexican kids. Started as a volunteer, later general manager.</span></li>
       </ul>
       <input type="checkbox" id="more-facts" class="facts-toggle">
       <ul class="bridge-facts-list facts-more" aria-label="More fun facts">
-        <li><span class="bfl-num">04</span><span class="bfl-text"><strong>International Conference Speaker</strong>: On designing experiences for queer and trans travelers.</span></li>
-        <li><span class="bfl-num">05</span><span class="bfl-text"><strong>FOLX Campaign Model</strong>: Recently cast as a model for FOLX, the queer and trans telehealth company.</span></li>
+        <li><span class="bfl-num">03</span><span class="bfl-text"><strong>International Conference Speaker</strong>: On designing experiences for queer and trans travelers.</span></li>
+        <li><span class="bfl-num">04</span><span class="bfl-text"><strong>FOLX Campaign Model</strong>: Recently cast as a model for FOLX, the queer and trans telehealth company.</span></li>
       </ul>
       <label for="more-facts" class="facts-btn"></label>
       <a href="/about" class="bridge-more">More about me →</a>
@@ -210,28 +207,28 @@ const orgSchema = {
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="rev3" class="rev-toggle">
       <p class="rtext"><strong>The website and guide were super helpful. They MADE my trip to Tulum.</strong> Santi is very responsive and knowledgeable about Tulum. I did the cenote and the street food tours and they were AMAZING. I highly highly recommend both — they were so different but each gave me a glimpse of Tulum I never would have seen without the tour. Santi is an absolute delight. The cenotes were stunning. The food was delicious. The culture and educational experience was phenomenal. I can't say enough good things.</p>
-      <label for="rev3" class="rev-more">Read more +</label>
+      <label for="rev3" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
       <p class="rname">Chashaa Johnson, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="rev2" class="rev-toggle">
       <p class="rtext"><strong>Santi made exploring and connecting feel effortless</strong>, when in reality, I never would have found the spaces, knowledge, fun, and people without them.</p>
-      <label for="rev2" class="rev-more">Read more +</label>
+      <label for="rev2" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
       <p class="rname">Haley Gowland, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="rev1" class="rev-toggle">
       <p class="rtext">I procrastinated in writing this review because anything I say will be an understatement to <strong>how delightful Santi is, how fantastic their tours are</strong>, and how the whole experience will easily become the highlight of any trip to Tulum.</p>
-      <label for="rev1" class="rev-more">Read more +</label>
+      <label for="rev1" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
       <p class="rname">Kristen Eckstrand, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="rev4" class="rev-toggle">
       <p class="rtext">I had such an amazing time on this tour! As a foodie, I really appreciated checking out La Norteña and eating all the authentic, delicious food that Santi recommended.</p>
-      <label for="rev4" class="rev-more">Read more +</label>
+      <label for="rev4" class="rev-more"><span class="rm-more">Read more +</span><span class="rm-less">Read less −</span></label>
       <p class="rname">Marissa Herrera, Local Guide, Google review</p>
     </div>
   </div>
@@ -248,7 +245,7 @@ const orgSchema = {
   <div class="tours-inner">
     <p class="sec-eye">What we do</p>
     <h2>The tours</h2>
-    <p class="tours-lead">Tours run small. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.</p>
+    <p class="tours-lead"><strong>Every tour is vetted so queer, trans, and gender diverse people can just focus on enjoying the day.</strong> Tours run small. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.</p>
 
     <div class="food-feature">
       <p class="food-feature-caption">Eating deliciously is a priority.</p>
@@ -267,7 +264,7 @@ const orgSchema = {
         <img class="ph flag-photo flag-photo-tall" src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through a wooden ladder into the cave">
         <div class="flag-body">
           <div class="flag-name">Secret Cenote</div>
-          <p class="flag-desc">A cenote not even locals know about. The entrance is an ancient well created by the Maya.</p>
+          <p class="flag-desc">A cenote not even locals know about. The entrance is an ancient well created by the Maya. <strong>A great option for gender diverse people who are nervous about wearing a bathing suit, because we get the cenote all to ourselves.</strong></p>
           <input type="checkbox" id="flagmore1" class="flag-toggle-check">
           <label for="flagmore1" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
           <div class="flag-more"><p>You'll climb down a ladder into an entrance that used to be a well used by the ancient Maya, down into water that's been here for thousands of years. Cared for by an extremely knowledgeable Maya family.</p></div>
@@ -389,7 +386,7 @@ const orgSchema = {
       </div>
       <p class="gline">Book 3 or more months ahead and ask about an early-booking rate.</p>
       <div class="gbtns">
-        <a href="/group-trips#camps" class="btn-groups">See the Camps →</a>
+        <a href="/group-trips" class="btn-groups">See the Camps →</a>
         <a href="/waitlist" class="btn-groups">Join the Waitlist →</a>
       </div>
       <p class="gline" style="margin-top:var(--s-sm);">Prefer a bigger trip? Join the waitlist for open camps, like Camp Queerness.</p>
@@ -459,6 +456,11 @@ const orgSchema = {
       <div class="faq-a"><div class="faq-a-inner">Yes, with real nuance worth understanding before you arrive. Here's the honest version. <a href="/blog/is-tulum-queer-trans-friendly">Read: Is Tulum LGBTQ+ Friendly?</a></div></div>
     </div>
     <div class="faq-item">
+      <input type="checkbox" id="faq-swim">
+      <label class="faq-q" for="faq-swim">I just had top surgery, or I'm a trans woman, and I want to be in my bathing suit. Which tour is best?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner"><strong>The best option is the Secret Cenote Tour, because we get the cenote all to ourselves.</strong> <a href="/tours#tour1">See the Secret Cenote Tour →</a></div></div>
+    </div>
+    <div class="faq-item">
       <input type="checkbox" id="faq3">
       <label class="faq-q" for="faq3">How big are the tour groups?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Tours run small, so you're never in a crowd. Larger groups, retreats, and events become private tours, sized and priced for your group.</div></div>
@@ -467,6 +469,11 @@ const orgSchema = {
       <input type="checkbox" id="faq4">
       <label class="faq-q" for="faq4">Do I need to book in advance?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Ideally, yes. About a week's notice is great, especially December through March. But if it's short notice, just message me and I'll do my best to get you on a tour.</div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="faq-diet">
+      <label class="faq-q" for="faq-diet">Do you adjust for dietary restrictions?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Tell us about any dietary restrictions, like gluten-free, when you book, and we'll adjust.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="faq5">
