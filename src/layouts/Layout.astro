@@ -183,6 +183,19 @@ const PIXEL_ID = '';
       targets.forEach((t) => { t.classList.add('reveal'); io.observe(t); });
     }
   </script>
+  <script>
+    // Close any opened review (and its Read more steps) once the reviews scroll out of view.
+    if ('IntersectionObserver' in window) {
+      const rio = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) {
+            e.target.querySelectorAll('.rev-toggle:checked, .rstep:checked').forEach((c) => { (c as HTMLInputElement).checked = false; });
+          }
+        });
+      }, { threshold: 0 });
+      document.querySelectorAll('.review-scroll').forEach((r) => rio.observe(r));
+    }
+  </script>
 
 </body>
 </html>

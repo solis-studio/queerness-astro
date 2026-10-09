@@ -109,6 +109,7 @@ import Layout from '../layouts/Layout.astro';
 <div class="wp-range-intro">
   <p class="wp-range-title">Experiences</p>
   <p>From walking distance of the Hyatt, to neighborhoods most visitors never find, every experience fits around your conference schedule.</p>
+  <p class="wp-range-talk">On these tours, we talk about cultural nuance, Mexican ingenuity, and queer and trans activism in Latin America.</p>
   <p>These are small-group experiences, run for the dates listed below. Get 6 or more people together and we can personalize everything, including the date.</p>
 </div>
 
@@ -620,6 +621,8 @@ import Layout from '../layouts/Layout.astro';
 
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
+  .wp-range-intro p + p{margin-top:12px !important;}
+  .wp-range-intro p.wp-range-talk{font-weight:700;color:var(--wblue);}
   .wp-range-intro p:not(.wp-range-title){font-size:16px;color:var(--wmuted);font-weight:300;line-height:1.7;max-width:480px;margin:0 auto;}
 
   .wp-section-label{background:var(--wcream);border-top:4px solid var(--wblue);border-bottom:1px solid var(--wborder);padding:32px 24px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}

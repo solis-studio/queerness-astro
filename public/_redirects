@@ -12,6 +12,8 @@
 /copy-of-personalized-tours     /tours                                  301
 /lgbt-tulum-guide                /blog/queer-tulum-recommendations       301
 /queer-tulum-recomendations      /blog/queer-tulum-recommendations       301
+/queer-tulum-recomendations/*    /blog/queer-tulum-recommendations       301
+/sitemap.xml                    /sitemap-index.xml                      301
 /reviews                        /                                       301
 /faqs                           /                                       301
 /coming-soon-01                 /thank-you                              301
