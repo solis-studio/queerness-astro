@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="LGBTQ+ Queer & Trans Experiences in Mexico City — WPATH 2026 | Queerness Experiences" description={"Eight curated LGBTQ+ queer and trans experiences in Mexico City for WPATH 2026 attendees. Tours, food, mezcal, drag, and lucha libre, led by queer Mexican locals."}>
+<Layout title="LGBTQ+ Queer & Trans Experiences in Mexico City — WPATH 2026 | Queerness Experiences" description={"Six curated LGBTQ+ queer and trans experiences in Mexico City for WPATH 2026 attendees. Tours, food, mezcal, and markets, led by queer Mexican locals."}>
 
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
@@ -14,18 +14,23 @@ import Layout from '../layouts/Layout.astro';
     },
     {
       "@type": "Question",
+      "name": "What is the group minimum?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class and Polanco Mezcal & Snacks need 6. Not there yet? Tell us your date and we'll combine interest." }
+    },
+    {
+      "@type": "Question",
       "name": "When do I pay?",
       "acceptedAnswer": { "@type": "Answer", "text": "Nothing is due at pre-registration. Once minimum group size is reached, we'll send you a booking link to pay and officially secure your spot. No surprises." }
     },
     {
       "@type": "Question",
       "name": "Are these tours only for WPATH attendees?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The daytime tours are exclusively for WPATH 2026 attendees. The nightlife events are WPATH-focused but open to others, they're public events and we'll be attending as a group." }
+      "acceptedAnswer": { "@type": "Answer", "text": "The daytime tours are exclusively for WPATH 2026 attendees." }
     },
     {
       "@type": "Question",
       "name": "What's included in the price?",
-      "acceptedAnswer": { "@type": "Answer", "text": "All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks. The Lucha Libre price includes arena entrance, tacos, and a non-alcoholic drink. Nightlife events are guest list, register your interest and we'll follow up with full details once confirmed." }
+      "acceptedAnswer": { "@type": "Answer", "text": "All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks." }
     },
     {
       "@type": "Question",
@@ -83,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="wp-hero-title">Explore</div>
       <div class="wp-hero-title-sub">Mexico City</div>
     </h1>
-    <p class="wp-hero-sub">Eight curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
+    <p class="wp-hero-sub">Six curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
     <a href="#register" class="wp-hero-btn">Pre-register now — no cost</a>
     <div class="wp-hero-note">No cost to pre-register · Reserve your interest</div>
 
@@ -110,19 +115,11 @@ import Layout from '../layouts/Layout.astro';
   <p class="wp-range-title">Experiences</p>
   <p>From walking distance of the Hyatt, to neighborhoods most visitors never find, every experience fits around your conference schedule.</p>
   <p class="wp-range-talk">On these tours, we talk about cultural nuance, Mexican ingenuity, and queer and trans activism in Latin America.</p>
-  <p>These are small-group experiences, run for the dates listed below. Get 6 or more people together and we can personalize everything, including the date.</p>
+  <p>These are small-group experiences, run for the dates listed below. Most need a group minimum of just 2 people. The Prehispanic Cooking Class and Polanco Mezcal need 6. Meet a tour's minimum and we can personalize everything, including the date.</p>
 </div>
 
 <!-- TOURS -->
 <div class="wp-accordion-wrap" id="wrap-tours">
-<div class="wp-section-label" data-target="wrap-tours">
-  <div>
-    <div class="wp-section-label-title">Tours</div>
-    <div class="wp-section-label-count">5 experiences · Nov 6–13</div>
-    <div class="wp-section-label-cta">Explore our tours ↓</div>
-  </div>
-  <div class="wp-accordion-arrow">+</div>
-</div>
 <div class="wp-accordion-cards">
 <div class="wp-cards-list">
 
@@ -130,15 +127,15 @@ import Layout from '../layouts/Layout.astro';
     <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="/images/wpath-cooking-class.jpg" alt="Prehispanic cooking class Roma Norte Mexico City" style="object-position: center 40%;">
       <div class="wp-card-tag">Culture</div>
-      <div class="wp-card-date">Nov 9</div>
+      <div class="wp-card-date">Nov 10–12</div>
     </div>
     <div class="wp-card-body">
       <div class="wp-card-title">Prehispanic Cooking Class</div>
       <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Monday Nov 9 · Morning</div>
+        <div class="wp-card-meta-item">📅 Nov 10–12 · Morning, afternoon, or evening, date chosen with your group</div>
         <div class="wp-card-meta-item">📍 Doña Vero · Roma Norte · 30–45 min from hotel</div>
         <div class="wp-card-meta-item">⏱ ~3 hrs · Up to 18 people</div>
-        <div class="wp-card-meta-item">👥 No group of 6 yet? Tell us your date, we'll combine interest</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 6 people. Not there yet? Tell us your date, we'll combine interest</div>
       </div>
       <p class="wp-card-teaser">Ancient recipes, living hands, Roma Norte. The meal you'll talk about all week.</p>
       <input type="checkbox" class="wp-card-toggle-check" id="t1">
@@ -166,7 +163,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="wp-card-meta-item">📅 Nov 10 morning · Nov 11 evening</div>
         <div class="wp-card-meta-item">📍 Roma Norte / Condesa · 30–45 min from hotel</div>
         <div class="wp-card-meta-item">⏱ ~3.5 hrs</div>
-        <div class="wp-card-meta-item">👥 No group of 6 yet? Tell us your date, we'll combine interest</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 2 people. Tell us your date and we'll organize it</div>
       </div>
       <p class="wp-card-teaser">The neighborhoods locals actually live in. Food, coffee, streets that feel alive.</p>
       <input type="checkbox" class="wp-card-toggle-check" id="t2">
@@ -184,24 +181,52 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-san-angel.jpg" alt="San Angel market day Mexico City" style="object-position: 15% center;">
+      <img class="wp-card-photo" loading="lazy" src="/images/wpath-san-angel.jpg" alt="Market day in Mexico City" style="object-position: 15% center;">
       <div class="wp-card-tag">Culture</div>
-      <div class="wp-card-date">Nov 7</div>
+      <div class="wp-card-date">Date TBD</div>
     </div>
     <div class="wp-card-body">
-      <div class="wp-card-title">San Ángel Market Day</div>
+      <div class="wp-card-title">Explore a Market in Mexico City</div>
       <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Saturday Nov 7 only · Morning</div>
-        <div class="wp-card-meta-item">📍 El Bazar Sábado · San Ángel · 45–60 min from hotel</div>
+        <div class="wp-card-meta-item">📅 Date to be chosen · Morning, afternoon, or evening</div>
+        <div class="wp-card-meta-item">📍 A local market · CDMX · Location shared once the date is set</div>
         <div class="wp-card-meta-item">⏱ ~3.5 hrs</div>
-        <div class="wp-card-meta-item">👥 CDMX has incredible markets daily. No group of 6 yet? Tell us your date, we'll combine interest</div>
+        <div class="wp-card-meta-item">👥 CDMX has incredible markets daily. Group minimum: 2 people. Tell us your date and we'll organize it</div>
       </div>
-      <p class="wp-card-teaser">Cobblestone streets, handmade ceramics, a taco stand tourists never find. Saturday only.</p>
+      <p class="wp-card-teaser">A local market, handmade ceramics, a taco stand tourists never find.</p>
       <input type="checkbox" class="wp-card-toggle-check" id="t3">
       <label class="wp-card-toggle-label" for="t3"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
       <div class="wp-card-details">
-        <p class="wp-card-desc">Cobblestone streets with a local guide, handmade ceramics you can't find anywhere else, and a taco stand tourists never discover. One Saturday morning that makes the whole trip feel worth it.</p>
+        <p class="wp-card-desc">A Mexico City market with a local guide, handmade ceramics you can't find anywhere else, and a taco stand tourists never discover. One morning that makes the whole trip feel worth it.</p>
         <div class="wp-card-includes">✓ Food & non-alcoholic drink included<br>✓ Transport between stops included</div>
+      </div>
+      <div class="wp-card-footer">
+        <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
+        <a href="#register" class="wp-card-btn">Pre-register</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wp-card">
+    <div class="wp-card-photo-wrap">
+      <img class="wp-card-photo" loading="lazy" src="/images/chapultepec-castle-malachite-hall.jpg" alt="Ornate hall with a malachite fountain and a stained glass skylight inside Chapultepec Castle in Mexico City">
+      <div class="wp-card-tag">Culture</div>
+      <div class="wp-card-date">Date TBD</div>
+    </div>
+    <div class="wp-card-body">
+      <div class="wp-card-title">Chapultepec Castle and Park</div>
+      <div class="wp-card-meta">
+        <div class="wp-card-meta-item">📅 Date to be chosen · Morning, afternoon, or evening</div>
+        <div class="wp-card-meta-item">📍 Chapultepec Castle and Park · CDMX</div>
+        <div class="wp-card-meta-item">⏱ ~2–3 hrs</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 2 people. Tell us your date and we'll organize it</div>
+      </div>
+      <p class="wp-card-teaser">A castle on a hill inside a giant city park.</p>
+      <input type="checkbox" class="wp-card-toggle-check" id="t9">
+      <label class="wp-card-toggle-label" for="t9"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
+      <div class="wp-card-details">
+        <p class="wp-card-desc">The castle on the hill was once home to Mexico's emperor and empress in the 1860s. Today it's a museum, and the park around it is where local families spend their time. The park is the Bosque de Chapultepec, literally the Forest of Chapultepec: a forest inside one of the largest cities in Latin America. We explore both with a local guide, at an unhurried pace with local snacks along the way. Details are shared once the date is set.</p>
+        <div class="wp-card-includes">✓ Castle tickets included<br>✓ Local snacks included</div>
       </div>
       <div class="wp-card-footer">
         <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
@@ -214,15 +239,15 @@ import Layout from '../layouts/Layout.astro';
     <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="/images/wpath-mezcal.jpg" alt="Mezcal tasting Polanco Mexico City">
       <div class="wp-card-tag">Tasting</div>
-      <div class="wp-card-date">Nov 6, 8 & 11</div>
+      <div class="wp-card-date">Nov 11</div>
     </div>
     <div class="wp-card-body">
       <div class="wp-card-title">Polanco Mezcal & Snacks</div>
       <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Nov 6, 8 & 11 · Evening</div>
+        <div class="wp-card-meta-item">📅 Wednesday Nov 11 · Evening</div>
         <div class="wp-card-meta-item">📍 Private venue · Polanco · Walking distance from hotel</div>
         <div class="wp-card-meta-item">⏱ ~2.5 hrs</div>
-        <div class="wp-card-meta-item">👥 No group of 6 yet? Tell us your date, we'll combine interest</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 6 people. Not there yet? Tell us your date, we'll combine interest</div>
       </div>
       <p class="wp-card-teaser">Five minutes from the hotel. Premium mezcal, private space, someone who knows the difference.</p>
       <input type="checkbox" class="wp-card-toggle-check" id="t4">
@@ -250,7 +275,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="wp-card-meta-item">📅 Friday Nov 13 · Morning (day after conference)</div>
         <div class="wp-card-meta-item">📍 CDMX · TBD</div>
         <div class="wp-card-meta-item">⏱ ~2–3 hrs</div>
-        <div class="wp-card-meta-item">👥 No group of 6 yet? Tell us your date, we'll combine interest</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 2 people. Tell us your date and we'll organize it</div>
       </div>
       <p class="wp-card-teaser">The conference is over. You're not ready to go home. The send-off you deserve.</p>
       <input type="checkbox" class="wp-card-toggle-check" id="t5">
@@ -270,112 +295,29 @@ import Layout from '../layouts/Layout.astro';
 </div>
 </div>
 
-<!-- NIGHTLIFE -->
-<div class="wp-accordion-wrap" id="wrap-nightlife">
-<div class="wp-section-label wp-nightlife-label" data-target="wrap-nightlife">
-  <div>
-    <div class="wp-section-label-title wp-nightlife-title">Nightlife</div>
-    <div class="wp-section-label-count">3 events · Nov 9–11</div>
-    <div class="wp-section-label-cta wp-nightlife-cta">Explore nightlife ↓</div>
+<!-- ALSO BY QUEERNESS EXPERIENCES -->
+<section class="wp-retreat" id="retreats" aria-label="Camp-style retreats in Tulum">
+  <div class="wp-retreat-inner">
+    <img class="wp-retreat-logo" src="/images/wpath-logo.png" alt="Queerness Experiences" width="52" height="52">
+    <div class="wp-retreat-eyebrow">Also by Queerness Experiences</div>
+    <h2 class="wp-retreat-title">Camp-style retreats in Tulum</h2>
+    <p class="wp-retreat-sub">Summer camp, reimagined for sapphic, nonbinary, queer, trans, and gender diverse grownups. Cenotes, slow travel, great local food, and a queer Tulum local planning every day.</p>
+    <div class="wp-retreat-chips">
+      <span>Cenotes</span><span>Slow travel</span><span>Great local food</span><span>Private villa</span>
+    </div>
+    <form class="wp-retreat-form" name="wpath-camp-info" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="wpath-camp-info">
+      <p class="wp-retreat-hp"><label>Leave this empty <input name="bot-field"></label></p>
+      <label class="wp-retreat-label" for="retreat-email">Want more info on our retreats?</label>
+      <div class="wp-retreat-row">
+        <input id="retreat-email" class="wp-retreat-input" type="email" name="email" placeholder="Your email" required autocomplete="email">
+        <button class="wp-retreat-btn" type="submit">Send me retreat info</button>
+      </div>
+      <p class="wp-retreat-msg" role="status" hidden>You're on the list. We'll be in touch with retreat info.</p>
+    </form>
+    <a class="wp-retreat-link" href="/group-trips">Explore group trips →</a>
   </div>
-  <div class="wp-accordion-arrow wp-nightlife-arrow">+</div>
-</div>
-<div class="wp-accordion-cards">
-<div class="wp-cards-list">
-
-  <div class="wp-card wp-nightlife-card">
-    <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-drag-show.jpg" alt="Drag show Somos Voces Zona Rosa Mexico City">
-      <div class="wp-card-tag">Evening event</div>
-      <div class="wp-card-date">Nov 9</div>
-    </div>
-    <div class="wp-card-body">
-      <div class="wp-card-title">Drag Spectacular at Somos Voces</div>
-      <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Monday Nov 9 · Evening</div>
-        <div class="wp-card-meta-item">📍 Somos Voces · Zona Rosa · 20–30 min from hotel</div>
-        <div class="wp-card-meta-item">⏱ ~3 hrs · Pay at the door</div>
-      </div>
-      <p class="wp-card-teaser">Latin America's largest queer bookstore. CDMX's best drag performers. One electric night.</p>
-      <input type="checkbox" class="wp-card-toggle-check" id="t6">
-      <label class="wp-card-toggle-label" for="t6"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
-      <div class="wp-card-details">
-        <p class="wp-card-desc">Somos Voces hosts some of CDMX's most celebrated drag performers. An electric night of talent, drinks, and great company in one of the city's most beloved queer spaces.</p>
-        <div class="wp-card-includes">Register here for guest list access · Pay at the door</div>
-      </div>
-      <div class="wp-card-footer">
-        <div class="wp-card-price">340–680 MXN<small>approx. $20–$40 USD</small></div>
-        <a href="#register" class="wp-card-btn">Pre-register</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wp-card wp-nightlife-card">
-    <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-rooftop-party.jpg" alt="Rooftop party Revuelta Zona Rosa Mexico City">
-      <div class="wp-card-tag">Evening event</div>
-      <div class="wp-card-date">Nov 10</div>
-    </div>
-    <div class="wp-card-body">
-      <div class="wp-card-title">Rooftop Party at CDMX's #1 Queer Bar</div>
-      <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Tuesday Nov 10 · Evening</div>
-        <div class="wp-card-meta-item">📍 Revuelta Queer House · Zona Rosa · 20–30 min from hotel</div>
-        <div class="wp-card-meta-item">⏱ ~3 hrs · Pay at the door</div>
-      </div>
-      <div class="wp-card-pending">⏳ Logistics being finalized · Register your interest now</div>
-      <p class="wp-card-teaser">CDMX's #1 queer bar. Rooftop open. Skyline views. The best energy in the city.</p>
-      <input type="checkbox" class="wp-card-toggle-check" id="t7">
-      <label class="wp-card-toggle-label" for="t7"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
-      <div class="wp-card-details">
-        <p class="wp-card-desc"><strong>Revuelta</strong>, rooftop open, skyline views, and the best queer energy in the city. The kind of night where you look around and think, I'm really here.</p>
-        <div class="wp-card-includes">Full details and ticketing sent once confirmed</div>
-      </div>
-      <div class="wp-card-footer">
-        <div class="wp-card-price">340–680 MXN<small>approx. $20–$40 USD</small></div>
-        <a href="#register" class="wp-card-btn">Pre-register</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wp-card wp-nightlife-card">
-    <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-lucha-libre.jpg" alt="Lucha Libre Arena Mexico tacos Mexico City">
-      <div class="wp-card-tag">Evening event</div>
-      <div class="wp-card-date">Nov 11</div>
-    </div>
-    <div class="wp-card-body">
-      <div class="wp-card-title">Lucha Libre + Tacos</div>
-      <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Wednesday Nov 11 · Evening</div>
-        <div class="wp-card-meta-item">📍 Arena México · Doctores · 45–60 min from hotel</div>
-        <div class="wp-card-meta-item">⏱ ~3–4 hrs</div>
-      </div>
-      <div class="wp-card-pending">⏳ Logistics being finalized · Register your interest now</div>
-      <p class="wp-card-teaser">Masked wrestlers, a roaring crowd, tacos after. Arena México. Nothing like it.</p>
-      <input type="checkbox" class="wp-card-toggle-check" id="t8">
-      <label class="wp-card-toggle-label" for="t8"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
-      <div class="wp-card-details">
-        <p class="wp-card-desc">The arena is packed and loud and completely alive. After the show, tacos at a local spot nearby, the kind of place you'd never find without someone who knows where to go.</p>
-        <div class="wp-card-includes">✓ Arena entrance, tacos & non-alcoholic drink included</div>
-      </div>
-      <div class="wp-card-footer">
-        <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
-        <a href="#register" class="wp-card-btn">Pre-register</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-</div>
-
-<!-- TULUM STRIP -->
-<div class="wp-tulum-strip">
-  <img src="/images/wpath-logo.png" alt="Queerness Experiences" style="width:44px;height:44px;object-fit:contain;flex-shrink:0;">
-  <div class="wp-tulum-strip-text">Also by Queerness Experiences: <strong>Tulum queer tours and group trips</strong>, cenotes, jungle, street food, and local spots.</div>
-  <a class="wp-tulum-strip-link" href="/group-trips">Explore Group Trips →</a>
-</div>
+</section>
 
 <!-- CTA STRIP -->
 <div class="wp-cta-strip">
@@ -396,6 +338,11 @@ import Layout from '../layouts/Layout.astro';
     <div class="wp-faq-answer">Every vendor and venue we work with is vetted for queer and trans inclusion. These experiences are built by and for our community, trans attendees are not just welcome, they're who we had in mind when designing every experience.</div>
   </div>
   <div class="wp-faq-item">
+    <input type="checkbox" id="wf-min" class="wp-faq-toggle">
+    <label for="wf-min" class="wp-faq-question">What is the group minimum?<span class="wp-faq-icon">+</span></label>
+    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class and Polanco Mezcal &amp; Snacks need 6. Not there yet? Tell us your date and we'll combine interest.</div>
+  </div>
+  <div class="wp-faq-item">
     <input type="checkbox" id="wf2" class="wp-faq-toggle">
     <label for="wf2" class="wp-faq-question">When do I pay?<span class="wp-faq-icon">+</span></label>
     <div class="wp-faq-answer">Nothing is due at pre-registration. Once minimum group size is reached, we'll send you a booking link to pay and officially secure your spot. No surprises.</div>
@@ -403,12 +350,12 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-faq-item">
     <input type="checkbox" id="wf3" class="wp-faq-toggle">
     <label for="wf3" class="wp-faq-question">Are these tours only for WPATH attendees?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">The daytime tours are exclusively for WPATH 2026 attendees. The nightlife events are WPATH-focused but open to others, they're public events and we'll be attending as a group.</div>
+    <div class="wp-faq-answer">The daytime tours are exclusively for WPATH 2026 attendees.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf4" class="wp-faq-toggle">
     <label for="wf4" class="wp-faq-question">What's included in the price?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks. The Lucha Libre price includes arena entrance, tacos, and a non-alcoholic drink. Nightlife events are guest list, register your interest and we'll follow up with full details once confirmed.</div>
+    <div class="wp-faq-answer">All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf5" class="wp-faq-toggle">
@@ -475,17 +422,17 @@ import Layout from '../layouts/Layout.astro';
         <label class="wp-fl">Tours — pick a date. Leave blank if not interested</label>
         <div class="wp-exp-list">
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Prehispanic Cooking Class</span>
+            <span class="wp-exp-name-flat">Prehispanic Cooking Class <small class="wp-exp-min">· 6+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-cooking-class">
               <option value="">Not interested</option>
-              <option value="Mon Nov 9, morning">Mon Nov 9, morning</option>
+              <option value="Nov 10-12, any time of day, date to be chosen">Nov 10–12, morning, afternoon, or evening (date to be chosen)</option>
               <option value="other">Other date (tell us below)</option>
             </select>
           </div>
           <div class="wp-exp-other" data-other-for="date-cooking-class" hidden><input class="wp-fi" type="text" name="date-cooking-class-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Roma/Condesa Food & Culture Tour</span>
+            <span class="wp-exp-name-flat">Roma/Condesa Food & Culture Tour <small class="wp-exp-min">· 2+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-roma-condesa">
               <option value="">Not interested</option>
               <option value="Tue Nov 10, morning">Tue Nov 10, morning</option>
@@ -496,21 +443,29 @@ import Layout from '../layouts/Layout.astro';
           <div class="wp-exp-other" data-other-for="date-roma-condesa" hidden><input class="wp-fi" type="text" name="date-roma-condesa-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">San Ángel Market Day</span>
+            <span class="wp-exp-name-flat">Explore a Market in Mexico City <small class="wp-exp-min">· 2+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-san-angel">
               <option value="">Not interested</option>
-              <option value="Sat Nov 7, morning">Sat Nov 7, morning (Saturdays only)</option>
+              <option value="Nov 10-12, any time of day, date to be chosen">Nov 10–12, morning, afternoon, or evening (date to be chosen)</option>
               <option value="other">Other date (tell us below)</option>
             </select>
           </div>
           <div class="wp-exp-other" data-other-for="date-san-angel" hidden><input class="wp-fi" type="text" name="date-san-angel-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Polanco Mezcal & Snacks</span>
+            <span class="wp-exp-name-flat">Chapultepec Castle and Park <small class="wp-exp-min">· 2+ people</small></span>
+            <select class="wp-fi wp-exp-select" name="date-chapultepec">
+              <option value="">Not interested</option>
+              <option value="Nov 10-12, any time of day, date to be chosen">Nov 10–12, morning, afternoon, or evening (date to be chosen)</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
+          </div>
+          <div class="wp-exp-other" data-other-for="date-chapultepec" hidden><input class="wp-fi" type="text" name="date-chapultepec-other" placeholder="What date would work for you?"></div>
+
+          <div class="wp-exp-row">
+            <span class="wp-exp-name-flat">Polanco Mezcal & Snacks <small class="wp-exp-min">· 6+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-mezcal">
               <option value="">Not interested</option>
-              <option value="Fri Nov 6, evening">Fri Nov 6, evening</option>
-              <option value="Sun Nov 8, evening">Sun Nov 8, evening</option>
               <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
               <option value="other">Other date (tell us below)</option>
             </select>
@@ -518,7 +473,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="wp-exp-other" data-other-for="date-mezcal" hidden><input class="wp-fi" type="text" name="date-mezcal-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour</span>
+            <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour <small class="wp-exp-min">· 2+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
               <option value="">Not interested</option>
               <option value="Fri Nov 13, morning">Fri Nov 13, morning</option>
@@ -527,17 +482,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="wp-exp-other" data-other-for="date-sapphic-shopping" hidden><input class="wp-fi" type="text" name="date-sapphic-shopping-other" placeholder="What date would work for you?"></div>
         </div>
-        <p class="wp-exp-hint">These are the dates I'm already running, not just suggestions, though I'm open to adding more if there's enough interest. Prehispanic Cooking Class needs a group of 6+ to confirm. Every other tour needs 4+.</p>
-      </div>
-
-      <div>
-        <label class="wp-fl">Nightlife — check any you'd like to join. No group minimum for these</label>
-        <div class="wp-checks">
-          <label class="wp-check"><input type="checkbox" name="nightlife-drag-show" value="yes"> Drag Spectacular at Somos Voces, Mon Nov 9</label>
-          <label class="wp-check"><input type="checkbox" name="nightlife-revuelta" value="yes"> Rooftop Party at Revuelta, Tue Nov 10</label>
-          <label class="wp-check"><input type="checkbox" name="nightlife-lucha-libre" value="yes"> Lucha Libre + Tacos, Wed Nov 11</label>
-        </div>
-        <p class="wp-exp-hint">Logistics for all nightlife events are still being finalized. Register your interest now and we'll follow up with full details.</p>
+        <p class="wp-exp-hint">These are the dates I'm already running, not just suggestions, though I'm open to adding more if there's enough interest. Prehispanic Cooking Class and Polanco Mezcal need 6+ to confirm. Every other tour needs just 2.</p>
       </div>
 
       <div class="wp-form-row">
@@ -577,7 +522,7 @@ import Layout from '../layouts/Layout.astro';
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap');
 
-  .wp-banner, .wp-hero, .wp-tulum-strip, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
+  .wp-banner, .wp-hero, .wp-tulum-strip, .wp-retreat, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
     --wblue: #2e3f52; --wblue-dark: #1e2d3d; --wblue-mid: #3d5068;
     --wbrass: #b8924a; --wbrass-light: #d4b06e; --wbrass-pale: #f0e6d3;
     --wcopper: #9e5a3a; --wcopper-light: #c07a52;
@@ -614,6 +559,24 @@ import Layout from '../layouts/Layout.astro';
   .wp-guide-text{font-size:14.5px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:300;}
   .wp-guide-text strong{color:rgba(255,255,255,0.85);font-weight:500;}
 
+  .wp-retreat{background:linear-gradient(160deg,var(--wblue-dark) 0%,var(--wblue) 60%,#3a2a3d 100%);border-top:3px solid var(--wbrass);padding:48px 24px;text-align:center;}
+  .wp-retreat-inner{max-width:620px;margin:0 auto;}
+  .wp-retreat-logo{width:52px;height:52px;object-fit:contain;margin:0 auto 14px;display:block;}
+  .wp-retreat-eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:10px;}
+  .wp-retreat .wp-retreat-title{color:#fff !important;text-transform:none;letter-spacing:-0.5px;-webkit-text-stroke:0;font-family:'Cormorant Garamond',serif;font-size:clamp(34px,8vw,52px);font-weight:300;font-style:italic;color:#fff;line-height:1.05;margin:0 0 14px;}
+  .wp-retreat-sub{font-size:17px;line-height:1.7;color:rgba(255,255,255,0.78);font-weight:300;margin:0 auto 18px;max-width:520px;}
+  .wp-retreat-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:26px;}
+  .wp-retreat-chips span{border:1px solid rgba(212,176,110,0.6);color:var(--wbrass-light);border-radius:999px;padding:5px 14px;font-size:13.5px;letter-spacing:0.5px;}
+  .wp-retreat-form{background:rgba(255,255,255,0.07);border:1px solid rgba(212,176,110,0.35);border-radius:4px;padding:22px 18px;margin:0 auto 18px;text-align:left;}
+  .wp-retreat-hp{position:absolute;left:-9999px;}
+  .wp-retreat-label{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;margin-bottom:12px;text-align:center;}
+  .wp-retreat-row{display:flex;flex-direction:column;gap:10px;}
+  .wp-retreat-input{width:100%;padding:14px 16px;border-radius:2px;border:1px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.95);font-size:16px;font-family:inherit;color:var(--wmahogany);box-sizing:border-box;}
+  .wp-retreat-btn{background:var(--wbrass);color:var(--wmahogany);border:0;border-radius:2px;padding:15px 24px;font-size:14px;font-weight:500;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;}
+  .wp-retreat-btn:hover{background:var(--wbrass-light);}
+  .wp-retreat-msg{margin:12px 0 0;text-align:center;color:var(--wbrass-light);font-size:16px;}
+  .wp-retreat-link{font-size:14.5px;color:var(--wbrass-light);text-decoration:none;border-bottom:1px solid var(--wbrass);}
+  @media(min-width:720px){.wp-retreat{padding:64px 48px;}.wp-retreat-row{flex-direction:row;}.wp-retreat-input{flex:1;}.wp-retreat-btn{white-space:nowrap;}}
   .wp-tulum-strip{background:var(--wblue-dark);border-top:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center;}
   .wp-tulum-strip-text{font-size:16px;color:rgba(255,255,255,0.6);}
   .wp-tulum-strip-text strong{color:rgba(255,255,255,0.85);}
@@ -621,20 +584,17 @@ import Layout from '../layouts/Layout.astro';
 
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
-  .wp-range-intro p + p{margin-top:12px !important;}
-  .wp-range-intro p.wp-range-talk{font-weight:700;color:var(--wblue);}
-  .wp-range-intro p:not(.wp-range-title){font-size:16px;color:var(--wmuted);font-weight:300;line-height:1.7;max-width:480px;margin:0 auto;}
+  .wp-range-intro p.wp-range-talk{font-weight:700 !important;color:var(--wblue) !important;}
+  .wp-range-intro p:last-child{margin-bottom:0;}
+  .wp-range-intro p:not(.wp-range-title){font-size:18px;color:var(--wmahogany);font-weight:400;line-height:1.6;max-width:560px;margin:0 auto 14px;text-align:left;border-left:3px solid var(--wbrass);padding:2px 0 2px 16px;}
 
   .wp-section-label{background:var(--wcream);border-top:4px solid var(--wblue);border-bottom:1px solid var(--wborder);padding:32px 24px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}
-  .wp-nightlife-label{border-top-color:var(--wcopper);}
   .wp-section-label-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,10vw,72px);font-weight:300;color:var(--wblue);letter-spacing:-2px;line-height:1;}
-  .wp-nightlife-title{color:var(--wcopper);}
   .wp-section-label-count{font-size:14.5px;color:var(--wmuted);letter-spacing:0.5px;padding-top:6px;}
   .wp-section-label-cta{font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--wbrass);margin-top:8px;font-weight:500;display:none;}
-  .wp-nightlife-cta{color:var(--wcopper-light);}
   .wp-accordion-arrow{font-size:25.5px;color:var(--wbrass);transition:transform 0.3s ease;line-height:1;flex-shrink:0;padding-top:6px;}
-  .wp-nightlife-arrow{color:var(--wcopper);}
   .wp-accordion-cards{overflow:hidden;}
+  #wrap-tours .wp-accordion-cards{max-height:none !important;overflow:visible;}
 
   .wp-card-teaser{font-size:17px;color:var(--wmuted);line-height:1.7;margin-bottom:12px;font-weight:300;font-style:italic;}
   .wp-card-toggle-check{position:absolute;opacity:0;pointer-events:none;}
@@ -649,14 +609,12 @@ import Layout from '../layouts/Layout.astro';
   .wp-cards-list{display:flex;flex-direction:column;gap:16px;background:var(--wcream);padding:16px;}
   .wp-card{background:var(--wwhite);border:1px solid var(--wborder);border-radius:4px;overflow:hidden;position:relative;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
   .wp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--wbrass) 0%,var(--wbrass-light) 100%);}
-  .wp-nightlife-card::before{background:linear-gradient(90deg,var(--wcopper) 0%,var(--wcopper-light) 100%);}
   .wp-card-photo-wrap{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;background:var(--wblue);}
   .wp-card-photo{width:100%;height:100%;object-fit:cover;display:block;}
   .wp-card-tag{position:absolute;bottom:12px;left:12px;max-width:56%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:rgba(30,29,24,0.82);color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:5px 9px;border-radius:1px;}
   .wp-card-date{position:absolute;bottom:12px;right:12px;max-width:34%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--wbrass);color:var(--wmahogany);font-size:11.5px;font-weight:500;letter-spacing:0.5px;padding:5px 9px;border-radius:1px;}
   .wp-card-body{padding:20px 20px 24px;}
   .wp-card-title{font-family:'Cormorant Garamond',serif;font-size:27.5px;font-weight:600;color:var(--wblue);line-height:1.2;margin-bottom:12px;}
-  .wp-nightlife-card .wp-card-title{color:var(--wmahogany);}
   .wp-card-meta{display:flex;flex-direction:column;gap:4px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--wborder);}
   .wp-card-meta-item{font-size:16px;color:var(--wmuted);line-height:1.4;}
   .wp-card-desc{font-size:17px;color:var(--wink-light);line-height:1.8;margin-bottom:16px;font-weight:300;}
@@ -709,6 +667,7 @@ import Layout from '../layouts/Layout.astro';
   .wp-exp-row{display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:10px 14px;}
   .wp-exp-name-flat{font-size:15.5px;font-weight:600;color:rgba(255,255,255,0.95);}
   .wp-exp-select{width:100%;}
+  .wp-exp-min{font-weight:300;color:rgba(255,255,255,0.6);font-size:13.5px;white-space:nowrap;}
   .wp-exp-hint{font-size:13.5px;color:rgba(255,255,255,0.4);font-style:italic;margin-top:6px;}
   .wp-exp-other{margin-top:-4px;}
   .wp-exp-other input{width:100%;}
@@ -771,4 +730,15 @@ import Layout from '../layouts/Layout.astro';
       });
     });
   });
+
+  const retreatForm = document.querySelector('.wp-retreat-form');
+  if (retreatForm) {
+    retreatForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const body = new URLSearchParams(new FormData(retreatForm)).toString();
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body })
+        .then((r) => { if (!r.ok) throw new Error(); retreatForm.querySelector('.wp-retreat-row').hidden = true; retreatForm.querySelector('.wp-retreat-label').hidden = true; retreatForm.querySelector('.wp-retreat-msg').hidden = false; if ((window as any).gtag) (window as any).gtag('event', 'generate_lead', { page: 'wpath-camp-info' }); if ((window as any).fbq) (window as any).fbq('track', 'Lead'); })
+        .catch(() => { retreatForm.submit(); });
+    });
+  }
 </script>

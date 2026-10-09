@@ -14,12 +14,13 @@ import Highlights from '../components/Highlights.astro';
   <div class="head-cols">
     <div class="head-left">
       <p class="head-body">Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Couples, friends, and solo travelers are all welcome.</p>
+      <a class="rating-pill" href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">★★★★★ 5.0 · 19 Google reviews</a>
       <a href="#book" class="btn-p head-btn">Check availability ↓</a>
     </div>
     <div class="hero-grid head-photos">
       <img src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through the cave in Tulum" loading="lazy">
       <img src="/images/muyil-mangrove-swim.jpg" alt="Two friends floating in the lagoon near Tulum" loading="lazy">
-      <img src="/images/negro-huitlacoche-taco-spread.jpg" alt="A blue corn tortilla with salsas and a horchata on a clay plate in Tulum" loading="lazy" style="object-position:center 40%;">
+      <img src="/images/negro-huitlacoche-spread.jpg" alt="Grilled corn in a husk, a blue corn quesadilla and a pineapple cocktail on a wooden table at Negro Huitlacoche in Tulum" loading="lazy" style="object-position:center 35%;">
       <img src="/images/punta-laguna-canoes.jpg" alt="Green canoes tied up at a lagoon near Tulum" loading="lazy">
     </div>
   </div>
@@ -447,6 +448,16 @@ import Highlights from '../components/Highlights.astro';
   <a href="/group-trips" class="btn-p" style="display:inline-block;">See group camps →</a>
 </section>
 
+<section class="confidence" aria-label="Book with confidence">
+  <p class="sec-eye">Book with confidence</p>
+  <div class="confidence-grid">
+    <div class="confidence-tile"><strong>50% deposit</strong><span>Holds your spot once we've confirmed a date.</span></div>
+    <div class="confidence-tile"><strong>Full refund</strong><span>If you cancel a week or more before your tour.</span></div>
+    <div class="confidence-tile"><strong>Rain or shine</strong><span>Tours happen in any weather, and I adjust the plan on the day.</span></div>
+  </div>
+  <a class="confidence-link" href="/policies">Read the full cancellation policy →</a>
+</section>
+
 <section class="cta" id="book">
   <p class="cta-eye">Check availability</p>
   <h2>Let's set up<br>your tour</h2>
@@ -626,4 +637,11 @@ footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px sol
 section#tour-reviews{background:var(--white) !important;}
 section#tour-reviews h2{color:var(--dark) !important;}
 section#tour-reviews .scroll-hint{color:var(--muted) !important;}
+.confidence{background:var(--bone);padding:var(--s-md) var(--s-sm);text-align:center;border-top:3px solid var(--dark);}
+.confidence-grid{display:grid;gap:12px;max-width:900px;margin:0 auto var(--s-sm);}
+.confidence-tile{background:var(--white);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);padding:16px;display:flex;flex-direction:column;gap:6px;text-align:left;}
+.confidence-tile strong{font-family:var(--ff);font-size:22px;line-height:1.1;text-transform:uppercase;color:var(--dark);font-weight:400;}
+.confidence-tile span{font-size:16px;line-height:1.5;color:var(--dark);}
+.confidence-link{font-family:var(--fb);font-size:14px;font-weight:700;color:var(--magenta);text-decoration:underline;text-underline-offset:3px;}
+@media(min-width:720px){.confidence-grid{grid-template-columns:repeat(3,1fr);}}
 </style>

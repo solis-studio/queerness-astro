@@ -6,7 +6,7 @@
 // Custom fields used below (tour, trip, wpath_interests) must exist in
 // MailerLite first — Subscribers > Fields > add a field with that exact
 // key — otherwise MailerLite will reject or silently drop unknown fields.
-const SYNCED_FORMS = new Set(['contact', 'camp-queerness-waitlist', 'work-with-me', 'wpath-2026']);
+const SYNCED_FORMS = new Set(['contact', 'camp-queerness-waitlist', 'work-with-me', 'wpath-2026', 'wpath-camp-info']);
 
 // Group IDs each form's subscribers get added to, so MailerLite automations
 // (triggered on "subscriber joins group") can send the right thank-you email.
@@ -20,7 +20,8 @@ function wpathInterests(data) {
   const labels = {
     'date-cooking-class': 'Cooking class',
     'date-roma-condesa': 'Roma/Condesa',
-    'date-san-angel': 'San Ángel',
+    'date-san-angel': 'Market',
+    'date-chapultepec': 'Chapultepec',
     'date-mezcal': 'Mezcal',
     'date-sapphic-shopping': 'Sapphic shopping tour',
   };

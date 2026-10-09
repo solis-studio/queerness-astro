@@ -196,6 +196,21 @@ const PIXEL_ID = '';
       document.querySelectorAll('.review-scroll').forEach((r) => rio.observe(r));
     }
   </script>
+  <script is:inline>
+    // Conversion events: a form submission lands on a thank-you page, and a click to the paid guidebook leaves for Gumroad.
+    (function () {
+      function ga(name, params) { if (window.gtag) window.gtag('event', name, params || {}); }
+      function px(name) { if (window.fbq) window.fbq('track', name); }
+      if (/^\/(thank-you|wpath-2026-thank-you)\/?$/.test(location.pathname)) {
+        ga('generate_lead', { page: location.pathname });
+        px('Lead');
+      }
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href*="gumroad.com"]') : null;
+        if (a) { ga('guidebook_click', { link_url: a.href }); px('InitiateCheckout'); }
+      });
+    })();
+  </script>
 
 </body>
 </html>

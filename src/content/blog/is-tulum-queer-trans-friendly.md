@@ -255,6 +255,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
   <p class="post-cta-eye">Planning your trip?</p>
   <h2 class="post-cta-h2">Free recs, or the full guide?</h2>
   <p class="post-cta-text">Our free recommendations are perfect for a day trip in Tulum. Staying longer? The full guidebook has 3-4 days planned out, plus direct email access to me.</p>
+  <blockquote class="post-cta-quote"><strong>They MADE my trip to Tulum.</strong> … The website and guide were super helpful.<cite>★★★★★ <a href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">Chashah Johnson, Google review</a></cite></blockquote>
   <div class="post-cta-btn-row">
     <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
     <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-cta-btn">Get the Full Guidebook →</a>
@@ -344,10 +345,13 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
   </div></div>
 </div>
 
-<div style="background:var(--blue);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;">
-  <p style="font-size:17px;line-height:1.7;color:rgba(255,255,255,0.95);margin-bottom:var(--s-sm);">Ready to see it for yourself? Book a tour, or grab the free recommendations first.</p>
+<div class="post-cta post-cta-blue">
+  <p class="post-cta-eye">Ready to see it for yourself?</p>
+  <h2 class="post-cta-h2">Explore Tulum with a queer local</h2>
+  <p class="post-cta-text">Small-group tours led by a queer, nonbinary Mexican local. Cenotes, local food, and the Tulum most visitors miss, with people who get it. <a class="post-cta-rating" href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">★★★★★ 5.0 · 19 Google reviews</a></p>
+  <blockquote class="post-cta-quote">It was also a gift to be guided in these experiences by another queer person as a queer couple.<cite>Madge Dietrich, Google review</cite></blockquote>
   <div class="post-cta-btn-row">
     <a href="/tours" class="post-cta-btn">Book a Queer Tulum Tour →</a>
-    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
+    <a href="/group-trips" class="post-cta-btn">See Group Trips →</a>
   </div>
 </div>

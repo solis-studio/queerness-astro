@@ -49,6 +49,7 @@ const stripAdventure = [
   <div class="head-cols">
   <div class="head-left">
   <p class="head-body">Summer camp, reimagined for sapphic, queer, and trans grownups, with Mexican flair. Every trip is personalized and every activity is mix and match. Bring your friends and I'll build the itinerary, or join the waitlist for our bigger camps.</p>
+  <a class="rating-pill" href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">★★★★★ 5.0 · 19 Google reviews of our tours</a>
   <div class="head-chips">
     <span class="head-chip">Every camp focuses on slow travel</span>
     <span class="head-chip">Exploring cenotes</span>
@@ -298,7 +299,7 @@ const stripAdventure = [
     <div class="faq-item">
       <input type="checkbox" id="wk2">
       <label class="faq-q" for="wk2">Day 1: Cenote + traditional Mayan feast<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Swim in a cenote, then share a traditional Mayan feast.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Swim in a private, crystal clear cenote, then share a traditional Mayan feast.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk3">
@@ -711,7 +712,12 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 .activity-group-comfort .comfort-p{font-size:17px;line-height:1.6;color:var(--muted);margin:0 0 var(--s-sm);}
 .activity-group-comfort .act-cover{cursor:default;}
 .activity-group-comfort .act-cover img{aspect-ratio:1/1;}
-@media(min-width:720px){.activity-group-comfort .act-cover img{aspect-ratio:16/9;}}
+@media(min-width:720px){
+.activity-group-comfort{display:grid !important;grid-template-columns:minmax(260px,42%) 1fr;column-gap:var(--s-md);align-content:center;align-items:center;}
+.activity-group-comfort .act-cover{grid-column:1;grid-row:1 / span 3;margin:0;}
+.activity-group-comfort .act-cover img{aspect-ratio:1/1;}
+.activity-group-comfort .comfort-h,.activity-group-comfort .comfort-p,.activity-group-comfort .stay-chips{grid-column:2;}
+}
 .trips-special{background:var(--bone);padding:var(--s-md) var(--s-sm);}
 .trips-special .expect-wrap{margin-bottom:0;}
 @media(min-width:720px){.trips-special{padding:var(--s-md) 40px;}}

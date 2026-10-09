@@ -22,6 +22,7 @@ import Layout from '../layouts/Layout.astro';
         <li>Direct email access. If you have a question before or during your trip, I'll answer it myself</li>
       </ul>
       <div class="gb-price">$27</div>
+      <blockquote class="gb-box-quote"><strong>They MADE my trip to Tulum.</strong> … The website and guide were super helpful.<cite>★★★★★ <a href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">Chashah Johnson, Google review</a></cite></blockquote>
       <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="btn-p" style="text-align:center;">Get the Full Guidebook →</a>
       <div class="gstat">Questions before you buy? Email <a href="mailto:info@queernessexperiences.com" style="color:var(--magenta);font-weight:700;">info@queernessexperiences.com</a>. I'll help you figure out if it's right for your trip.</div>
     </div>
@@ -36,4 +37,7 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   .gb-price{font-family:var(--ff);font-size:32px;color:var(--magenta);text-align:center;margin-bottom:14px;text-transform:uppercase;}
+  .gb-box-quote{margin:0 0 14px;padding:4px 0 4px 14px;background:transparent;border:0;border-left:4px solid var(--magenta);box-shadow:none;font-size:17px;line-height:1.5;font-style:italic;color:var(--dark);}
+  .gb-box-quote cite{display:block;margin-top:6px;font-size:12.5px;font-style:normal;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta);}
+  .gb-box-quote cite a{color:var(--magenta);text-decoration:underline;text-underline-offset:3px;}
 </style>
