@@ -142,7 +142,7 @@ To be honest with you: legal protections and lived reality aren't always the sam
   <h2 class="post-cta-h2">Free recs, or the full guide?</h2>
   <p class="post-cta-text">Our free recommendations are perfect for a day trip in Tulum. Staying longer? The full guidebook has 3-4 days planned out, plus direct email access to me.</p>
   <div class="post-cta-btn-row">
-    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Recommendations →</a>
+    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
     <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-cta-btn">Get the Full Guidebook →</a>
   </div>
 </div>
@@ -225,6 +225,6 @@ To be honest with you: legal protections and lived reality aren't always the sam
   <p style="font-size:17px;line-height:1.7;color:rgba(255,255,255,0.95);margin-bottom:var(--s-sm);">Ready to see it for yourself? Book a tour, or grab the free recommendations first.</p>
   <div class="post-cta-btn-row">
     <a href="/tours" class="post-cta-btn">Book a Queer Tulum Tour →</a>
-    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Recommendations →</a>
+    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
   </div>
 </div>

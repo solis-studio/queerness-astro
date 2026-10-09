@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import WhyUs from '../components/WhyUs.astro';
 ---
-<Layout title="LGBTQ+ Tulum Tours | Queerness Experiences" description={"LGBTQ+ Tulum tours for queer and trans travelers and families: secret cenote, Muyil river float, jungle and monkeys, food tour, and Stories Behind the Storefronts."}>
+<Layout title="Small-Group Tulum Tours With a Queer Local Guide | Queerness Experiences" description={"Small-group cenote, river float, and food tours in Tulum with a queer local guide. Your own pace, often just your group. 5.0★ on Google."}>
 
 <header class="head">
   <div class="head-top">
@@ -11,7 +12,14 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <p class="head-body">Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Tap any tour to see what the day looks like. Honeymooners, couples, friend groups, solo travelers, all welcome. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.</p>
   <div class="food-feature" style="position:relative;z-index:2;margin-top:var(--s-md);margin-bottom:0;">
-    <p class="food-feature-caption">Eating deliciously is a priority. Local bakeries, locally-owned restaurants, an amazing chef, seasonal local fruit. Every tour is tailored to dietary restrictions and allergies.</p>
+    <p class="food-feature-caption">Eating deliciously is a priority.</p>
+    <div class="food-chips">
+      <span class="food-chip">Local bakeries</span>
+      <span class="food-chip">Locally-owned restaurants</span>
+      <span class="food-chip">Food by an amazing private chef</span>
+      <span class="food-chip">Seasonal local fruit</span>
+      <span class="food-chip">Tailored to dietary restrictions and allergies</span>
+    </div>
   </div>
 </header>
 
@@ -22,6 +30,7 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="tour-grid">
 
+  <h3 class="tour-cat">Adventure tours</h3>
   <!-- SECRET CENOTE -->
   <div class="tour">
     <input type="checkbox" id="tour1">
@@ -46,7 +55,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Swimming</span>
         </div>
         <img class="tour-addon-photo" src="/images/secret-cenote-addon-local.jpg" alt="The local cenote add-on, with cliff jumping and clear water for snorkeling">
-        <p class="tour-desc"><strong>Optional add-on: visit a local cenote with cliff jumping, perfect for free diving and amazing snorkeling. +700 MXN per person.</strong></p>
+        <p class="tour-desc"><strong>Optional add-on: visit a local cenote with cliff jumping, perfect for swimming and amazing snorkeling. +700 MXN per person, about $40 USD.</strong></p>
         <div class="tour-itin">
           <p class="tour-itin-h">Itinerary</p>
           <ul class="tour-itin-list">
@@ -68,9 +77,9 @@ import Layout from '../layouts/Layout.astro';
             <ul class="tour-inc-list"><li>Hotel pickup/drop-off (available on request)</li></ul>
           </div>
         </div>
-        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group.</strong></p>
+        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group, about $18 USD.</strong></p>
         <div class="tour-foot">
-          <span class="tour-price">FROM 2,200 MXN / PERSON</span>
+          <span class="tour-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,200 MXN</span><span class="price-usd">About $130 USD</span></span>
           <a href="#book" class="btn-book">Check Availability →</a>
         </div>
       </div>
@@ -122,9 +131,9 @@ import Layout from '../layouts/Layout.astro';
             <ul class="tour-inc-list"><li>Hotel pickup/drop-off (available on request)</li></ul>
           </div>
         </div>
-        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group.</strong></p>
+        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group, about $18 USD.</strong></p>
         <div class="tour-foot">
-          <span class="tour-price">FROM 3,400 MXN / PERSON</span>
+          <span class="tour-price"><span class="price-pp">Per person</span><span class="price-mxn">From 3,400 MXN</span><span class="price-usd">About $200 USD</span></span>
           <a href="#book" class="btn-book">Check Availability →</a>
         </div>
       </div>
@@ -147,11 +156,11 @@ import Layout from '../layouts/Layout.astro';
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
-        <p class="tour-desc">A tour of two off-the-beaten-path cenotes. Taak Bi Ha is an amazing cave cenote, a cenote in the jungle with great lighting for freediving and stalactite and stalagmite formations. Nicte Ha is a fully open cenote with lily pads, cliff jumping, and amazing snorkeling.</p>
+        <p class="tour-desc">A tour of two off-the-beaten-path cenotes. Taak Bi Ha is an amazing cave cenote, a cenote in the jungle with great lighting for swimming and stalactite and stalagmite formations. Nicte Ha is a fully open cenote with lily pads, cliff jumping, and amazing snorkeling.</p>
         <div class="tour-meta">
           <span class="meta-pill">4-5 hours</span>
           <span class="meta-pill">Cave &amp; open cenote</span>
-          <span class="meta-pill">Freediving</span>
+          <span class="meta-pill">Cliff jumping</span>
           <span class="meta-pill">Swimming</span>
         </div>
         <div class="tour-itin">
@@ -174,9 +183,9 @@ import Layout from '../layouts/Layout.astro';
             <ul class="tour-inc-list"><li>Hotel pickup/drop-off (available on request)</li></ul>
           </div>
         </div>
-        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group.</strong></p>
+        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group, about $18 USD.</strong></p>
         <div class="tour-foot">
-          <span class="tour-price">FROM 2,800 MXN / PERSON</span>
+          <span class="tour-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,800 MXN</span><span class="price-usd">About $165 USD</span></span>
           <a href="#book" class="btn-book">Check Availability →</a>
         </div>
       </div>
@@ -193,13 +202,13 @@ import Layout from '../layouts/Layout.astro';
         <div class="tour-bar">
           <span class="tour-name">Monkey Spotting + Lagoon Jungle Adventure</span>
           </div>
-        <p class="tour-oneline">Our most adventurous tour. Spend the day in the jungle looking for wild monkeys.</p>
+        <p class="tour-oneline">A full day in the jungle looking for wild monkeys.</p>
         <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
-        <p class="tour-desc">Our most adventurous tour. Spend the day in the jungle looking for wild monkeys while enjoying swimming, canoeing, and zip lining over a pristine lagoon. And because your guide is a UCLA wildlife biologist, you'll actually understand what you're looking at, not just see it. Includes picnic lunch.</p>
+        <p class="tour-desc">A full day in the jungle looking for wild monkeys while enjoying swimming, canoeing, and zip lining over a pristine lagoon. And because your guide is a UCLA wildlife biologist, you'll actually understand what you're looking at, not just see it. Includes picnic lunch.</p>
         <div class="tour-meta">
           <span class="meta-pill">Full day</span>
           <span class="meta-pill">Wild spider monkeys</span>
@@ -231,9 +240,9 @@ import Layout from '../layouts/Layout.astro';
             <ul class="tour-inc-list"><li>Hotel pickup/drop-off</li></ul>
           </div>
         </div>
-        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group.</strong></p>
+        <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group, about $18 USD.</strong></p>
         <div class="tour-foot">
-          <span class="tour-price">FROM 4,000 MXN / PERSON</span>
+          <span class="tour-price"><span class="price-pp">Per person</span><span class="price-mxn">From 4,000 MXN</span><span class="price-usd">About $235 USD</span></span>
           <a href="#book" class="btn-book">Check Availability →</a>
         </div>
       </div>
@@ -241,9 +250,10 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <div class="tours-note tours-note-lowkey" style="grid-column:1/-1;margin-bottom:var(--s-md);">
-    <strong>Want something more low-key?</strong> The Food Tour and Stories Behind the Storefronts are easy, walkable days. Mix and match them with a cenote or jungle tour to build your perfect day in Tulum.
+    <strong>Want something more low-key?</strong> The Food Tour and Stories Behind the Storefronts are easy, walkable days. Mix and match them with a cenote or jungle tour to build your perfect vacation.
   </div>
 
+  <h3 class="tour-cat">Food and culture tours</h3>
   <!-- STORIES BEHIND THE STOREFRONT -->
   <div class="tour">
     <input type="checkbox" id="tour3">
@@ -288,7 +298,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="tour-foot">
-          <span class="tour-price">FROM 2,500 MXN / PERSON</span>
+          <span class="tour-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,500 MXN</span><span class="price-usd">About $145 USD</span></span>
           <a href="#book" class="btn-book">Check Availability →</a>
         </div>
       </div>
@@ -300,7 +310,7 @@ import Layout from '../layouts/Layout.astro';
     <input type="checkbox" id="tour4">
     <label class="tour-head" for="tour4">
       <img class="tour-photo" src="/images/food-tour-sitdown.jpg" alt="A friend celebrating over bao buns at a Tulum restaurant on the Food Tour" style="object-position:center 20%;">
-      <div class="tour-tag">Food · Drinks included</div>
+      <div class="tour-tag">Culture &amp; food</div>
       <div class="tour-info">
         <div class="tour-bar">
           <span class="tour-name">Food Tour</span>
@@ -311,7 +321,7 @@ import Layout from '../layouts/Layout.astro';
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
-        <p class="tour-desc">Explore prehispanic Mexican food and the amazing fusions that make Tulum one of the best places to eat. It's mix and match: three of our favorite local spots, blending street food stops and sit-down restaurants.</p>
+        <p class="tour-desc">Explore prehispanic Mexican food and the amazing fusions that make Tulum one of the best places to eat. We mix and match across three local spots in one tour, street stands, casual eats, and sit-down favorites.</p>
         <div class="tour-meta">
           <span class="meta-pill">3-4 hours</span>
           <span class="meta-pill">Food &amp; drinks included</span>
@@ -362,6 +372,8 @@ import Layout from '../layouts/Layout.astro';
 
 </section>
 
+<WhyUs />
+
 <section class="reviews" id="tour-reviews">
   <div class="reviews-inner">
   <p class="sec-eye" style="color:var(--white);">Our reviews</p>
@@ -373,21 +385,21 @@ import Layout from '../layouts/Layout.astro';
       <input type="checkbox" id="trev1" class="rev-toggle">
       <p class="rtext">Ay ay ay, what a time!!! Santi was a dream. The entire tour, start to finish, through Tulum and into the jungle and down into the cenote was better than I ever could've imagined.</p>
       <label for="trev1" class="rev-more">Read more</label>
-      <p class="rname">— Corinna Harris, Google review</p>
+      <p class="rname">Corinna Harris, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="trev2" class="rev-toggle">
       <p class="rtext">My partner and I booked two tours with Santi during our trip to Tulum, Street Food in the evening and Cenotes the next day. Before the trip, Santi was incredibly communicative and helpful as I planned, offering amazing local recs.</p>
       <label for="trev2" class="rev-more">Read more</label>
-      <p class="rname">— Madge Dietrich, Google review</p>
+      <p class="rname">Madge Dietrich, Google review</p>
     </div>
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="trev3" class="rev-toggle">
       <p class="rtext">We found Santi on Reddit while looking for queer experiences in Tulum and had a great tailored tour of the Muyil river. During the tour, they use their extensive knowledge in marine biology to share facts about the river.</p>
       <label for="trev3" class="rev-more">Read more</label>
-      <p class="rname">— Diana Ledesma, Google review</p>
+      <p class="rname">Diana Ledesma, Google review</p>
     </div>
   </div>
   <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all reviews on Google →</a>
@@ -409,17 +421,29 @@ import Layout from '../layouts/Layout.astro';
       <div class="faq-a"><div class="faq-a-inner">Full refund if you cancel a week or more before your tour. 50% refund if you cancel between 48 hours and 6 days out. Inside 48 hours, deposits are non-refundable. Tours happen rain or shine.</div></div>
     </div>
   </div>
+  <p class="policy-link" style="margin-top:var(--s-md);font-size:15px;font-weight:700;"><a href="/policies" style="color:var(--magenta);">Policies and disclaimers, including the liability release →</a></p>
+</section>
+
+<section style="background:var(--white);padding:var(--s-md) var(--s-sm);text-align:center;">
+  <p class="sec-eye" style="justify-content:center;">We give back</p>
+  <p style="font-size:17px;line-height:1.65;color:var(--dark);max-width:560px;margin:var(--s-sm) auto 0;">Every tour and trip donates to a social, cultural, or environmental project in Tulum.</p>
+</section>
+
+<section style="background:var(--bone);padding:var(--s-md) var(--s-sm);text-align:center;">
+  <p class="sec-eye" style="justify-content:center;">Want more than a day?</p>
+  <p style="font-size:17px;line-height:1.65;color:var(--dark);max-width:560px;margin:var(--s-sm) auto var(--s-md);">Plan a private camp for your group: 4 days and 5 nights in Tulum, starting at $4,000 per person, with a private villa and pool, airport pickup, and most meals included.</p>
+  <a href="/group-trips" class="btn-p" style="display:inline-block;">See group camps →</a>
 </section>
 
 <section class="cta" id="book">
   <p class="cta-eye">Check availability</p>
   <h2>Let's set up<br>your tour</h2>
-  <p>Tell me your dates and which tour caught your eye. I'll check availability and follow up with everything you need to lock it in.</p>
+  <p>Tell me your dates and which tour caught your eye. I'll check availability and follow up with everything you need to lock it in. Booking more than one tour? Ask about a multi-tour rate.</p>
   <form class="cta-form" name="contact" method="POST" data-netlify="true" action="/thank-you">
     <input type="hidden" name="form-name" value="contact" />
     <div class="cta-row2">
-      <input class="cta-in" type="text" name="first_name" placeholder="First name" required>
-      <input class="cta-in" type="text" name="last_name" placeholder="Last name">
+      <input class="cta-in" type="text" name="first-name" placeholder="First name" required>
+      <input class="cta-in" type="text" name="last-name" placeholder="Last name" required>
     </div>
     <input class="cta-in" type="text" name="pronouns" placeholder="Pronouns">
     <input class="cta-in" type="email" name="email" placeholder="Email" required>

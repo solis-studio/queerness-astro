@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Policies from '../components/Policies.astro';
+---
+<Layout title="Policies and Liability Release | Queerness Experiences" description={"Cancellation policy, acceptance of risk, documentation, and other policies for Queerness Experiences tours and group trips in Tulum."}>
+
+<section class="faq" id="policies">
+  <p class="sec-eye">Before you book</p>
+  <h1 style="font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--dark);text-transform:uppercase;margin-bottom:var(--s-sm);">Policies and<br>disclaimers</h1>
+  <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-bottom:var(--s-md);">The details for our tours and group trips. Questions about any of this? Ask before you book.</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <input type="checkbox" id="pol-deposit">
+      <label class="faq-q" for="pol-deposit">Deposits and payment (tours)<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Once we've confirmed a date, your spot is reserved with a 50% deposit via Zelle, Wise, or PayPal (5% fee applies to PayPal).</div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="pol-cancel">
+      <label class="faq-q" for="pol-cancel">Cancellation policy (tours)<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Full refund if you cancel a week or more before your tour. 50% refund if you cancel between 48 hours and 6 days out. Inside 48 hours, deposits are non-refundable. Tours happen rain or shine.</div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="pol-group">
+      <label class="faq-q" for="pol-group">Deposits and cancellation (group trips)<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Deposit and cancellation terms for group trips are shared before you book, once dates and prices are set.</div></div>
+    </div>
+  </div>
+  <Policies prefix="pol" heading={false} />
+</section>
+
+</Layout>

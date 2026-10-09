@@ -1,0 +1,27 @@
+---
+---
+<section class="why">
+  <div class="why-inner">
+    <p class="sec-eye" style="color:var(--yellow);">Why us</p>
+    <div class="why-grid">
+      <div class="why-item"><strong>Queer and trans led</strong><span>Hosted by Santi Solis, founder of Queerness Experiences.</span></div>
+      <div class="why-item"><strong>Tulum local</strong><span>Born in Mexico, living in Tulum since 2017.</span></div>
+      <div class="why-item"><strong>Friends, not vendors</strong><span>Small businesses run by friends of ours.</span></div>
+      <div class="why-item"><strong>Personalized</strong><span>Built around your group's interests.</span></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why{background:var(--blue);padding:var(--s-md) var(--s-sm);}
+  .why-inner{max-width:1120px;margin:0 auto;}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:var(--s-sm);}
+  .why-item{border:2px solid rgba(255,255,255,0.5);padding:18px 16px;color:var(--white);display:flex;flex-direction:column;gap:6px;}
+  .why-item strong{font-family:var(--ff);font-size:15px;line-height:1.2;text-transform:uppercase;font-weight:400;}
+  .why-item span{font-size:14px;line-height:1.5;color:rgba(255,255,255,0.85);}
+  @media(min-width:720px){
+    .why{padding:var(--s-md) 40px;}
+    .why-grid{grid-template-columns:repeat(4,1fr);gap:16px;}
+    .why-item strong{font-size:17px;}
+  }
+</style>

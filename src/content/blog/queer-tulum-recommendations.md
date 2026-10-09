@@ -1,12 +1,12 @@
 ---
-title: "LGBTQ+ Tulum Guidebook: Free Recommendations From the Founder of a Queer Tour Agency"
+title: "Free LGBTQ+ Tulum Guide: Local Recommendations From the Founder of a Queer Tour Agency"
 description: "Free LGBTQ+ Tulum recommendations from the founder of a queer Tulum tour and group trip agency. A favorite pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
 keyword: "lgbtq tulum"
 pubDate: 2026-01-25
 draft: false
 heroImage: "/images/story-horse-group-coffee.jpg"
 heroAlt: "Santi and friends sharing coffee and food together at a cafe table in Tulum"
-heroPosition: "center 90%"
+heroPosition: "center 55%"
 faq:
   - q: "Is Tulum, Mexico safe for queer and trans travelers?"
     a: "Yes. Tulum is a welcoming place in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-queer-trans-friendly."
@@ -42,17 +42,26 @@ I'm Santi (they/them), queer, nonbinary, Mexican, and I've called Tulum home for
   <span class="post-cta-top-link">Get the Full Guidebook →</span>
 </a>
 
+<div class="post-two-col">
+  <div>
+    <img class="post-photo" src="/images/santi-cave-cenote-mask.jpg" alt="A cenote in Tulum, Mexico" style="flex:none;width:100%;max-width:300px;height:auto;aspect-ratio:auto;object-fit:initial;min-height:0;margin:0 auto;display:block;">
+  </div>
+  <div>
+    <div style="background:var(--bone);border-left:6px solid var(--terra);padding:32px;box-sizing:border-box;font-size:16px;line-height:1.7;color:var(--dark);"><p style="margin:0;"><strong>☀️ Heads up — no sunscreen in the cenotes.</strong> It contaminates the water, and sunscreen shouldn't be used in the ocean either, since it bleaches and kills coral reefs. We recommend bringing a sun shirt instead. If you need sunscreen, apply it well before you're in the water, and look for the most natural option you can find, aka one with lots of zinc instead of other chemicals.</p></div>
+  </div>
+</div>
+
 ## Recommendations
 
 <img class="post-photo" src="/images/negro-huitlacoche-food.jpg" alt="Pre-Hispanic Mexican food spread at Negro Huitlacoche in Tulum" style="aspect-ratio:1/1;object-position:center 82%;max-width:420px;margin-left:auto;margin-right:auto;display:block;">
 
 <div class="post-acc-item">
   <input type="checkbox" id="racc1" class="post-acc-toggle">
-  <label for="racc1" class="post-acc-head"><span>Negro Huitlacoxe — one of our favorite restaurants in Tulum</span><span class="post-acc-plus">More info <span class="post-acc-plus-icon">+</span></span></label>
+  <label for="racc1" class="post-acc-head"><span>Negro Huitlacoche — one of our favorite restaurants in Tulum</span><span class="post-acc-plus">More info <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <img class="post-photo" src="/images/negro-huitlacoche-taco-spread.jpg" alt="A huitlacoche taco with salsas, a mezcal drink, and the full table spread at Negro Huitlacoche, Tulum" style="aspect-ratio:1/1;object-position:center 35%;">
     <p><strong>Pre-Hispanic Mexican food · Tulum Centro</strong></p>
-    <p>A restaurant built around a corn mill, heirloom corn, fire, and pre-Hispanic Mexican cooking. Grilled elote, huitlacoche tacos in dual-toned heirloom tortillas — I recommend the one in the blue tortilla. Everything cooked over open flame in a tree-shaded courtyard. One of our favorite restaurants in Tulum, and it earns it. Go hungry.</p>
+    <p>A restaurant built around a corn mill, heirloom corn, fire, and pre-Hispanic Mexican cooking. We recommend getting the corn and the blue corn horchata. Everything cooked over open flame in a tree-shaded courtyard. One of our favorite restaurants in Tulum, and it earns it. Go hungry.</p>
     <label for="racc1" class="post-acc-close">− Close</label>
   </div></div>
 </div>
@@ -79,16 +88,12 @@ I'm Santi (they/them), queer, nonbinary, Mexican, and I've called Tulum home for
   </div></div>
 </div>
 
-## Practical Advice
+<a href="/tours" style="display:block;background:var(--blue);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:24px;margin:var(--s-md) 0;text-decoration:none;text-align:center;">
+  <p style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">Want a local guide to take you to secret spots?</p>
+  <span style="display:inline-block;background:var(--yellow);color:var(--dark);padding:12px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;">See the Tours →</span>
+</a>
 
-<div class="post-two-col">
-  <div>
-    <img class="post-photo" src="/images/santi-cave-cenote-mask.jpg" alt="A cenote in Tulum, Mexico" style="flex:none;width:100%;max-width:300px;height:auto;aspect-ratio:auto;object-fit:initial;min-height:0;margin:0 auto;display:block;">
-  </div>
-  <div>
-    <div style="background:var(--bone);border-left:6px solid var(--terra);padding:32px;box-sizing:border-box;font-size:16px;line-height:1.7;color:var(--dark);"><p style="margin:0;"><strong>☀️ Heads up — no sunscreen in the cenotes.</strong> It contaminates the water, and sunscreen shouldn't be used in the ocean either, since it bleaches and kills coral reefs. We recommend bringing a sun shirt instead. If you need sunscreen, apply it well before you're in the water, and look for the most natural option you can find, aka one with lots of zinc instead of other chemicals.</p></div>
-  </div>
-</div>
+## Practical Advice
 
 <div class="post-acc-item">
   <input type="checkbox" id="racc4" class="post-acc-toggle">
@@ -127,9 +132,6 @@ I'm Santi (they/them), queer, nonbinary, Mexican, and I've called Tulum home for
   </div></div>
 </div>
 
-  </div>
-</div>
-
 <div class="post-acc-item">
   <input type="checkbox" id="racc7" class="post-acc-toggle">
   <label for="racc7" class="post-acc-head"><span>A playlist to get you stoked for your trip</span><span class="post-acc-plus">More info <span class="post-acc-plus-icon">+</span></span></label>
@@ -141,6 +143,13 @@ I'm Santi (they/them), queer, nonbinary, Mexican, and I've called Tulum home for
     <label for="racc7" class="post-acc-close">− Close</label>
   </div></div>
 </div>
+
+<a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" style="display:block;background:var(--yellow);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:24px;margin:var(--s-md) 0;text-decoration:none;text-align:center;">
+  <p style="font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--dark);margin-bottom:8px;">Want more?</p>
+  <p style="font-size:20px;font-weight:700;color:var(--dark);margin-bottom:10px;">Beach clubs. Cenotes. Nightlife. Activities.</p>
+  <p style="font-size:15px;color:var(--dark);margin-bottom:14px;">This is one day's worth of recs. The full guidebook is 3-4 days, fully planned out.</p>
+  <span style="display:inline-block;background:var(--dark);color:var(--white);padding:12px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;">Get the Full Guidebook →</span>
+</a>
 
 ## FAQ
 

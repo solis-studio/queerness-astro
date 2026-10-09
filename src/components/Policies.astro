@@ -1,0 +1,28 @@
+---
+// Shared policies and disclaimers dropdowns (tours + group trips).
+// Drop inside a section that already uses the .faq styles.
+const { prefix = 'pol', optional = false, heading = true } = Astro.props;
+---
+{heading && <p class="sec-eye" style="margin-top:var(--s-md);">Policies and disclaimers</p>}
+<div class="faq-list">
+  <div class="faq-item">
+    <input type="checkbox" id={`${prefix}-risk`}>
+    <label class="faq-q" for={`${prefix}-risk`}>Acceptance of risk<span class="tog">+</span></label>
+    <div class="faq-a"><div class="faq-a-inner">Our tours and trips include outdoor activities like swimming in cenotes, floating down rivers, kayaking, canoeing, and walking through the jungle. These come with real risks, including injury, illness, weather, wildlife, and travel delays, and some can be serious. By joining, you accept those risks and take responsibility for your own choices and health.{optional && ' All activities are optional.'} Please tell us about any medical conditions, allergies, or limitations ahead of time so we can plan around them. A liability release will be sent to you before your tour or trip.</div></div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id={`${prefix}-docs`}>
+    <label class="faq-q" for={`${prefix}-docs`}>Documentation and insurance<span class="tog">+</span></label>
+    <div class="faq-a"><div class="faq-a-inner">You're responsible for having a valid passport and any entry documents Mexico requires for your nationality. We also recommend travel insurance that covers medical care and trip changes.</div></div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id={`${prefix}-change`}>
+    <label class="faq-q" for={`${prefix}-change`}>Itineraries can change<span class="tog">+</span></label>
+    <div class="faq-a"><div class="faq-a-inner">Tours and camps happen rain or shine. Weather, tides, wildlife, and local conditions affect what we can do each day. We may change the schedule, the order of activities, or swap in something comparable to keep the group safe and the day great.</div></div>
+  </div>
+  <div class="faq-item">
+    <input type="checkbox" id={`${prefix}-remove`}>
+    <label class="faq-q" for={`${prefix}-remove`}>Participant removal<span class="tog">+</span></label>
+    <div class="faq-a"><div class="faq-a-inner">We may ask a participant to leave a tour or trip if their behavior puts the safety or experience of others at risk. If you have concerns before or during, please talk to us first.</div></div>
+  </div>
+</div>

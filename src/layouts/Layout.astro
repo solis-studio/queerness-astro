@@ -51,6 +51,28 @@ import '../styles/global.css';
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Analytics: Google Analytics 4 + Microsoft Clarity. Skipped for visitors whose browser timezone is in Europe. -->
+  <script is:inline>
+    (function () {
+      var tz = '';
+      try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+      if (/^Europe\//.test(tz)) return;
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-6S30NEBWNC';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-6S30NEBWNC');
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'yuo1h8kzqh');
+    })();
+  </script>
 </head>
 <body>
 
@@ -66,11 +88,11 @@ import '../styles/global.css';
     </label>
     <div class="nav-r">
       <a href="/about" class="nav-mobile-only">About</a>
-      <a href="/blog/queer-tulum-recommendations">Free Recs</a>
+      <a href="/blog/queer-tulum-recommendations">Free Tulum Guide</a>
       <a href="/tours">Tours</a>
-      <a href="/group-trips">Camp Queerness</a>
+      <a href="/group-trips">Group Trips</a>
       <a href="/wpath-2026">WPATH</a>
-      <a href="/blog">Blog</a>
+      <a href="/blog">Local Insights</a>
       <a href="/book" class="nav-book">Book</a>
     </div>
   </nav>
@@ -87,12 +109,14 @@ import '../styles/global.css';
     <ul class="flinks">
       <li><a href="/about">About</a></li>
       <li><a href="/work-with-me">Work With Me</a></li>
-      <li><a href="/blog/queer-tulum-recommendations">Free Recs</a></li>
+      <li><a href="/blog/queer-tulum-recommendations">Free Tulum Guide</a></li>
       <li><a href="/tours">Tours</a></li>
-      <li><a href="/group-trips">Camp Queerness</a></li>
+      <li><a href="/group-trips">Group Trips</a></li>
       <li><a href="/wpath-2026">WPATH 2026</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a href="/blog">Local Insights</a></li>
       <li><a href="/book">Book</a></li>
+      <li><a href="/policies">Policies</a></li>
+      <li><a href="/privacy">Privacy</a></li>
       <li><a href="https://instagram.com/queerness_experiences_tulum">Instagram</a></li>
     </ul>
     <div class="femail">info@queernessexperiences.com</div>
@@ -105,6 +129,56 @@ import '../styles/global.css';
       btt.classList.toggle('show', window.scrollY > 600);
     });
     btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+  <script>
+    // Hide a scroll arrow once its scroller can't go any further that way.
+    const arrows = Array.from(document.querySelectorAll('.strip-arrow, .scroll-arrow'));
+    function scrollerFor(btn) {
+      const g = btn.closest('.tours-gallery-wrap');
+      if (g) return g.querySelector('.tours-gallery');
+      const r = btn.closest('.reviews-inner');
+      if (r) return r.querySelector('.review-scroll');
+      const n = btn.closest('.strip-nav');
+      return n ? n.previousElementSibling : null;
+    }
+    function isLeft(btn) {
+      const t = (btn.className + ' ' + (btn.getAttribute('aria-label') || '')).toLowerCase();
+      return t.includes('left') || t.includes('previous');
+    }
+    function updateArrows() {
+      arrows.forEach((btn) => {
+        const sc = scrollerFor(btn);
+        if (!sc) return;
+        const atStart = sc.scrollLeft <= 2;
+        const atEnd = sc.scrollLeft + sc.clientWidth >= sc.scrollWidth - 2;
+        const hide = isLeft(btn) ? atStart : atEnd;
+        btn.style.visibility = hide ? 'hidden' : 'visible';
+        btn.disabled = hide;
+      });
+      document.querySelectorAll('.review-scroll-nav, .strip-nav').forEach((nav) => {
+        const btns = Array.from(nav.querySelectorAll('button'));
+        const allHidden = btns.length > 0 && btns.every((b) => b.disabled);
+        nav.style.display = allHidden ? 'none' : '';
+      });
+    }
+    arrows.forEach((btn) => {
+      const sc = scrollerFor(btn);
+      if (sc) sc.addEventListener('scroll', updateArrows, { passive: true });
+    });
+    window.addEventListener('resize', updateArrows);
+    window.addEventListener('load', updateArrows);
+    updateArrows();
+  </script>
+  <script>
+    // Subtle fade-up as sections scroll into view.
+    document.documentElement.classList.add('js');
+    const targets = document.querySelectorAll('section h2, .sec-eye, .flagship, .gfact, .gcamp, .camp-type, .activity-group, .qtile, .cred, .rcard, .btn-groups');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      targets.forEach((t) => { t.classList.add('reveal'); io.observe(t); });
+    }
   </script>
 
 </body>
