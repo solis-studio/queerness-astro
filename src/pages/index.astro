@@ -1,5 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import MediaStrip from '../components/MediaStrip.astro';
+const stripAfterBio = [
+  { src: '/images/tulum-cenote-swing-camp-queerness.jpeg', alt: 'Swinging out over a cenote on a group trip in Tulum' },
+  { video: '/images/queer-camp-tulum-voguing-clip.mp4', poster: '/images/queer-camp-tulum-voguing-poster.jpg', alt: 'Two people voguing together under a palapa on a group trip in Tulum' },
+  { video: '/images/tulum-lagoon-boat-ride-clip.mp4', poster: '/images/tulum-lagoon-boat-ride-poster.jpg', alt: 'Riding a small boat across a turquoise lagoon near Tulum' },
+  { src: '/images/tulum-couple-laughing-jungle-trail.jpeg', alt: 'A couple laughing together on a jungle trail near Tulum', pos: 'center 25%' },
+];
+const stripAfterGuide = [
+  { src: '/images/tulum-negro-huitlacoche-blue-corn-quesadilla.jpg', alt: 'Grilled corn, a cocktail and a blue corn quesadilla on a clay-and-wood table at Negro Huitlacoche in Tulum' },
+  { video: '/images/tulum-tacos-de-canasta-clip.mp4', poster: '/images/tulum-tacos-de-canasta-poster.jpg', alt: 'Building a plate of tacos de canasta with salsas at a local restaurant near Tulum' },
+  { src: '/images/tulum-street-art-mural-walk.jpg', alt: 'A traveler looking up at a large Maya woman mural on a street art walk in Tulum', pos: 'center 30%' },
+  { src: '/images/tulum-watercolor-picnic-fresh-fruit.jpg', alt: 'Friends painting together over a spread of fresh fruit in the jungle near Tulum', pos: 'center 20%' },
+];
+const stripAfterReviews = [
+  { src: '/images/tulum-friends-sunset-dock.jpeg', alt: 'Friends on a dock at sunset in Tulum' },
+  { video: '/images/tulum-cenote-dive-clip.mp4', poster: '/images/tulum-cenote-dive-poster.jpg', alt: 'A jump and splash into a turquoise cenote near Tulum' },
+  { src: '/images/tulum-lagoon-birdwatching-binoculars.jpeg', alt: 'Birdwatching with binoculars near a lagoon in Tulum' },
+];
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -105,7 +123,7 @@ const orgSchema = {
   .gcamp strong{font-family:var(--fb);font-size:15px;color:var(--white);}
   .gcamp span{font-size:13.5px;line-height:1.4;color:rgba(255,255,255,0.88);}
   .gbtns{display:flex;flex-wrap:wrap;gap:12px;}
-  .gbtns .btn-groups{flex:1 1 220px;max-width:340px;}
+  .gbtns .btn-groups{flex:0 0 auto;max-width:none;padding:12px 18px;font-size:13.5px;}
   @media(min-width:720px){
     .friend .friend-inner{justify-content:flex-start !important;gap:56px !important;}
     .friend .friend-intro{flex:1;}
@@ -175,6 +193,8 @@ const orgSchema = {
   </div>
 </section>
 
+<MediaStrip items={stripAfterBio} id="strip-after-bio" label="Moments from our tours and trips in Tulum" />
+
 <!-- GUIDE — above tours -->
 <section class="guide" id="guide">
   <div class="guide-inner">
@@ -199,6 +219,8 @@ const orgSchema = {
 </section>
 
 <!-- REVIEWS -->
+<MediaStrip items={stripAfterGuide} id="strip-after-guide" label="Food, art, and culture moments in Tulum" />
+
 <section class="reviews" id="reviews">
   <div class="reviews-inner">
   <p class="sec-eye" style="color:var(--yellow);">Our reviews</p>
@@ -245,6 +267,8 @@ const orgSchema = {
   <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all our reviews on Google →</a>
   </div>
 </section>
+
+<MediaStrip items={stripAfterReviews} id="strip-after-reviews" label="More moments from our trips" />
 
 <!-- TOURS — two flagships + mini boxes -->
 <section class="tours" id="tours">
@@ -377,12 +401,12 @@ const orgSchema = {
       <h2>Group trips,<br>built around you</h2>
       <p class="groups-tagline">Camp spirit, villa comfort. Private camp-style trips for sapphic, queer, and trans grownups, based in a private villa with a pool and planned around what your group wants to do.</p>
       <div class="gfacts">
-        <div class="gfact"><span class="gfact-k">From</span><span class="gfact-v">$2,000 USD per person</span></div>
-        <div class="gfact"><span class="gfact-k">Length</span><span class="gfact-v">4 days, 3 nights or 8 days, 7 nights</span></div>
+        <div class="gfact"><span class="gfact-k">Short trip</span><span class="gfact-v">4 days, 3 nights<br>from $2,000</span></div>
+        <div class="gfact"><span class="gfact-k">Full trip</span><span class="gfact-v">8 days, 7 nights<br>from $4,000</span></div>
         <div class="gfact"><span class="gfact-k">Group size</span><span class="gfact-v">3 to 16 people</span></div>
         <div class="gfact"><span class="gfact-k">Stay</span><span class="gfact-v">Private villa with a pool</span></div>
       </div>
-      <p class="gline">Includes airport pickups, most meals, and all activities and classes. Group rates available.</p>
+      <p class="gline">Prices are per person in USD. Includes airport pickups, most meals, and all activities and classes. Group rates available.</p>
       <p class="gsub">Example camps</p>
       <div class="gcamps">
         <div class="gcamp"><strong>Adventure</strong><span>Kayaking, canoeing, birds and monkeys</span></div>

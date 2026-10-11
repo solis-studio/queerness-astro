@@ -116,7 +116,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .gstat{font-family:var(--fb);font-size:13px;font-weight:700;color:var(--terra);margin-top:var(--s-md);padding-top:var(--s-sm);border-top:2px solid var(--border);}
 
 /* TOURS — two flagships full, rest as small boxes */
-.tours{background:var(--white);padding:var(--s-lg) var(--s-sm) var(--s-md);}
+.tours{background:var(--white);padding:var(--s-md) var(--s-sm) var(--s-md);}
 .tours .sec-eye{color:var(--magenta);}
 .tours h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--dark);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .tours-lead{font-size:18px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}

@@ -51,12 +51,14 @@ const { items = [], id = 'media-strip', label = 'Photos from our trips' } = Astr
 .media-strip-track > :first-child{margin-left:auto;}
 .media-strip-track > :last-child{margin-right:auto;}
 .media-strip-track img,.media-strip-track video{flex:0 0 72%;max-width:300px;height:auto;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);scroll-snap-align:start;background:var(--bone);}
-.media-strip-nav{display:flex;justify-content:space-between;gap:16px;padding:var(--s-xs, 8px) var(--s-sm) 0;}
+.media-strip{position:relative;}
+.media-strip-nav{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;gap:16px;padding:0 6px;pointer-events:none;z-index:3;}
+.media-strip-nav .scroll-arrow{pointer-events:auto;box-shadow:0 2px 8px rgba(0,0,0,0.35);}
 .media-strip-nav .scroll-arrow{transition:opacity 0.2s ease;}
 .media-strip-nav .scroll-arrow.is-hidden{opacity:0;pointer-events:none;}
 @media(min-width:900px){
   .media-strip-track{padding:4px 40px 8px;scroll-padding:0 40px;}
   .media-strip-track img,.media-strip-track video{flex:0 0 280px;max-width:none;width:280px;height:auto;}
-  .media-strip-nav{padding:var(--s-xs, 8px) 40px 0;}
+  .media-strip-nav{padding:0 14px;}
 }
 </style>
