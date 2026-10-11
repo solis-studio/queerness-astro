@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
-<Layout title="Queer Tulum Blog | Queerness Experiences" description="Honest guides to Tulum for queer travelers, families, and destination weddings — safety, where to go, and what locals actually know.">
+<Layout title="Queer Tulum Blog | Queerness Experiences" description={"Honest guides to Tulum for queer and trans travelers: safety, where to go, and what locals actually know."}>
   <section class="blog-index">
     <p class="sec-eye">Local insights</p>
     <h1 class="blog-h1">Queer Tulum,<br>the honest guide</h1>

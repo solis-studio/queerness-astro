@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TourCarousel from '../components/TourCarousel.astro';
 ---
 <Layout noindex={true} title="Thank You | Queerness Experiences" description={"Thanks for reaching out about LGBTQ+ travel experiences in Tulum. Here's what happens next."}>
 
@@ -10,4 +11,31 @@ import Layout from '../layouts/Layout.astro';
   <a href="/blog/queer-tulum-recommendations" class="btn-p" style="display:inline-block;text-align:center;">See the Free Tulum Guide →</a>
 </section>
 
+<section class="thanks-group">
+  <p class="sec-eye" style="color:var(--dark);">Want more Tulum?</p>
+  <h2>Experience Tulum with more queer people</h2>
+  <p>Two ways to bring your favorite people along. Bring 3 or more friends and I'll build the full trip itinerary, or get the dates first for our 2027 day camp style group trips.</p>
+  <div class="thanks-btns">
+    <a href="/group-trips" class="btn-p">Plan a trip with friends →</a>
+    <a href="/waitlist" class="btn-p thanks-alt">Get 2027 trip updates →</a>
+  </div>
+  <p class="thanks-give">Every tour and trip donates to a social, cultural, or environmental project in Tulum.</p>
+</section>
+
+<TourCarousel eyebrow="While you wait" heading="Add another tour" />
+
 </Layout>
+
+<style>
+  #thanks{align-items:flex-start !important;}
+  #thanks > *{margin-left:0 !important;margin-right:0 !important;}
+  #thanks .contact-lead{max-width:720px;}
+  .thanks-group{background:var(--yellow);border-top:3px solid var(--dark);padding:var(--s-md) var(--s-sm);}
+  .thanks-group h2{font-family:var(--ff);font-size:28px;line-height:1.1;text-transform:uppercase;color:var(--dark) !important;margin:0 0 var(--s-sm);}
+  .thanks-group p{font-size:17px;line-height:1.6;color:var(--dark);max-width:560px;margin:0 0 var(--s-sm);}
+  @media(min-width:720px){.thanks-group{padding-left:40px;padding-right:40px;}}
+  .thanks-btns{display:flex;flex-wrap:wrap;gap:12px;}
+  .thanks-btns .btn-p{display:inline-block;text-align:center;}
+  .thanks-alt{background:var(--white);color:var(--dark);}
+  .thanks-group .thanks-give{font-size:14.5px;margin:var(--s-sm) 0 0;}
+</style>

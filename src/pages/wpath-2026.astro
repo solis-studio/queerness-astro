@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="LGBTQ+ Queer & Trans Experiences in Mexico City — WPATH 2026 | Queerness Experiences" description={"Six curated LGBTQ+ queer and trans experiences in Mexico City for WPATH 2026 attendees. Tours, food, mezcal, and markets, led by queer Mexican locals."}>
+<Layout title="WPATH 2026 Mexico City: Queer & Trans Tours | Queerness Experiences" description={"Pre-register free for queer and trans tours in Mexico City during WPATH 2026: food, markets, Chapultepec, and more, led by a queer Mexican local."}>
 
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
@@ -15,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
     {
       "@type": "Question",
       "name": "What is the group minimum?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class and Polanco Mezcal & Snacks need 6. Not there yet? Tell us your date and we'll combine interest." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest." }
     },
     {
       "@type": "Question",
@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
     {
       "@type": "Question",
       "name": "What's included in the price?",
-      "acceptedAnswer": { "@type": "Answer", "text": "All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks." }
+      "acceptedAnswer": { "@type": "Answer", "text": "All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed." }
     },
     {
       "@type": "Question",
@@ -57,8 +57,8 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- BANNER -->
 <div class="wp-banner">
-  <div class="wp-banner-text">8 experiences · <strong>WPATH 2026 · Mexico City</strong></div>
-  <a href="#register" class="wp-banner-btn">Pre-register — no cost</a>
+  <div class="wp-banner-text">5 experiences · <strong>WPATH 2026 · Mexico City</strong></div>
+  <a href="#register" class="wp-banner-btn">Pre-register, no cost</a>
 </div>
 
 <!-- DISCLAIMER -->
@@ -88,8 +88,8 @@ import Layout from '../layouts/Layout.astro';
       <div class="wp-hero-title">Explore</div>
       <div class="wp-hero-title-sub">Mexico City</div>
     </h1>
-    <p class="wp-hero-sub">Six curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
-    <a href="#register" class="wp-hero-btn">Pre-register now — no cost</a>
+    <p class="wp-hero-sub">Five curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
+    <a href="#register" class="wp-hero-btn">Pre-register now, no cost</a>
     <div class="wp-hero-note">No cost to pre-register · Reserve your interest</div>
 
     <div class="wp-guide-label" style="text-align:center;margin-bottom:16px;">Creators of these experiences</div>
@@ -115,7 +115,14 @@ import Layout from '../layouts/Layout.astro';
   <p class="wp-range-title">Experiences</p>
   <p>From walking distance of the Hyatt, to neighborhoods most visitors never find, every experience fits around your conference schedule.</p>
   <p class="wp-range-talk">On these tours, we talk about cultural nuance, Mexican ingenuity, and queer and trans activism in Latin America.</p>
-  <p>These are small-group experiences, run for the dates listed below. Most need a group minimum of just 2 people. The Prehispanic Cooking Class and Polanco Mezcal need 6. Meet a tour's minimum and we can personalize everything, including the date.</p>
+  <div class="wp-sizes">
+    <input type="checkbox" id="wp-sizes-toggle" class="wp-sizes-toggle">
+    <label for="wp-sizes-toggle" class="wp-sizes-label"><span class="ws-open">How group sizes work +</span><span class="ws-close">Less −</span></label>
+    <div class="wp-sizes-body">
+      <p>These are small-group experiences, run for the dates listed below. Most need just 2 or more people. The Prehispanic Cooking Class needs 6 or more.</p>
+      <p>Meet a tour's minimum and we can personalize everything, including the date. Not sure your group fits? Tell us what you have in mind and we'll see what we can arrange.</p>
+    </div>
+  </div>
 </div>
 
 <!-- TOURS -->
@@ -237,34 +244,6 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-mezcal.jpg" alt="Mezcal tasting Polanco Mexico City">
-      <div class="wp-card-tag">Tasting</div>
-      <div class="wp-card-date">Nov 11</div>
-    </div>
-    <div class="wp-card-body">
-      <div class="wp-card-title">Polanco Mezcal & Snacks</div>
-      <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Wednesday Nov 11 · Evening</div>
-        <div class="wp-card-meta-item">📍 Private venue · Polanco · Walking distance from hotel</div>
-        <div class="wp-card-meta-item">⏱ ~2.5 hrs</div>
-        <div class="wp-card-meta-item">👥 Group minimum: 6 people. Not there yet? Tell us your date, we'll combine interest</div>
-      </div>
-      <p class="wp-card-teaser">Five minutes from the hotel. Premium mezcal, private space, someone who knows the difference.</p>
-      <input type="checkbox" class="wp-card-toggle-check" id="t4">
-      <label class="wp-card-toggle-label" for="t4"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
-      <div class="wp-card-details">
-        <p class="wp-card-desc">An intimate private space and a guided tasting of 4–5 premium mezcals chosen by someone who actually knows the difference. Learn to read a label, understand the production, and taste mezcal the way it's meant to be, slowly, with context.</p>
-        <div class="wp-card-includes">✓ Guided mezcal tasting & snacks included</div>
-      </div>
-      <div class="wp-card-footer">
-        <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
-        <a href="#register" class="wp-card-btn">Pre-register</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wp-card">
-    <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="/images/wpath-sapphic-shopping.jpeg" alt="Sapphic shopping breakfast tour Mexico City">
       <div class="wp-card-tag">Sapphic tour</div>
       <div class="wp-card-date">Nov 13</div>
@@ -323,8 +302,8 @@ import Layout from '../layouts/Layout.astro';
 <div class="wp-cta-strip">
   <div class="wp-cta-strip-eyebrow">Ready to explore?</div>
   <div class="wp-cta-strip-title">Reserve your spot below</div>
-  <div class="wp-cta-strip-sub">No cost to pre-register · Spots confirmed once minimum group size is reached</div>
-  <a href="#register" class="wp-cta-strip-btn">Pre-register now — no cost</a>
+  <div class="wp-cta-strip-sub">No cost to pre-register · I reply within a couple of hours · Spots confirmed once minimum group size is reached</div>
+  <a href="#register" class="wp-cta-strip-btn">Pre-register now, no cost</a>
 </div>
 
 <!-- FAQ -->
@@ -340,7 +319,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-faq-item">
     <input type="checkbox" id="wf-min" class="wp-faq-toggle">
     <label for="wf-min" class="wp-faq-question">What is the group minimum?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class and Polanco Mezcal &amp; Snacks need 6. Not there yet? Tell us your date and we'll combine interest.</div>
+    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf2" class="wp-faq-toggle">
@@ -355,7 +334,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-faq-item">
     <input type="checkbox" id="wf4" class="wp-faq-toggle">
     <label for="wf4" class="wp-faq-question">What's included in the price?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks.</div>
+    <div class="wp-faq-answer">All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf5" class="wp-faq-toggle">
@@ -419,7 +398,7 @@ import Layout from '../layouts/Layout.astro';
       <div><label class="wp-fl">Email</label><input class="wp-fi" type="email" name="email" required></div>
       <div><label class="wp-fl">WhatsApp (include country code)</label><input class="wp-fi" type="tel" name="whatsapp" required></div>
       <div>
-        <label class="wp-fl">Tours — pick a date. Leave blank if not interested</label>
+        <label class="wp-fl">Tours: pick a date. Leave blank if not interested</label>
         <div class="wp-exp-list">
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Prehispanic Cooking Class <small class="wp-exp-min">· 6+ people</small></span>
@@ -463,16 +442,6 @@ import Layout from '../layouts/Layout.astro';
           <div class="wp-exp-other" data-other-for="date-chapultepec" hidden><input class="wp-fi" type="text" name="date-chapultepec-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Polanco Mezcal & Snacks <small class="wp-exp-min">· 6+ people</small></span>
-            <select class="wp-fi wp-exp-select" name="date-mezcal">
-              <option value="">Not interested</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
-              <option value="other">Other date (tell us below)</option>
-            </select>
-          </div>
-          <div class="wp-exp-other" data-other-for="date-mezcal" hidden><input class="wp-fi" type="text" name="date-mezcal-other" placeholder="What date would work for you?"></div>
-
-          <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour <small class="wp-exp-min">· 2+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
               <option value="">Not interested</option>
@@ -482,7 +451,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="wp-exp-other" data-other-for="date-sapphic-shopping" hidden><input class="wp-fi" type="text" name="date-sapphic-shopping-other" placeholder="What date would work for you?"></div>
         </div>
-        <p class="wp-exp-hint">These are the dates I'm already running, not just suggestions, though I'm open to adding more if there's enough interest. Prehispanic Cooking Class and Polanco Mezcal need 6+ to confirm. Every other tour needs just 2.</p>
+        <p class="wp-exp-hint">These are the dates I'm already running, not just suggestions, though I'm open to adding more if there's enough interest. The Prehispanic Cooking Class needs 6+ to confirm. Every other tour needs just 2+. Fewer people than that, or a different day? Tell us and we'll see what we can arrange.</p>
       </div>
 
       <div class="wp-form-row">
@@ -503,8 +472,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
       <div><label class="wp-fl">Group member names (optional)</label><textarea class="wp-fi" name="group-members" rows="2" placeholder="If you know who's joining you, list names here"></textarea></div>
-      <div><label class="wp-fl">Anything else we should know?</label><textarea class="wp-fi" name="message" rows="3"></textarea></div>
-      <button type="submit" class="wp-how-cta-btn" style="border:none;cursor:pointer;">Pre-register — no cost</button>
+      <div><label class="wp-fl">Any special interests? Tell us and we'll do our best to work them in (optional)</label><textarea class="wp-fi" name="message" rows="3"></textarea></div>
+      <button type="submit" class="wp-how-cta-btn" style="border:none;cursor:pointer;">Pre-register, no cost</button>
     </form>
     <script>
       document.querySelectorAll('.wp-exp-select[name^="date-"]').forEach(function(sel){
@@ -586,6 +555,15 @@ import Layout from '../layouts/Layout.astro';
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
   .wp-range-intro p.wp-range-talk{font-weight:700 !important;color:var(--wblue) !important;}
   .wp-range-intro p:last-child{margin-bottom:0;}
+  .wp-sizes{max-width:560px;margin:0 auto;text-align:left;}
+  .wp-sizes-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
+  .wp-sizes-label{display:inline-block;font-size:15px;font-weight:700;color:var(--wblue);border-bottom:2px solid var(--wbrass);padding-bottom:2px;cursor:pointer;}
+  .wp-sizes-label .ws-close{display:none;}
+  .wp-sizes-toggle:checked + .wp-sizes-label .ws-open{display:none;}
+  .wp-sizes-toggle:checked + .wp-sizes-label .ws-close{display:inline;}
+  .wp-sizes-body{display:none;margin-top:12px;}
+  .wp-sizes-toggle:checked ~ .wp-sizes-body{display:block;}
+  .wp-range-intro .wp-sizes-body p{font-size:17px;color:var(--wmahogany);font-weight:400;line-height:1.55;margin:0 0 10px;border-left:3px solid var(--wbrass);padding:2px 0 2px 14px;}
   .wp-range-intro p:not(.wp-range-title){font-size:18px;color:var(--wmahogany);font-weight:400;line-height:1.6;max-width:560px;margin:0 auto 14px;text-align:left;border-left:3px solid var(--wbrass);padding:2px 0 2px 16px;}
 
   .wp-section-label{background:var(--wcream);border-top:4px solid var(--wblue);border-bottom:1px solid var(--wborder);padding:32px 24px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}
@@ -597,7 +575,7 @@ import Layout from '../layouts/Layout.astro';
   #wrap-tours .wp-accordion-cards{max-height:none !important;overflow:visible;}
 
   .wp-card-teaser{font-size:17px;color:var(--wmuted);line-height:1.7;margin-bottom:12px;font-weight:300;font-style:italic;}
-  .wp-card-toggle-check{position:absolute;opacity:0;pointer-events:none;}
+  .wp-card-toggle-check{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
   .wp-card-toggle-label{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;color:var(--wbrass);cursor:pointer;margin-bottom:14px;font-weight:500;letter-spacing:0.5px;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:2px;}
   .wp-toggle-icon{font-size:19.5px;line-height:1;transition:transform 0.25s;font-weight:300;}
   .wp-card-toggle-check:checked ~ .wp-card-toggle-label .wp-toggle-icon{transform:rotate(45deg);}
@@ -636,7 +614,7 @@ import Layout from '../layouts/Layout.astro';
   .wp-faq-title{font-family:'Cormorant Garamond',serif;font-size:31.5px;font-weight:400;color:var(--wblue);margin-bottom:32px;}
   .wp-faq-item{border-top:1px solid var(--wborder);}
   .wp-faq-item:last-child{border-bottom:1px solid var(--wborder);}
-  .wp-faq-toggle{position:absolute;opacity:0;pointer-events:none;}
+  .wp-faq-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
   .wp-faq-question{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:18px;font-weight:500;color:var(--wink);line-height:1.4;}
   .wp-faq-icon{font-size:23.5px;color:var(--wbrass);flex-shrink:0;transition:transform 0.25s;line-height:1;font-weight:300;}
   .wp-faq-toggle:checked ~ .wp-faq-question .wp-faq-icon{transform:rotate(45deg);}

@@ -1,0 +1,56 @@
+---
+import tours from '../data/tours.json';
+const { exclude = '', heading = 'More tours', eyebrow = 'While you wait' } = Astro.props;
+const list = tours.filter((t) => t.slug !== exclude);
+---
+<section class="tc" aria-label="Tours">
+  <p class="sec-eye">{eyebrow}</p>
+  <h2>{heading}</h2>
+  <div class="tc-track">
+    {list.map((o) => (
+      <a class="tc-card" href={`/tours/${o.slug}`}>
+        <img src={o.photo} alt={o.alt} loading="eager" decoding="async" width="600" height="400" style={`object-position:${o.heroPos};`} />
+        <span class="tc-name">{o.name}</span>
+        <span class="tc-tag">{o.tag}</span>
+      </a>
+    ))}
+  </div>
+  <div class="tc-nav">
+    <button type="button" class="scroll-arrow" aria-label="Scroll tours left" data-dir="-1">←</button>
+    <button type="button" class="scroll-arrow" aria-label="Scroll tours right" data-dir="1">→</button>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.tc').forEach((sec) => {
+    const track = sec.querySelector('.tc-track') as HTMLElement;
+    const nav = sec.querySelector('.tc-nav') as HTMLElement;
+    const left = sec.querySelector('.scroll-arrow[data-dir="-1"]') as HTMLElement;
+    const right = sec.querySelector('.scroll-arrow[data-dir="1"]') as HTMLElement;
+    const edges = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      left.classList.toggle('is-hidden', track.scrollLeft <= 2);
+      right.classList.toggle('is-hidden', track.scrollLeft >= max - 2);
+      nav.style.display = track.scrollWidth <= track.clientWidth + 2 ? 'none' : '';
+    };
+    [left, right].forEach((b) => b.addEventListener('click', () => track.scrollBy({ left: Number(b.dataset.dir) * 260, behavior: 'smooth' })));
+    track.addEventListener('scroll', edges, { passive: true });
+    window.addEventListener('resize', edges);
+    edges();
+  });
+</script>
+
+<style is:global>
+.tc{background:var(--bone);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--dark);}
+.tc h2{font-family:var(--ff);font-size:26px;line-height:1.1;text-transform:uppercase;color:var(--dark) !important;margin:0 0 var(--s-sm);}
+.tc-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 6px 8px 0;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.tc-track::-webkit-scrollbar{display:none;}
+.tc-card{flex:0 0 66%;max-width:240px;scroll-snap-align:start;display:flex;flex-direction:column;background:var(--white);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);color:var(--dark);align-self:flex-start;}
+.tc-card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block;background:var(--bone);border-bottom:3px solid var(--dark);}
+.tc-name{font-family:var(--ff);font-size:15px;line-height:1.15;text-transform:uppercase;padding:8px 10px 2px;}
+.tc-tag{font-family:var(--fb);font-size:12.5px;font-weight:700;color:var(--magenta);padding:0 10px 10px;}
+.tc-nav{display:flex;justify-content:space-between;margin-top:var(--s-sm);}
+.tc-nav .scroll-arrow{transition:opacity .2s ease;}
+.tc-nav .scroll-arrow.is-hidden{opacity:0;pointer-events:none;}
+@media(min-width:720px){.tc{padding:var(--s-md) 40px;}.tc-card{flex-basis:240px;}}
+</style>

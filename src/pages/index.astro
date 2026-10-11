@@ -13,7 +13,7 @@ const orgSchema = {
   address: { '@type': 'PostalAddress', addressLocality: 'Tulum', addressRegion: 'Quintana Roo', addressCountry: 'MX' },
 };
 ---
-<Layout title="LGBTQ+ Tulum Tours & Queer Group Trips | Queerness Experiences" description={"Specially crafted tours and group trips in Tulum for queer and trans travelers, led by a queer local. 5.0★ on Google. Cenotes, food, and a free Tulum guidebook."}>
+<Layout title="LGBTQ+ Tulum Tours & Queer Group Trips | Queerness Experiences" description={"Feel at ease in Tulum with a queer local. Cenote, food, and group trips for queer and trans travelers. 5.0★ on Google, and we handle the planning."}>
 <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 
 <!-- HERO — dominant H1, then photo grid, then body, then CTAs -->
@@ -83,10 +83,11 @@ const orgSchema = {
     .bridge .bridge-facts-list{grid-template-columns:1fr 1fr;}
     .bridge .bridge-name{font-size:38px;}
   }
-  .facts-toggle{position:absolute;opacity:0;pointer-events:none;}
+  .facts-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
   .bridge .facts-more{display:none;}
   .facts-toggle:checked ~ .facts-more{display:grid;}
   .facts-btn{display:inline-block;cursor:pointer;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--white);margin:0 0 var(--s-sm);}
+  .flag-page-link{display:inline-block;margin-top:8px;font-family:var(--fb);font-size:13px;font-weight:700;color:var(--magenta);text-decoration:underline;text-underline-offset:3px;}
   .facts-btn::before{content:'More fun facts +';}
   .facts-toggle:checked ~ .facts-btn::before{content:'Fewer fun facts \2212';}
   .bridge .bridge-more{margin-top:var(--s-sm);display:block;width:max-content;}
@@ -124,7 +125,7 @@ const orgSchema = {
   @media(min-width:720px){.qbar{padding:var(--s-md) 40px;}.qbar-grid{grid-template-columns:1fr;}.qbar-h{font-size:26px;}}
   .agency{background:var(--blue);padding:var(--s-sm);}
   .agency-inner{max-width:1120px;margin:0 auto;}
-  .agency-toggle{position:absolute;opacity:0;pointer-events:none;}
+  .agency-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
   .agency-q{display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;padding:8px 0;}
   .agency-eye{display:block;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--yellow);margin-bottom:4px;}
   .agency-h{display:block;font-family:var(--ff);font-size:20px;line-height:1.2;text-transform:uppercase;color:var(--white);}
@@ -202,6 +203,7 @@ const orgSchema = {
   <div class="reviews-inner">
   <p class="sec-eye" style="color:var(--yellow);">Our reviews</p>
   <h2>What queer &amp; trans<br>travelers say</h2>
+  <p class="reviews-sub on-dark">We've had the privilege of working with amazing people. This is what they say.</p>
   <div class="review-scroll">
     <div class="rcard">
       <div class="rstars">★★★★★</div>
@@ -268,10 +270,10 @@ const orgSchema = {
         <img class="ph flag-photo flag-photo-tall" src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through a wooden ladder into the cave">
         <div class="flag-body">
           <div class="flag-name">Secret Cenote</div>
-          <p class="flag-desc">A cenote not even locals know about. The entrance is an ancient well created by the Maya. <strong>A great option for gender diverse people who are nervous about wearing a bathing suit, because we get the cenote all to ourselves.</strong></p>
+          <p class="flag-desc">A cenote not even locals know about. The entrance is an ancient well created by the Maya. <strong>A great option for gender diverse people who want to feel completely at ease in their bathing suit: the cenote is all ours, and it's shaded from the sun.</strong></p>
           <input type="checkbox" id="flagmore1" class="flag-toggle-check">
           <label for="flagmore1" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>You'll climb down a ladder into an entrance that used to be a well used by the ancient Maya, down into water that's been here for thousands of years. Cared for by an extremely knowledgeable Maya family.</p></div>
+          <div class="flag-more"><p>You'll climb down a ladder into an entrance that used to be a well used by the ancient Maya, down into water that's been here for thousands of years. Cared for by an extremely knowledgeable Maya family.</p><a class="flag-page-link" href="/tours/secret-cenote">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,200 MXN</span><span class="price-usd">About $130 USD</span></span>
             <a href="/tours#tour1" class="flag-link">See Full Itinerary →</a>
@@ -285,7 +287,7 @@ const orgSchema = {
           <p class="flag-desc">Relaxation tour. Float through canals built by the ancient Maya.</p>
           <input type="checkbox" id="flagmore2" class="flag-toggle-check">
           <label for="flagmore2" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>Boat through lagoons and mangroves. The most relaxing day in Tulum, and the one people keep talking about when they get home.</p></div>
+          <div class="flag-more"><p>Boat through lagoons and mangroves. The most relaxing day in Tulum, and the one people keep talking about when they get home.</p><a class="flag-page-link" href="/tours/muyil-river-float">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price"><span class="price-pp">Per person</span><span class="price-mxn">From 3,400 MXN</span><span class="price-usd">About $200 USD</span></span>
             <a href="/tours#tour2" class="flag-link">See Full Itinerary →</a>
@@ -302,7 +304,7 @@ const orgSchema = {
           <p class="flag-desc">Two off-the-beaten-path cenotes, cave and open water.</p>
           <input type="checkbox" id="flagmore6" class="flag-toggle-check">
           <label for="flagmore6" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>Taak Bi Ha, an amazing cave cenote with great lighting for swimming, and Nicte Ha, a fully open cenote with lily pads, cliff jumping, and amazing snorkeling.</p></div>
+          <div class="flag-more"><p>Taak Bi Ha, an amazing cave cenote with great lighting for swimming, and Nicte Ha, a fully open cenote with lily pads, cliff jumping, and amazing snorkeling.</p><a class="flag-page-link" href="/tours/intro-to-cenotes-tour">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,800 MXN</span><span class="price-usd">About $165 USD</span></span>
             <a href="/tours#tour-intro-cenotes" class="flag-link">See Full Itinerary →</a>
@@ -316,7 +318,7 @@ const orgSchema = {
           <p class="flag-desc">A full day in the jungle looking for wild monkeys.</p>
           <input type="checkbox" id="flagmore5" class="flag-toggle-check">
           <label for="flagmore5" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>Swimming, canoeing, and zip lining over a pristine lagoon. Includes picnic lunch. Led by a UCLA wildlife biologist, so you actually understand what you're looking at.</p></div>
+          <div class="flag-more"><p>Swimming, canoeing, and zip lining over a pristine lagoon. Includes picnic lunch. Led by a UCLA wildlife biologist, so you actually understand what you're looking at.</p><a class="flag-page-link" href="/tours/monkey-spotting-lagoon-jungle-adventure">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price"><span class="price-pp">Per person</span><span class="price-mxn">From 4,000 MXN</span><span class="price-usd">About $235 USD</span></span>
             <a href="/tours#tour5" class="flag-link">See Full Itinerary →</a>
@@ -334,7 +336,7 @@ const orgSchema = {
           <p class="flag-desc">Explore the local side of Tulum. Get the chisme (gossip).</p>
           <input type="checkbox" id="flagmore3" class="flag-toggle-check">
           <label for="flagmore3" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>Share a meal together, explore murals around town, and get the local chisme, the town behind the town.</p></div>
+          <div class="flag-more"><p>Share a meal together, explore murals around town, and get the local chisme, the town behind the town.</p><a class="flag-page-link" href="/tours/stories-behind-the-storefronts">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price"><span class="price-pp">Per person</span><span class="price-mxn">From 2,500 MXN</span><span class="price-usd">About $145 USD</span></span>
             <a href="/tours#tour3" class="flag-link">See Full Itinerary →</a>
@@ -348,7 +350,7 @@ const orgSchema = {
           <p class="flag-desc">Explore prehispanic Mexican food and the amazing fusions that make Tulum one of the best places to eat.</p>
           <input type="checkbox" id="flagmore4" class="flag-toggle-check">
           <label for="flagmore4" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
-          <div class="flag-more"><p>Choose your style: three street food stops, or three sit-down spots. Street food or sit-down, your choice.</p></div>
+          <div class="flag-more"><p>Choose your style: three street food stops, or three sit-down spots.</p><a class="flag-page-link" href="/tours/food-tour">See the full tour page →</a></div>
           <div class="flag-foot">
             <span class="flag-price">PRICE BY EXPERIENCE</span>
             <a href="/tours#tour4" class="flag-link">See Full Itinerary →</a>
@@ -368,16 +370,16 @@ const orgSchema = {
 <section class="groups" id="groups">
   <div class="groups-two-col">
     <div class="groups-photo-col">
-      <img class="groups-hero-photo" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a picnic spread of fresh fruit during Camp Queerness near Tulum">
+      <img class="groups-hero-photo" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a picnic spread of fresh fruit on a group trip near Tulum">
     </div>
     <div>
       <p class="sec-eye">Now booking for winter</p>
       <h2>Group trips,<br>built around you</h2>
-      <p class="groups-tagline">Private camp-style trips for sapphic, queer, and trans grownups, planned around what your group wants to do.</p>
+      <p class="groups-tagline">Camp spirit, villa comfort. Private camp-style trips for sapphic, queer, and trans grownups, based in a private villa with a pool and planned around what your group wants to do.</p>
       <div class="gfacts">
-        <div class="gfact"><span class="gfact-k">From</span><span class="gfact-v">$4,000 USD per person</span></div>
-        <div class="gfact"><span class="gfact-k">Length</span><span class="gfact-v">4 days, 5 nights</span></div>
-        <div class="gfact"><span class="gfact-k">Group size</span><span class="gfact-v">3 to 13 people</span></div>
+        <div class="gfact"><span class="gfact-k">From</span><span class="gfact-v">$2,000 USD per person</span></div>
+        <div class="gfact"><span class="gfact-k">Length</span><span class="gfact-v">3 to 4 days or 7 to 8 days</span></div>
+        <div class="gfact"><span class="gfact-k">Group size</span><span class="gfact-v">3 to 16 people</span></div>
         <div class="gfact"><span class="gfact-k">Stay</span><span class="gfact-v">Private villa with a pool</span></div>
       </div>
       <p class="gline">Includes airport pickups, most meals, and all activities and classes. Group rates available.</p>
@@ -390,10 +392,10 @@ const orgSchema = {
       </div>
       <p class="gline">Book 3 or more months ahead and ask about an early-booking rate.</p>
       <div class="gbtns">
-        <a href="/group-trips" class="btn-groups">See the Camps →</a>
-        <a href="/waitlist" class="btn-groups">Join the Waitlist →</a>
+        <a href="/group-trips" class="btn-groups">See Group Trips →</a>
+        <a href="/waitlist" class="btn-groups">Get 2027 Trip Updates →</a>
       </div>
-      <p class="gline" style="margin-top:var(--s-sm);">Prefer a bigger trip? Join the waitlist for open camps, like Camp Queerness.</p>
+      <p class="gline" style="margin-top:var(--s-sm);">Dates for the 2027 Tulum group trips are coming soon. Leave your email to hear first.</p>
     </div>
   </div>
 </section>
@@ -439,7 +441,7 @@ const orgSchema = {
         <span class="food-chip">Theatre in Spanish</span>
         <span class="food-chip">And more each week</span>
       </div>
-      <a href="/book" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Message me and join me for an activity →</a>
+      <a href="/book#activity" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Message me and join me for an activity →</a>
     </div>
   </div>
 </section>
@@ -461,7 +463,7 @@ const orgSchema = {
     </div>
     <div class="faq-item">
       <input type="checkbox" id="faq-swim">
-      <label class="faq-q" for="faq-swim">I just had top surgery, or I'm a trans woman, and I want to be in my bathing suit. Which tour is best?<span class="tog">+</span></label>
+      <label class="faq-q" for="faq-swim">What's the best tour for someone who's gender diverse and wants to feel super comfortable in their bathing suit?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner"><strong>The best option is the Secret Cenote Tour, because we get the cenote all to ourselves.</strong> <a href="/tours#tour1">See the Secret Cenote Tour →</a></div></div>
     </div>
     <div class="faq-item">

@@ -1,11 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import WhyUs from '../components/WhyUs.astro';
 import Highlights from '../components/Highlights.astro';
 import MediaStrip from '../components/MediaStrip.astro';
 const stripCamp = [
   { src: '/images/tulum-kayak-sunset-lagoon.jpg', alt: 'Two friends kayaking toward a bright orange sunset over the lagoon near Tulum' },
-  { video: '/images/queer-camp-tulum-voguing-clip.mp4', poster: '/images/queer-camp-tulum-voguing-poster.jpg', alt: 'Two people voguing together under a palapa on a Camp Queerness trip in Tulum' },
+  { video: '/images/queer-camp-tulum-voguing-clip.mp4', poster: '/images/queer-camp-tulum-voguing-poster.jpg', alt: 'Two people voguing together under a palapa on a group trip in Tulum' },
   { src: '/images/tulum-friends-laughing-lagoon.jpg', alt: 'Two friends laughing together by a lagoon near Tulum' },
   { src: '/images/tulum-cenote-rope-ladder.jpg', alt: 'Climbing down a rope ladder into a cenote near Tulum' },
 ];
@@ -26,6 +25,16 @@ const stripArt = [
   { src: '/images/tulum-la-guarida-cultural-workshop.jpg', alt: 'A group gathered for a cultural workshop at La Guarida in Tulum' },
   { src: '/images/tulum-watercolor-picnic-fresh-fruit.jpg', alt: 'Friends painting together over a spread of fresh fruit in the jungle near Tulum' },
 ];
+const stripStay = [
+  { src: '/images/tulum-couple-laughing-jungle-trail.jpeg', alt: 'Two friends laughing together on a jungle trail near Tulum', pos: 'center 35%' },
+  { src: '/images/tulum-friends-sunset-dock.jpeg', alt: 'Two friends sitting on a dock at sunset near Tulum' },
+  { src: '/images/santi-dog-lagoon.jpg', alt: 'Santi in a bucket hat petting a dog on a lagoon dock near Tulum', pos: 'center 55%' },
+];
+const stripNight = [
+  { src: '/images/la-guarida-theater.jpg', alt: 'A group gathered under a chandelier at La Guarida, a community cultural center in Tulum', pos: 'center 45%' },
+  { src: '/images/party-dancing-friends.jpg', alt: 'Queer and trans friends dancing together at a party in Tulum', pos: 'center 38%' },
+  { src: '/images/dance-class-alt.jpg', alt: 'Dancers practicing together in a studio near Tulum' },
+];
 const stripNature = [
   { src: '/images/tulum-birdwatching-lagoon.jpg', alt: 'Birdwatching with binoculars at a lagoon near Tulum' },
   { src: '/images/tulum-mangrove-boardwalk-walk.jpeg', alt: 'Walking through the mangrove boardwalk in Tulum' },
@@ -38,7 +47,7 @@ const stripAdventure = [
   { src: '/images/tulum-friends-sunset-dock.jpeg', alt: 'Friends at sunset on a dock in Tulum' },
 ];
 ---
-<Layout title="Queer Group Trips in Tulum, Camp-Style | Queerness Experiences" description={"Bring 3 or more friends or join the waitlist. Adventure, dance, family and team camps in Tulum with cenotes, local food and a queer local guide. Starting at $4,000 USD per person for 4 days and 5 nights."}>
+<Layout title="Queer Group Trips in Tulum, Camp-Style | Queerness Experiences" description={"Camp spirit, villa comfort: a private villa with a pool, every day planned for you by a queer local. From $2,000 USD per person."}>
 
 <header class="head">
   <div class="head-top">
@@ -48,9 +57,12 @@ const stripAdventure = [
   </div>
   <div class="head-cols">
   <div class="head-left">
-  <p class="head-body">Summer camp, reimagined for sapphic, queer, and trans grownups, with Mexican flair. Every trip is personalized and every activity is mix and match. Bring your friends and I'll build the itinerary, or join the waitlist for our bigger camps.</p>
+  <p class="head-body"><strong>Camp spirit, villa comfort.</strong> Summer camp for sapphic, queer, and trans grownups, with Mexican flair.</p>
+  <p class="head-body head-body-2">Your home base is a <strong>private villa with its own pool</strong>, picked for your group. Then every day has day camp vibes.</p>
+  <p class="head-body head-body-2">Dates for the 2027 group trips are coming soon. Want to come sooner? Bring 3 or more friends and I'll build the full trip itinerary.</p>
   <a class="rating-pill" href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">★★★★★ 5.0 · 19 Google reviews of our tours</a>
   <div class="head-chips">
+    <span class="head-chip">Private villa with a pool</span>
     <span class="head-chip">Every camp focuses on slow travel</span>
     <span class="head-chip">Exploring cenotes</span>
     <span class="head-chip">Kayaking the biosphere</span>
@@ -58,12 +70,11 @@ const stripAdventure = [
     <span class="head-chip">Arts and crafts</span>
     <span class="head-chip">Birdwatching</span>
     <span class="head-chip">Pre-Hispanic and Mexican food</span>
-    <span class="head-chip">Stories with people who get it</span>
   </div>
   </div>
   <div class="hero-grid">
     <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
-    <img src="/images/tulum-cenote-swing-camp-queerness.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
+    <img src="/images/tulum-cenote-swing-camp-queerness.jpeg" alt="Swinging out over a cenote on a group trip in Tulum">
     <img src="/images/tulum-lagoon-birdwatching-binoculars.jpeg" alt="Birdwatching with binoculars near a lagoon in Tulum">
     <img src="/images/tulum-friends-laughing-over-drinks.jpg" alt="Friends laughing together over drinks in Tulum">
   </div>
@@ -99,16 +110,18 @@ const stripAdventure = [
 
 <section class="glance" aria-label="Camp at a glance">
   <div class="glance-grid">
-    <div><span class="glance-k">From</span><span class="glance-v">$4,000 USD per person</span></div>
-    <div><span class="glance-k">Length</span><span class="glance-v">4 days, 5 nights</span></div>
-    <div><span class="glance-k">Group size</span><span class="glance-v">3 to 13 people</span></div>
+    <div><span class="glance-k">Group size</span><span class="glance-v">Private groups of 3 or more. Camps I host: up to 16. Larger group? We adjust.</span></div>
     <div><span class="glance-k">Stay</span><span class="glance-v">Private villa with a pool</span></div>
-    <div><span class="glance-k">Includes</span><span class="glance-v">Airport pickups, most meals, all activities and classes</span></div>
+    <div><span class="glance-k">Includes</span><span class="glance-v">Airport pickups, most meals, all activities and classes. Group rates available.</span></div>
     <div><span class="glance-k">Not included</span><span class="glance-v">Flights and alcohol</span></div>
+  </div>
+  <div class="glance-acc faq-item">
+    <input type="checkbox" id="gpricing">
+    <label class="faq-q" for="gpricing">Pricing<span class="tog">+</span></label>
+    <div class="faq-a"><div class="faq-a-inner"><strong>Short trip (3 to 4 days):</strong> from $2,000 USD per person.<br><strong>Full trip (7 to 8 days):</strong> from $4,000 USD per person.<br>Group rates are available.</div></div>
   </div>
 </section>
 
-<WhyUs />
 
 <MediaStrip items={stripFood} id="strip-food" label="Food and moments from our trips" />
 
@@ -116,7 +129,7 @@ const stripAdventure = [
   <div class="reviews-inner">
   <p class="sec-eye">Our reviews</p>
   <h2>What people say</h2>
-  <p class="reviews-sub">Reviews from our Tulum tours, guided by the same person who leads the camps.</p>
+  <p class="reviews-sub">We've had the privilege of working with amazing people. This is what they say about our Tulum tours, guided by the same person who leads the camps.</p>
   <p class="scroll-hint">← swipe to read more →</p>
   <div class="review-scroll">
     <div class="rcard">
@@ -152,22 +165,25 @@ const stripAdventure = [
 
 <!-- PICK YOUR CAMP -->
 <section class="camp-types" id="camps">
-  <p class="sec-eye">Step 1: Pick your camp</p>
-  <h2>Queer camps tailored<br>to your group</h2>
-  <p class="camp-types-lead">The camp you pick sets the focus. Mix and match activities from any of them.</p>
+  <p class="sec-eye">Step 1: Pick your camp style</p>
+  <h2>Group trips tailored<br>for camp style vibes</h2>
+  <p class="camp-types-lead">Every trip is a private group trip built around your group. The camp style you pick sets the focus, and you can mix and match activities from any of them.</p>
+  <div class="villa-feature">
+    <p class="villa-feature-k">Every trip is based in</p>
+    <h3>A private villa with its own pool</h3>
+    <p>Picked for your group, with room for slow mornings, lounging by the pool, and unstructured time together.</p>
+  </div>
   <div class="camp-inc">
-    <span class="camp-inc-k">Every camp has</span>
-    <span class="start-chip">A queer Tulum local planning every day</span>
+    <span class="camp-inc-k">Every trip has</span>
+    <span class="start-chip">A queer Tulum local planning every single excursion</span>
     <span class="start-chip">Great local food, tailored to dietary needs</span>
     <span class="start-chip">Cenotes</span>
-    <span class="start-chip">One private villa with a pool</span>
-    <span class="start-chip">Small groups of 3 to 13</span>
+    <span class="start-chip">Groups of 3 to 16</span>
   </div>
   <div class="camp-type-grid">
     <div class="camp-type camp-type-adventure">
       <img class="camp-type-photo" src="/images/monkey-canoe-paddle.jpg" alt="Santi smiling while paddling a canoe on a lagoon near Tulum" style="object-position:center 30%;">
       <h3>Adventure Camp</h3>
-      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>More time outdoors, in the jungle and biosphere reserve.</p>
       <ul>
         <li>Kayak at sunset on the lagoon</li>
@@ -179,7 +195,6 @@ const stripAdventure = [
     <div class="camp-type camp-type-dance">
       <video class="camp-type-photo" src="/images/dance-class-clip.mp4" poster="/images/dance-class-pose.jpg" autoplay muted loop playsinline preload="auto" aria-label="Dancers stepping together in a dance class near Tulum" style="object-position:center 50%;"></video>
       <h3>Dance Camp</h3>
-      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>Explore your body through dance, with no gender roles.</p>
       <ul>
         <li>Salsa, bachata, vogue, and waacking</li>
@@ -191,7 +206,6 @@ const stripAdventure = [
     <div class="camp-type camp-type-family">
       <img class="camp-type-photo" src="/images/tours-gallery-picnic.jpg" alt="Three friends at a picnic table with fresh fruit and watercolors near Tulum" style="object-position:center 25%;">
       <h3>Family Camp</h3>
-      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>For queer families, at a pace that works for every age.</p>
       <ul>
         <li>Picnics and easy outdoor days</li>
@@ -203,7 +217,6 @@ const stripAdventure = [
     <div class="camp-type camp-type-team">
       <img class="camp-type-photo" src="/images/hero-jungle-group.jpg" alt="A group of friends smiling together on a jungle trail near Tulum" style="object-position:center 30%;">
       <h3>Team Bonding Camp</h3>
-      <p class="camp-price"><strong>From $4,000 USD per person</strong><span>4 days, 5 nights. Longer trips available.</span></p>
       <p>For businesses and organizations, built around your team.</p>
       <ul>
         <li>Shared activities and shared meals</li>
@@ -213,8 +226,8 @@ const stripAdventure = [
       <a href="#activities" class="camp-type-link">See all possible activities ↓</a>
     </div>
   </div>
-  <p class="camp-swipe">← swipe to see all four camps →</p>
-  <p class="camp-types-else"><strong>Don't see your camp?</strong> We build trips around anything your group is into. Tell us what you're dreaming up and we'll make it happen.</p>
+  <p class="camp-swipe">← swipe to see all four camp styles →</p>
+  <p class="camp-types-else"><strong>Don't see your style?</strong> We build trips around anything your group is into. Tell us what you're dreaming up and we'll make it happen.</p>
 </section>
 
 <!-- "WHAT THESE TRIPS ACTUALLY ARE" — pulled 2026-09-12, written for multiple group trips, doesn't fit Camp Queerness alone. Full markup preserved in git history, may reuse pieces of this copy elsewhere later. -->
@@ -274,7 +287,7 @@ const stripAdventure = [
   <div class="activity-group activity-group-comfort comfort">
     <div class="act-cover"><img src="/images/tulum-live-drawing-session-comfort-zone.jpeg" alt="A friend posing while another sketches a live drawing in Tulum" style="object-position:center 44%;" loading="lazy"></div>
     <p class="comfort-h">Expand your comfort zone</p>
-    <p class="comfort-p">Totally optional. Try something new, with people who get it.</p>
+    <p class="comfort-p">Totally optional. Try something new with your group, or keep it private.</p>
     <div class="stay-chips">
       <span class="stay-chip">Singing classes</span>
       <span class="stay-chip">Pose for a private live drawing session</span>
@@ -287,9 +300,9 @@ const stripAdventure = [
 
 <!-- SAMPLE WEEK -->
 <section class="faq" id="sample-week">
-  <p class="sec-eye">Step 3: What 4 days can look like</p>
+  <p class="sec-eye">Step 3: What a short trip can look like</p>
   <h2>A sample camp</h2>
-  <p class="week-lead">This is a sample 4 day, 5 night camp, our starting trip. Longer trips add more days, like a jungle day or extra free time. Every group is different and every activity is optional. Adventure, Dance, Family, and Team camps add more of their own focus on top of this.</p>
+  <p class="week-lead">This is a sample short trip. Full trips run 7 to 8 days and add more days, like a jungle day or extra free time. Every group is different and every activity is optional. Adventure, Dance, Family, and Team camps add more of their own focus on top of this.</p>
   <div class="faq-list">
     <div class="faq-item">
       <input type="checkbox" id="wk1">
@@ -298,23 +311,23 @@ const stripAdventure = [
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk2">
-      <label class="faq-q" for="wk2">Day 1: Cenote + traditional Mayan feast<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Swim in a private, crystal clear cenote, then share a traditional Mayan feast.</div></div>
+      <label class="faq-q" for="wk2">Day 1: Cenote + pre-Hispanic dinner<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner"><strong>Daytime:</strong> Swim in a private, crystal clear cenote.<br><strong>Evening:</strong> A pre-Hispanic dinner at one of Tulum's highly rated restaurants.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk3">
-      <label class="faq-q" for="wk3">Day 2: River float + cooking class<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Float down canals built by the ancient Mayans, with time to relax and nap. In the evening, a hands-on cooking class and a shared meal of local food.</div></div>
+      <label class="faq-q" for="wk3">Day 2: River float, cooking class + mezcal tasting<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner"><strong>Daytime:</strong> Float down canals built by the ancient Mayans, with time to relax and nap.<br><strong>Evening:</strong> A hands-on cooking class, a shared meal of local food, and a mezcal tasting.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk4">
       <label class="faq-q" for="wk4">Day 3: Free day and special activities<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Hang out by the pool, explore Tulum on your own, or add a special activity. Rest, play, or try something new.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Hang out by the pool, go to the beach, explore Tulum on your own, or add a special activity. Rest, play, or try something new. We'll help you coordinate all of it.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk5">
       <label class="faq-q" for="wk5">Day 4: Art and community<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">A creative day with a local community center: make something with your hands, move together, and give back, then share stories at night.</div></div>
+      <div class="faq-a"><div class="faq-a-inner"><strong>Daytime:</strong> A creative day with <a href="https://instagram.com/ladle.mx" target="_blank" rel="noopener">LADLE</a>, a local community center: make something with your hands, move together, and give back.<br><strong>Evening:</strong> A going away party featuring some of the most creative people in Tulum.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="wk6">
@@ -331,16 +344,19 @@ const stripAdventure = [
 
 <section class="bleed" style="--bleed:var(--bone);background:var(--bone);padding:var(--s-md) var(--s-sm) var(--s-md);max-width:1120px;margin:0 auto;">
   <p class="sec-eye">Home base</p>
-  <h2>Where<br>you'll stay</h2>
-  <p class="stay-lead">We choose the villa based on your group size.</p>
+  <h2>Where you'll stay</h2>
+  <p class="stay-lead">A private villa with its own pool, chosen for your group size, with space for slow, unstructured time together.</p>
   <div class="stay-chips">
-    <span class="stay-chip">Private villa with a private pool</span>
+    <span class="stay-chip">Birds in the morning</span>
+    <span class="stay-chip">A private pool to lounge by</span>
+    <span class="stay-chip">Food cooked by a private chef</span>
+    <span class="stay-chip">Hear the jungle at night</span>
     <span class="stay-chip">Quiet neighborhood</span>
     <span class="stay-chip">Just outside Tulum town center</span>
-    <span class="stay-chip">Easy to explore in free time</span>
-    <span class="stay-chip">Hear the jungle at night</span>
   </div>
 </section>
+
+<MediaStrip items={stripStay} id="strip-stay" label="Slow days and evenings on our trips" />
 
 <!-- CAMP QUEERNESS — the whole page is this, not boxed as one card among others -->
 <section class="bleed" style="--bleed:var(--white);background:var(--white);padding:var(--s-sm) var(--s-sm);max-width:1120px;margin:0 auto;">
@@ -355,6 +371,8 @@ const stripAdventure = [
 <!-- LUXURY LESBIANS — paused for now, focusing on Camp Queerness. Card removed 2026-09-11, full markup preserved in git history if reviving later. -->
 
 <!-- PARTNER WITH TRIP HOSTS -->
+<MediaStrip items={stripNight} id="strip-night" label="Community, creativity and dancing on our trips" />
+
 <section class="partner" id="partners">
   <div class="partner-inner">
     <div class="partner-text">
@@ -384,17 +402,17 @@ const stripAdventure = [
     <div class="faq-item">
       <input type="checkbox" id="gfaq3">
       <label class="faq-q" for="gfaq3">How is this different from other queer and sapphic trips?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">These trips are hosted by Santi Solis, founder of Queerness Experiences and a bicultural, bilingual, queer and trans biologist trained at UCLA, who created Camp Queerness and has been running tours for queer and trans travelers in Tulum for years. That means insight into Mexico you can only get from a local.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">These trips are hosted by Santi Solis, founder of Queerness Experiences and a bicultural, bilingual, queer and trans biologist trained at UCLA, who created these trips and has been running tours for queer and trans travelers in Tulum for years. That means insight into Mexico you can only get from a local.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-min">
       <label class="faq-q" for="gfaq-min">How many people do I need for a private trip?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">From 3 to 13 people. If you have a group of three or more friends, we can arrange a camp for you. For one or two people, take a look at the <a href="/tours">tours</a>.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Private groups start at 3 people, and camps I host go up to 16. Have a bigger group? We can adjust. If you have three or more friends, we can arrange a trip for you. For one or two people, take a look at the <a href="/tours">tours</a>.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-price">
-      <label class="faq-q" for="gfaq-price">How much does a camp cost?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Camps start at $4,000 USD per person for 4 days and 5 nights, flights not included. That covers your private villa with a private pool, most meals, airport pickup and drop-off, local transport, and your activities. Everything is flexible: we can add or remove nights, and the final price depends on your dates, your group size, and the activities you pick. Group rates are available. Tell us about your group and we'll send you a quote.</div></div>
+      <label class="faq-q" for="gfaq-price">How much does a group trip cost?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Short trips (3 to 4 days) start at $2,000 USD per person and full trips (7 to 8 days) start at $4,000 USD per person, flights not included. That covers your private villa with a private pool, most meals, airport pickup and drop-off, local transport, and your activities. Everything is flexible: we can add or remove nights, and the final price depends on your dates, your group size, and the activities you pick. Group rates are available. Tell us about your group and we'll send you a quote.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-incl">
@@ -408,8 +426,8 @@ const stripAdventure = [
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq1">
-      <label class="faq-q" for="gfaq1">Who can join Camp Queerness?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Camp Queerness is specifically for queer, sapphic, and trans travelers.</div></div>
+      <label class="faq-q" for="gfaq1">Who can join these trips?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">These trips are specifically for queer, sapphic, and trans travelers.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-reserve">
@@ -421,7 +439,7 @@ const stripAdventure = [
 </section>
 
 <section style="background:var(--white);padding:var(--s-sm) var(--s-sm) var(--s-md);text-align:center;">
-  <a href="/waitlist" class="btn-p" style="display:inline-block;">Join the Waitlist →</a>
+  <a href="/waitlist" class="btn-p" style="display:inline-block;">Get 2027 trip updates →</a>
 </section>
 
 <!-- HOST CTA moved to /bring-your-group -->
@@ -459,6 +477,7 @@ a{color:inherit;text-decoration:none;}
 .head-top{position:relative;overflow:hidden;margin:calc(var(--s-md) * -1) calc(var(--s-sm) * -1) 0;padding:var(--s-md) var(--s-sm) var(--s-md);}
 .shape-y{position:absolute;top:0;right:0;width:40%;height:100%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
 .head-body{font-size:19px;line-height:1.6;color:rgba(255,255,255,0.95);position:relative;z-index:2;max-width:640px;}
+.head-body-2{margin-top:12px;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:4px;position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:19px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
@@ -484,7 +503,7 @@ a{color:inherit;text-decoration:none;}
 .activity-group-learn{background:rgba(27,77,107,0.07);}
 .activity-group .activity-box{background:var(--white);}
 .mini-carousel{position:relative;overflow:hidden;aspect-ratio:4/3;max-width:520px;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);margin:var(--s-md) 0 var(--s-md);}
-.mini-carousel input{position:absolute;opacity:0;pointer-events:none;}
+.mini-carousel input{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
 .mini-carousel-track{display:flex;width:300%;height:100%;transition:transform 0.4s ease;}
 .mini-carousel-track img{width:33.3333%;height:100%;object-fit:cover;flex-shrink:0;}
 .mini-carousel-2 .mini-carousel-track{width:200%;}
@@ -538,9 +557,11 @@ footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px sol
 .glance-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:var(--s-sm) var(--s-md);}
 .glance-grid div{display:flex;flex-direction:column;gap:2px;}
 .glance-k{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--yellow);}
+.glance-acc{max-width:1120px;margin:var(--s-sm) auto 0;border:3px solid var(--dark);}
+.glance-acc .faq-q{padding-top:14px;padding-bottom:14px;}
 .glance-v{font-family:var(--fb);font-size:15px;font-weight:700;color:var(--white);line-height:1.3;}
 @media(min-width:900px){.glance{padding:var(--s-sm) 40px;}.glance-grid{grid-template-columns:repeat(3,1fr);}}
-.more-toggle{position:absolute;opacity:0;pointer-events:none;}
+.more-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
 .more-wrap{display:none;}
 .more-toggle:checked ~ .more-wrap{display:contents;}
 .more-btn{grid-column:1 / -1;cursor:pointer;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);padding:6px 0;}
@@ -575,6 +596,11 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 .camp-type-link{margin-top:auto;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--magenta);}
 .camp-types .camp-type-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:20px;padding:0 10px 16px 0;-webkit-overflow-scrolling:touch;}
 .camp-types .camp-type{flex:0 0 82%;scroll-snap-align:start;}
+.villa-feature{background:var(--yellow);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);padding:20px;margin:var(--s-md) 0 var(--s-sm);}
+.villa-feature-k{font-family:var(--fb);font-size:12.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark);margin:0 0 6px;}
+.villa-feature h3{font-family:var(--ff);font-size:26px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin:0 0 8px;}
+.villa-feature p:last-child{font-size:17px;line-height:1.55;color:var(--dark);margin:0;max-width:640px;}
+@media(min-width:720px){.villa-feature{padding:28px 32px;}.villa-feature h3{font-size:36px;}}
 .camp-swipe{font-size:13px;color:var(--muted);margin:8px 0 0;}
 @media(min-width:600px){.camp-types .camp-type{flex-basis:44%;}}
 @media(min-width:960px){.camp-types .camp-type-grid{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;padding:0 10px 10px 0;}.camp-types .camp-type{flex:none;}.camp-swipe{display:none;}.camp-type-photo{aspect-ratio:4/3 !important;}}
@@ -649,13 +675,13 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 @media(min-width:900px){.partner-inner{flex-direction:row;align-items:center;justify-content:space-between;gap:var(--s-lg);}}
 .head-left{display:contents;}
 @media(min-width:900px){.head-left{display:block;}}
-.stay-lead{font-size:19px;font-weight:500;line-height:1.6;color:var(--dark);margin-top:var(--s-sm);}
-.stay-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--s-sm);}
-.stay-chip{background:var(--white);border:2px solid var(--dark);border-radius:999px;padding:8px 18px;font-size:14.5px;font-weight:700;color:var(--dark);}
+.stay-lead{font-size:18px;font-weight:500;line-height:1.5;color:var(--dark);margin-top:var(--s-sm);}
+.stay-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.stay-chip{background:var(--white);border:2px solid var(--dark);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:700;line-height:1.3;color:var(--dark);}
 .comfort{margin-top:var(--s-md);}
 .comfort-h{font-family:var(--ff);font-size:24px;line-height:1.1;color:var(--dark);margin-bottom:var(--s-sm);}
 .comfort-p{font-size:17px;line-height:1.6;color:var(--muted);}
-.week-lead{font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin:var(--s-sm) 0 var(--s-md);}
+.week-lead{font-size:17px;line-height:1.6;color:var(--muted);max-width:640px;margin:var(--s-sm) 0 var(--s-sm);}
 .give-back{margin-top:var(--s-md);}
 .give-back p:last-child{font-size:18px;line-height:1.6;color:var(--dark);max-width:640px;}
 .camp-type-photo{display:block;max-width:none;width:calc(100% + 44px);margin:-22px -22px 16px;aspect-ratio:3/2;object-fit:cover;border-bottom:3px solid var(--dark);}
@@ -663,7 +689,7 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 .head .hero-grid{width:100%;max-width:none;}
 .head-chip{flex:1 1 auto;text-align:center;}
 .activity-group{position:relative;}
-.act-toggle{position:absolute;opacity:0;pointer-events:none;}
+.act-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
 .activity-group .activity-group-h{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin:0;}
 .activity-group .activity-group-h::after{content:'+';font-family:var(--fb);font-size:30px;line-height:1;color:var(--dark);}
 .act-toggle:checked ~ .activity-group-h{margin-bottom:var(--s-sm);}

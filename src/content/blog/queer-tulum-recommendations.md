@@ -1,5 +1,6 @@
 ---
 title: "Free LGBTQ+ Tulum Guide: Local Recommendations From the Founder of a Queer Tour Agency"
+seoTitle: "Free LGBTQ+ Tulum Guide: Local Tips"
 description: "Free LGBTQ+ Tulum recommendations from a queer local: a pre-Hispanic restaurant, specialty coffee, a queer-friendly bar and how to get around."
 keyword: "lgbtq tulum"
 pubDate: 2026-01-25
@@ -182,7 +183,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <p><strong>Classic Mexican music.</strong> The songs you'll hear at weddings, house parties, karaoke, and just about anywhere people are out drinking.</p>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/34CvMlQhe54w7xJTqGFu0J?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <p style="margin-top:16px;"><strong>Modern songs I'm obsessed with.</strong> My collection of my favorite music in Spanish. This playlist has queer Latinx reggaetoneras, rappers, Indigenous singers (like Maki, a Mapuche reggaetonera; the Mapuche are an Indigenous people of Chile and Argentina), as well as, of course, Karol G and Bad Bunny.</p>
+    <p style="margin-top:16px;"><strong>Modern songs I'm obsessed with.</strong> My collection of my favorite music in Spanish. This playlist has queer Latinx reggaetoneras, rappers, Indigenous singers (like Isleñya Antumalen, a Mapuche reggaetonera, with the song "Maki"; the Mapuche are an Indigenous people of Chile and Argentina), as well as, of course, Karol G and Bad Bunny.</p>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1DdS3SWql2Td0n6q9GLD6s?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     <label for="racc7" class="post-acc-close">− Close</label>
   </div></div>

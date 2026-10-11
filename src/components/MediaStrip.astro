@@ -22,8 +22,16 @@ const { items = [], id = 'media-strip', label = 'Photos from our trips' } = Astr
       track.scrollBy({ left: Number((b as HTMLElement).dataset.dir) * 300, behavior: 'smooth' });
     }));
     const nav = sec.querySelector('.media-strip-nav') as HTMLElement;
-    const fit = () => { nav.style.display = track.scrollWidth <= track.clientWidth + 2 ? 'none' : ''; };
+    const left = sec.querySelector('.scroll-arrow[data-dir="-1"]') as HTMLElement;
+    const right = sec.querySelector('.scroll-arrow[data-dir="1"]') as HTMLElement;
+    const edges = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      left.classList.toggle('is-hidden', track.scrollLeft <= 2);
+      right.classList.toggle('is-hidden', track.scrollLeft >= max - 2);
+    };
+    const fit = () => { nav.style.display = track.scrollWidth <= track.clientWidth + 2 ? 'none' : ''; edges(); };
     fit(); window.addEventListener('resize', fit);
+    track.addEventListener('scroll', edges, { passive: true });
     track.querySelectorAll('video').forEach((v) => {
       const vid = v as HTMLVideoElement;
       const tryPlay = () => { vid.muted = true; const p = vid.play(); if (p) p.catch(() => {}); };
@@ -43,7 +51,9 @@ const { items = [], id = 'media-strip', label = 'Photos from our trips' } = Astr
 .media-strip-track > :first-child{margin-left:auto;}
 .media-strip-track > :last-child{margin-right:auto;}
 .media-strip-track img,.media-strip-track video{flex:0 0 72%;max-width:300px;height:auto;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);scroll-snap-align:start;background:var(--bone);}
-.media-strip-nav{display:flex;justify-content:flex-end;gap:16px;padding:var(--s-xs, 8px) var(--s-sm) 0;}
+.media-strip-nav{display:flex;justify-content:space-between;gap:16px;padding:var(--s-xs, 8px) var(--s-sm) 0;}
+.media-strip-nav .scroll-arrow{transition:opacity 0.2s ease;}
+.media-strip-nav .scroll-arrow.is-hidden{opacity:0;pointer-events:none;}
 @media(min-width:900px){
   .media-strip-track{padding:4px 40px 8px;scroll-padding:0 40px;}
   .media-strip-track img,.media-strip-track video{flex:0 0 280px;max-width:none;width:280px;height:auto;}

@@ -63,12 +63,12 @@ const PIXEL_ID = '';
       if (/^Europe\//.test(tz)) return;
       var g = document.createElement('script');
       g.async = true;
-      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-6S30NEBWNC';
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-SZL9YH9KVF';
       document.head.appendChild(g);
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
       window.gtag('js', new Date());
-      window.gtag('config', 'G-6S30NEBWNC');
+      window.gtag('config', 'G-SZL9YH9KVF');
       (function (c, l, a, r, i, t, y) {
         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
         t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
@@ -212,5 +212,24 @@ const PIXEL_ID = '';
     })();
   </script>
 
+  <script is:inline>
+    // Open/close boxes (tours, FAQs, reviews): keep the page exactly where it was so it never jumps.
+    (function () {
+      var moved = false;
+      ['wheel', 'touchmove', 'keydown'].forEach(function (e) { window.addEventListener(e, function () { moved = true; }, { passive: true }); });
+      document.addEventListener('click', function (ev) {
+        var lab = ev.target && ev.target.closest ? ev.target.closest('label[for]') : null;
+        if (!lab) return;
+        var inp = document.getElementById(lab.getAttribute('for'));
+        if (!inp || inp.type !== 'checkbox') return;
+        var y = window.scrollY, t0 = performance.now(); moved = false;
+        (function tick() {
+          if (moved) return;
+          if (Math.abs(window.scrollY - y) > 2) window.scrollTo({ top: y, behavior: 'instant' });
+          if (performance.now() - t0 < 600) requestAnimationFrame(tick);
+        })();
+      }, true);
+    })();
+  </script>
 </body>
 </html>

@@ -1,12 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Book an LGBTQ+ Tour in Tulum | Queerness Experiences" description={"Book an LGBTQ+ tour in Tulum for queer and trans travelers. Tell me your dates and I'll reply within 24 hours."}>
+<Layout title="Book a Queer-Led Tulum Tour | Queerness Experiences" description={"Tell me your dates and which tour interests you. A queer Tulum local replies within 24 hours and handles the rest."}>
 
 <section class="contact" id="contact">
   <p class="sec-eye">Book a tour</p>
   <h1>When are you<br>arriving?</h1>
   <p class="contact-lead">Tell me your dates and which tour interests you. I'll reply within 24 hours.</p>
+  <div class="group-callout">
+    <p class="group-callout-eye">Bringing 3 or more people?</p>
+    <h2>Plan a private group trip</h2>
+    <p>Camp spirit, villa comfort: a private villa with a pool, with every day planned around your group by a queer Tulum local.</p>
+    <a href="/bring-your-group" class="group-callout-btn">Plan a group trip →</a>
+  </div>
   <form class="form" name="contact" method="POST" data-netlify="true" action="/thank-you">
     <input type="hidden" name="form-name" value="contact" />
     <div style="display:flex;gap:12px;">
@@ -26,19 +32,25 @@ import Layout from '../layouts/Layout.astro';
         <label class="tour-check"><input type="checkbox" name="tour" value="Stories Behind the Storefronts"> Stories Behind the Storefronts</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Food Tour"> Food Tour</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Monkey Spotting"> Monkey Spotting</label>
-        <label class="tour-check"><input type="checkbox" name="tour" value="Join me for an activity"> Join me for an activity (not a tour)</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Not sure yet"> Not sure yet, help me choose</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Other"> Other</label>
       </div>
     </div>
-    <div class="camp-interest-box">
-      <label class="tour-check" style="background:var(--bone);">
-        <input type="checkbox" name="tour" value="Interested in a private group camp">
-        Planning a trip with 3 or more people? I can plan a private group camp for you, starting at $4,000 USD per person for 4 days and 5 nights.
-      </label>
-    </div>
     <div><label class="fl">Tell me more about you and what you're looking for</label><textarea class="fi" name="message" rows="3" placeholder="A little about your trip, your group, or what you're hoping for" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
     <button type="submit" class="fsub">Submit</button>
+  </form>
+</section>
+
+<section class="contact activity" id="activity">
+  <p class="sec-eye">Not a tour</p>
+  <h2>Join me for<br>an activity</h2>
+  <p class="contact-lead">Most weeks I'm out dancing, drawing, or at the theatre in Spanish, and you're welcome to come along. Leave your email and when you'll be in Tulum, and I'll send you what's coming up.</p>
+  <form class="form" name="join-activity" method="POST" data-netlify="true" action="/thank-you">
+    <input type="hidden" name="form-name" value="join-activity" />
+    <div><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+    <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+    <div><label class="fl">When will you be in Tulum?</label><input class="fi" type="text" name="dates" placeholder="e.g. July 12–19" required></div>
+    <button type="submit" class="fsub">Send</button>
   </form>
 </section>
 
@@ -49,5 +61,10 @@ import Layout from '../layouts/Layout.astro';
   @media(max-width:479px){.tour-checks{grid-template-columns:1fr;}}
   .tour-check{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--dark);padding:11px 14px;font-family:var(--fb);font-size:14.5px;color:var(--dark);cursor:pointer;}
   .tour-check input{width:18px;height:18px;accent-color:var(--magenta);flex-shrink:0;cursor:pointer;}
-  .camp-interest-box{margin-top:var(--s-sm);}
+  .group-callout{background:var(--yellow);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:20px;margin:0 0 var(--s-md);}
+  .group-callout-eye{font-family:var(--fb);font-size:12.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark);margin:0 0 6px;}
+  .group-callout h2{font-family:var(--ff);font-size:26px;line-height:1.1;text-transform:uppercase;color:var(--dark) !important;margin:0 0 8px;}
+  .contact.activity{border-top:4px solid var(--dark);}
+  .group-callout p{font-size:16px;line-height:1.55;color:var(--dark);margin:0 0 14px;}
+  .group-callout-btn{display:inline-block;background:var(--dark);color:var(--white);padding:13px 18px;font-family:var(--fb);font-size:14px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border:3px solid var(--dark);}
 </style>

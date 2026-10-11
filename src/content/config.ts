@@ -6,6 +6,7 @@ const blog = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),              // shows as the H1 and the SEO <title>
+    seoTitle: z.string().optional(), // optional shorter <title> for search results (the H1 stays `title`)
     description: z.string(),        // meta description — write it to sell the click, include the keyword
     keyword: z.string(),           // the ONE primary keyword this post targets
     pubDate: z.date(),             // publish date

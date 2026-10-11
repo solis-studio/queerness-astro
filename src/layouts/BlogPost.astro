@@ -1,6 +1,6 @@
 ---
 import Layout from './Layout.astro';
-const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, heroPosition, heroCaption, faq, slug } = Astro.props;
+const { title, seoTitle, description, keyword, pubDate, updatedDate, heroImage, heroAlt, heroPosition, heroCaption, faq, slug } = Astro.props;
 const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
 // Every other post funnels to the free recommendations. The
@@ -28,7 +28,7 @@ const faqSchema = faq && faq.length > 0 ? {
   })),
 } : null;
 ---
-<Layout title={`${title} | Queerness Experiences`} description={description}>
+<Layout title={`${seoTitle || title} | Queerness Experiences`} description={description}>
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <article class={`post${isRecsPost ? ' post-wide' : ''}`}>
     <p class="post-kicker">Queer Tulum Guide</p>
@@ -79,7 +79,8 @@ const faqSchema = faq && faq.length > 0 ? {
   <style is:global>
     .post{max-width:680px;margin:0 auto;padding:var(--s-md) var(--s-sm) var(--s-lg);}
     .post-kicker{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:var(--s-sm);}
-    .post-h1{font-family:var(--ff);font-size:38px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin-bottom:12px;letter-spacing:0.02em;}
+    .post-h1{font-family:var(--ff);font-size:38px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin-bottom:12px;letter-spacing:0.02em;overflow-wrap:break-word;}
+    @media(max-width:480px){.post-h1{font-size:29px;letter-spacing:0.01em;}}
     .post-meta{font-family:var(--fb);font-size:13px;color:var(--muted);margin-bottom:var(--s-md);}
     .post-meta a{text-decoration:underline;}
     .post-cta-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--yellow);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);padding:16px;margin-bottom:var(--s-md);text-decoration:none;}
@@ -100,7 +101,7 @@ const faqSchema = faq && faq.length > 0 ? {
     .post-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);}
     /* Accordion — for posts with several short entries readers should skim, not read start to finish */
     .post-acc-item{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:4px 4px 0 var(--dark);overflow:hidden;}
-    .post-acc-toggle{position:absolute;opacity:0;pointer-events:none;}
+    .post-acc-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
     .post-acc-head{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 16px;cursor:pointer;background:var(--bone);font-family:var(--ff);font-size:16px;text-transform:uppercase;color:var(--dark);}
     .post-acc-plus{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta);flex-shrink:0;display:flex;align-items:center;gap:6px;}
     .post-acc-plus-icon{font-size:18px;transition:transform 0.2s;display:inline-block;}

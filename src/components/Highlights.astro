@@ -1,47 +1,65 @@
 ---
 const { kind = 'tours' } = Astro.props;
-const noun = kind === 'trips' ? 'trip' : 'tour';
-const enjoy = kind === 'trips' ? 'their trip' : 'the day';
+const trips = kind === 'trips';
+const noun = trips ? 'trip' : 'tour';
 ---
 <div class="expect-wrap">
   <h2 class="expect-h">What makes these {noun}s special</h2>
-  <div class="expect-box">
-    <div class="expect-row">
-      <p class="expect-k">Created for you</p>
-      <p class="expect-line">Every {noun} is vetted so sapphic, nonbinary, queer, trans, and gender diverse people can just focus on enjoying {enjoy}.</p>
-    </div>
-    <div class="expect-row">
-      <p class="expect-k">Eating deliciously is a priority</p>
-      <div class="food-chips">
-        <span class="food-chip">Local bakeries</span>
-        <span class="food-chip">Locally-owned restaurants</span>
-        <span class="food-chip">Food by an amazing private chef</span>
-        <span class="food-chip">Seasonal local fruit</span>
-        <span class="food-chip">Tailored to dietary restrictions and allergies</span>
-      </div>
-    </div>
-    <div class="expect-row">
-      <p class="expect-k">On these {noun}s, we talk about</p>
-      <div class="food-chips">
-        <span class="food-chip">Cultural nuances</span>
-        <span class="food-chip">Mexican ingenuity</span>
-        <span class="food-chip">Queer activism in Latin America</span>
-      </div>
-    </div>
+  {trips && <p class="expect-story">I never got to go to summer camp, but I worked day camps and overnight camps. Now I get to give queer adults the chance to relive that excitement, joy, curiosity, and connection, with the hobbies we love and the things we're excited to learn.</p>}
+  <input type="checkbox" id="expect-toggle" class="expect-toggle">
+  <div class="expect-tiles">
+    <div class="expect-tile"><strong>Made for you</strong><span>Vetted for sapphic, nonbinary, queer, trans, and gender diverse people.</span></div>
+    <div class="expect-tile"><strong>Led by a local</strong><span>Queer, bicultural, a UCLA-trained biologist. In Tulum since 2017. <a href="/about" class="expect-link">Meet Santi →</a></span></div>
+    <div class="expect-tile"><strong>The people</strong><span>Meet the people behind community initiatives and local businesses.</span></div>
+    {trips ? (
+      <div class="expect-tile"><strong>The food</strong><span>Food that reminds us of our grandparents and puts Mexico on the map as a cultural powerhouse.</span></div>
+    ) : (
+      <div class="expect-tile"><strong>The food</strong><span>Local bakeries, locally owned restaurants, and seasonal fruit. Tailored to any dietary restriction.</span></div>
+    )}
+    {trips ? (
+      <div class="expect-tile expect-extra"><strong>Music and culture</strong><span>Music that stops a whole crowd and gets everyone singing, and the culture behind it.</span></div>
+    ) : (
+      <div class="expect-tile expect-extra"><strong>What we talk about</strong><span>Cultural nuances, queer activism, and Mexican ingenuity.</span></div>
+    )}
+    {trips ? (
+      <div class="expect-tile expect-extra"><strong>Eating deliciously</strong><span>Local bakeries, locally owned restaurants, seasonal fruit, and an amazing private chef. Tailored to any dietary restriction.</span></div>
+    ) : (
+      <div class="expect-tile expect-extra"><strong>Slow travel</strong><span>Your own pace, never rushed.</span></div>
+    )}
   </div>
+  <label for="expect-toggle" class='expect-more-label expect-mobile-only'><span class="em-open">Learn more +</span><span class="em-close">Less −</span></label>
 </div>
 
 <style is:global>
 .expect-wrap{max-width:1120px;margin:0 auto var(--s-md);padding:0;}
 .expect-h{font-family:var(--ff);font-size:22px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin:0 0 var(--s-sm);}
-.expect-line{font-size:16px;line-height:1.5;color:var(--dark);margin:10px 0 0;}
-.expect-box{background:transparent;border:0;border-top:2px solid rgba(0,0,0,0.12);box-shadow:none;padding:var(--s-sm) 0 0;display:flex;flex-direction:column;gap:var(--s-sm);}
-.expect-k{font-family:var(--fb);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:0;}
-.expect-box .food-chips{margin-top:10px;}
-.expect-box .food-chip{background:transparent;border:2px solid var(--dark);}
-@media(min-width:900px){
+.expect-toggle{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;}
+.expect-tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.expect-tile{background:var(--white);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--yellow);padding:12px;display:flex;flex-direction:column;gap:5px;}
+.expect-tile strong{font-family:var(--ff);font-size:16px;line-height:1.1;text-transform:uppercase;color:var(--dark);font-weight:400;}
+.expect-tile span{font-size:14.5px;line-height:1.4;color:var(--dark);}
+.expect-story{font-size:16.5px;line-height:1.5;color:var(--dark);margin:0 0 var(--s-sm);max-width:720px;}
+.expect-link{color:var(--magenta);font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;}
+.expect-extra{padding:10px 12px;}
+.expect-extra span{display:none;}
+.expect-toggle:checked ~ .expect-tiles .expect-extra span{display:block;}
+.expect-chips-extra{display:none;margin-top:var(--s-sm);}
+.expect-toggle:checked ~ .expect-chips-extra{display:block;}
+.expect-k{font-family:var(--fb);font-weight:700;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:var(--s-sm) 0 0;}
+.expect-chips-extra .food-chips{margin-top:10px;}
+.expect-chips-extra .food-chip{background:transparent;border:2px solid var(--dark);}
+.expect-more-label{display:inline-block;margin-top:var(--s-sm);font-family:var(--fb);font-size:14px;font-weight:700;color:var(--dark);border-bottom:2px solid var(--dark);padding-bottom:2px;cursor:pointer;}
+.expect-more-label .em-close{display:none;}
+.expect-toggle:checked ~ .expect-more-label .em-open{display:none;}
+.expect-toggle:checked ~ .expect-more-label .em-close{display:inline;}
+@media(min-width:720px){
   .expect-h{font-size:30px;}
-  .expect-box{flex-direction:row;gap:var(--s-md);}
-  .expect-row{flex:1;}
+  .expect-tiles{grid-template-columns:repeat(3,1fr);gap:16px;}
+  .expect-tile{padding:16px;}
+  .expect-tile strong{font-size:19px;}
+  .expect-tile span{font-size:15.5px;}
+  .expect-extra{padding:16px;}
+  .expect-extra span{display:block;}
+  .expect-mobile-only{display:none;}
 }
 </style>
