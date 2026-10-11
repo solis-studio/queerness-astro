@@ -201,7 +201,7 @@ const PIXEL_ID = '1631971857414818';
     (function () {
       function ga(name, params) { if (window.gtag) window.gtag('event', name, params || {}); }
       function px(name) { if (window.fbq) window.fbq('track', name); }
-      if (/^\/(thank-you|wpath-2026-thank-you)\/?$/.test(location.pathname)) {
+      if (/^\/(thank-you|thank-you-activity|wpath-2026-thank-you)\/?$/.test(location.pathname)) {
         ga('generate_lead', { page: location.pathname });
         px('Lead');
       }
