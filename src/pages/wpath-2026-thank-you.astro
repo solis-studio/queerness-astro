@@ -1,5 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import MediaStrip from '../components/MediaStrip.astro';
+const stripTulum = [
+  { src: '/images/tulum-kayak-sunset-lagoon.jpg', alt: 'Two friends kayaking toward a bright orange sunset over the lagoon near Tulum' },
+  { src: '/images/secret-cenote-entrance.jpg', alt: 'Climbing down the hidden entrance to the Secret Cenote near Tulum', pos: 'center 60%' },
+  { src: '/images/secret-cenote-group.jpg', alt: 'Three queer friends laughing together by a cenote near Tulum', pos: 'center 35%' },
+  { src: '/images/tulum-cenote-swing-camp-queerness.jpeg', alt: 'Swinging out over a cenote on a queer group trip in Tulum' },
+  { src: '/images/tulum-mangrove-swim-friends.jpeg', alt: 'Friends swimming through the mangroves in Tulum' },
+  { src: '/images/party-dancing-friends.jpg', alt: 'Queer and trans friends dancing together at a party in Tulum', pos: 'center 38%' },
+];
 ---
 <Layout noindex={true} title="You're Pre-Registered | WPATH 2026 | Queerness Experiences" description={"Thanks for pre-registering for queer and trans LGBTQ+ experiences in Mexico City at WPATH 2026."}>
 
@@ -7,20 +16,30 @@ import Layout from '../layouts/Layout.astro';
   <div class="wpt-inner">
     <p class="wpt-eyebrow">You're on the list</p>
     <h1 class="wpt-title">Thank you for<br>pre-registering.</h1>
-    <p class="wpt-body">We'll reach out as soon as your group reaches the minimum size to confirm, usually between 4 and 6 people per experience. No payment is due until then.</p>
-    <p class="wpt-body">In the meantime, if your plans change or you have questions, just reply to the confirmation email you'll receive shortly.</p>
+    <p class="wpt-body">I'll get back to you within a couple of hours to plan your experience. No payment is due until your group is confirmed.</p>
+    <p class="wpt-body">Questions or a change of plans? Just reply to the confirmation email.</p>
 
     <div class="wpt-tulum">
       <img src="/images/wpath-logo.png" alt="Queerness Experiences" class="wpt-tulum-logo">
       <div>
-        <p class="wpt-tulum-eyebrow">Also by Queerness Experiences</p>
-        <p class="wpt-tulum-text">Queer tours and group trips in Tulum, cenotes, jungle, street food, and the local spots most visitors never find. If your trip includes a stop there, or you're already dreaming about a future one, take a look.</p>
-        <a href="/group-trips/" class="wpt-tulum-btn">Explore Group Trips →</a>
+        <p class="wpt-tulum-eyebrow">Your next queer-friendly trip</p>
+        <p class="wpt-tulum-text">Curious where else in Mexico queer and trans travelers feel at home, beyond Puerto Vallarta and Mexico City? A queer local who has lived in Tulum since 2017 shares what it's really like there.</p>
+        <a href="/blog/is-tulum-queer-trans-friendly/" class="wpt-tulum-btn">Is Tulum LGBTQ+ friendly? →</a>
       </div>
     </div>
-
     <a href="/wpath-2026/" class="wpt-back">← Back to WPATH 2026 experiences</a>
   </div>
+</div>
+
+<div class="wpt-next">
+  <p class="wpt-next-eyebrow">We run experiences there too</p>
+  <h2 class="wpt-next-title">Queer tours and group trips in Tulum</h2>
+  <p class="wpt-next-text">Cenotes, sunset kayaks, the jungle and your people. Every day planned for you by a queer local.</p>
+</div>
+<MediaStrip items={stripTulum} id="strip-wpt-tulum" label="Moments from our queer tours and group trips in Tulum" />
+<div class="wpt-next wpt-next-links">
+  <a href="/group-trips/" class="wpt-next-btn">Queer group trips in Tulum →</a>
+  <a href="/tours/" class="wpt-next-link">See queer Tulum tours →</a>
 </div>
 
 </Layout>
@@ -37,6 +56,14 @@ import Layout from '../layouts/Layout.astro';
   .wpt-tulum-text{font-family:'DM Sans',sans-serif;font-size:15.5px;color:rgba(255,255,255,0.6);line-height:1.7;font-weight:300;margin-bottom:14px;}
   .wpt-tulum-btn{display:inline-block;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#2a1810;background:#b8924a;padding:12px 20px;border-radius:2px;text-decoration:none;}
   .wpt-back{font-family:'DM Sans',sans-serif;font-size:14.5px;color:rgba(255,255,255,0.5);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:2px;}
+
+  .wpt-next{background:#faf6f0;padding:40px 24px 8px;text-align:center;}
+  .wpt-next-eyebrow{font-family:'DM Sans',sans-serif;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:#b8924a;font-weight:600;margin-bottom:8px;}
+  .wpt-next-title{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,8vw,42px);font-weight:600;color:#2e3f52;line-height:1.15;margin:0 auto 12px;max-width:560px;}
+  .wpt-next-text{font-family:'DM Sans',sans-serif;font-size:16.5px;color:#3d3530;line-height:1.6;max-width:480px;margin:0 auto;}
+  .wpt-next-links{padding:8px 24px 48px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+  .wpt-next-btn{display:inline-block;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#faf6f0;background:#2e3f52;padding:14px 22px;border-radius:2px;text-decoration:none;}
+  .wpt-next-link{font-family:'DM Sans',sans-serif;font-size:14.5px;color:#2e3f52;text-decoration:none;border-bottom:1px solid #b8924a;padding-bottom:2px;}
 
   @media(min-width:720px){
     .wpt-wrap{padding:96px 48px;}
