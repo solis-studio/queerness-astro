@@ -47,7 +47,7 @@ const ld = {
   </div>
 </header>
 
-<nav class="tour-crumbs" aria-label="Breadcrumb"><a href="/tours">← All tours</a></nav>
+<nav class="tour-crumbs" aria-label="Breadcrumb"><a href="/tours/">← All tours</a></nav>
 
 <section class="tour-detail">
   <div class="tour-body-inner" set:html={t.body} />
@@ -71,7 +71,7 @@ const ld = {
     <div class="confidence-tile"><strong>Rain or shine</strong><span>Tours happen in any weather, and I adjust the plan on the day.</span></div>
     <div class="confidence-tile"><strong>Direct access to me</strong><span>Ask me anything before and during your trip, and get recommendations tailored to you.</span></div>
   </div>
-  <a class="confidence-link" href="/policies">Read the full cancellation policy →</a>
+  <a class="confidence-link" href="/policies/">Read the full cancellation policy →</a>
 </section>
 
 <section class="cta" id="book">
@@ -115,9 +115,9 @@ const ld = {
 <section class="more-tours" aria-label="More tours">
   <p class="sec-eye">More tours</p>
   <ul class="more-tours-list">
-    {others.map((o) => (<li><a href={`/tours/${o.slug}`}>{o.name}</a></li>))}
+    {others.map((o) => (<li><a href={`/tours/${o.slug}/`}>{o.name}</a></li>))}
   </ul>
-  <a href="/tours" class="more-tours-all">See all tours →</a>
+  <a href="/tours/" class="more-tours-all">See all tours →</a>
 </section>
 
 <section class="group-promo" aria-label="Group trips">
@@ -125,8 +125,8 @@ const ld = {
   <h2>Day camp style group trips for queer grown-ups</h2>
   <p>Dates for the 2027 Tulum group trips are coming soon. Want to come sooner? Bring 3 or more friends and I'll build the itinerary.</p>
   <div class="group-promo-btns">
-    <a href="/group-trips" class="btn-p">See group trips →</a>
-    <a href="/waitlist" class="btn-p group-promo-alt">Get 2027 trip updates →</a>
+    <a href="/group-trips/" class="btn-p">See group trips →</a>
+    <a href="/waitlist/" class="btn-p group-promo-alt">Get 2027 trip updates →</a>
   </div>
 </section>
 </Layout>

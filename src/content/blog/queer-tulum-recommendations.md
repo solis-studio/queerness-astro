@@ -115,7 +115,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
   </div></div>
 </div>
 
-<a href="/tours" style="display:block;background:var(--blue);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:24px;margin:var(--s-md) 0;text-decoration:none;text-align:center;">
+<a href="/tours/" style="display:block;background:var(--blue);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:24px;margin:var(--s-md) 0;text-decoration:none;text-align:center;">
   <img class="post-card-cover" src="/images/secret-cenote-entrance.jpg" alt="Stepping down a wooden ladder into a hidden cenote entrance covered in ferns near Tulum" style="display:block;width:calc(100% + 48px);max-width:none;margin:-24px -24px 18px;aspect-ratio:4/3;object-fit:cover;object-position:center 85%;border-bottom:3px solid var(--dark);" loading="lazy">
   <p style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">Want a local guide to take you to secret spots?</p>
   <span style="display:inline-block;background:var(--yellow);color:var(--dark);padding:12px 22px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;">See the Tours →</span>
@@ -196,7 +196,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <p class="post-sell-eye">Ready to see the real Tulum?</p>
   <p class="post-sell-h">Explore it with a local.</p>
   <div class="post-sell-btns">
-    <a href="/tours" class="post-sell-btn post-sell-btn-m"><strong>Small-Group Tours</strong><span>Cenotes, river floats, and food tours with a queer Tulum local, for sapphic, queer, and trans travelers.</span><em>See the Tours →</em></a>
+    <a href="/tours/" class="post-sell-btn post-sell-btn-m"><strong>Small-Group Tours</strong><span>Cenotes, river floats, and food tours with a queer Tulum local, for sapphic, queer, and trans travelers.</span><em>See the Tours →</em></a>
     <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-sell-btn post-sell-btn-y"><strong>The Full Guidebook</strong><span>Exploring on your own? 3-4 days, fully planned out.</span><em>Get the Guidebook →</em></a>
   </div>
 </div>
@@ -217,7 +217,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <input type="checkbox" id="facc4" class="post-acc-toggle">
   <label for="facc4" class="post-acc-head"><span>Is Tulum, Mexico safe for queer and trans travelers?</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p><strong>Yes.</strong> Tulum is a welcoming place in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></p>
+    <p><strong>Yes.</strong> Tulum is a welcoming place in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-queer-trans-friendly/">Is Tulum LGBTQ+ Friendly?</a></p>
     <label for="facc4" class="post-acc-close">− Close</label>
   </div></div>
 </div>
@@ -226,7 +226,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <input type="checkbox" id="facc5" class="post-acc-toggle">
   <label for="facc5" class="post-acc-head"><span>Is Tulum queer friendly?</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Yes, with real nuance worth understanding before you visit Tulum, Mexico. Here's the honest, local answer: <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum Queer & Trans Friendly?</a></p>
+    <p>Yes, with real nuance worth understanding before you visit Tulum, Mexico. Here's the honest, local answer: <a href="/blog/is-tulum-queer-trans-friendly/">Is Tulum Queer & Trans Friendly?</a></p>
     <label for="facc5" class="post-acc-close">− Close</label>
   </div></div>
 </div>

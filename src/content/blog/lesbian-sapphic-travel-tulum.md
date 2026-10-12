@@ -31,7 +31,7 @@ faq:
 
 A highly curated, exclusive retreat for lesbian, sapphic, queer, and trans professionals 30+. Zero planning required on your end — luxury accommodations and elevated experiences, fully done for you.
 
-[Join the waitlist →](/waitlist?trip=luxury-lesbians-retreat)
+[Join the waitlist →](/waitlist/?trip=luxury-lesbians-retreat)
 
 ## FAQ
 
@@ -55,7 +55,7 @@ A highly curated, exclusive retreat for lesbian, sapphic, queer, and trans profe
   <input type="checkbox" id="lsfaq3" class="post-acc-toggle">
   <label for="lsfaq3" class="post-acc-head"><span>What is the Luxury Lesbians Retreat?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>A highly curated, exclusive retreat for lesbian, sapphic, queer, and trans professionals 30+. Zero planning on your end: luxury accommodations and elevated experiences, fully done for you. <a href="/waitlist?trip=luxury-lesbians-retreat">Join the waitlist</a>.</p>
+    <p>A highly curated, exclusive retreat for lesbian, sapphic, queer, and trans professionals 30+. Zero planning on your end: luxury accommodations and elevated experiences, fully done for you. <a href="/waitlist/?trip=luxury-lesbians-retreat">Join the waitlist</a>.</p>
   </div></div>
 </div>
 

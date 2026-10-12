@@ -9,7 +9,7 @@ const isRecsPost = slug === 'queer-tulum-recommendations';
 const isFriendlyPost = slug === 'is-tulum-queer-trans-friendly';
 const hideTopBanner = isRecsPost || isFriendlyPost;
 const hideBottomCta = isFriendlyPost || isRecsPost;
-const ctaHref = isRecsPost ? 'https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide' : '/blog/queer-tulum-recommendations';
+const ctaHref = isRecsPost ? 'https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide' : '/blog/queer-tulum-recommendations/';
 const ctaTopText = isRecsPost ? 'Want it all planned out, plus a local to message with questions?' : 'Want the free recommendations?';
 const ctaTopLink = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Tulum Guide →';
 const ctaH2 = isRecsPost ? 'Get the full Tulum guidebook' : 'Get my free Tulum recommendations';
@@ -33,7 +33,7 @@ const faqSchema = faq && faq.length > 0 ? {
   <article class={`post${isRecsPost ? ' post-wide' : ''}`}>
     <p class="post-kicker">Queer Tulum Guide</p>
     <h1 class="post-h1">{title}</h1>
-    <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by <a href="/about">Santi Solis</a>, founder of Queerness Experiences</p>
+    <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by <a href="/about/">Santi Solis</a>, founder of Queerness Experiences</p>
 
     <!-- Funnel: top mention, so it's visible before anyone scrolls (recs post + friendliness post move this into the body instead) -->
     {!hideTopBanner && (
@@ -67,7 +67,7 @@ const faqSchema = faq && faq.length > 0 ? {
             <p class="post-cta-text">Our free recommendations are perfect for a day trip in Tulum. Staying longer? The full guidebook has 3-4 days planned out, plus direct email access to me.</p>
             <blockquote class="post-cta-quote"><strong>They MADE my trip to Tulum.</strong> … The website and guide were super helpful.<cite>★★★★★ <a href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">Chashah Johnson, Google review</a></cite></blockquote>
             <div class="post-cta-btn-row">
-              <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
+              <a href="/blog/queer-tulum-recommendations/" class="post-cta-btn">See the Free Tulum Guide →</a>
               <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-cta-btn">Get the Full Guidebook →</a>
             </div>
           </>

@@ -44,7 +44,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/santi-hero-tulum.jpg" alt="Santi laughing in the water near Tulum, wearing a life vest" style="aspect-ratio:4/3;object-position:center 69%;">
-    <a href="/about" class="post-photo-caption">More About Santi →</a>
+    <a href="/about/" class="post-photo-caption">More About Santi →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -59,7 +59,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/group-trips-photo.jpg" alt="A group of queer and trans travelers smiling together on a Queerness Experiences trip in Tulum" style="aspect-ratio:1/1;object-position:center 40%;">
-    <a href="/tours" class="post-photo-caption">Book a Queer Tulum Tour →</a>
+    <a href="/tours/" class="post-photo-caption">Book a Queer Tulum Tour →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -80,7 +80,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <ul class="post-bullets">
   <li>Gender expression here doesn't always look the way it does in the US. It's <strong>woven into daily life</strong> instead of confined to one scene.</li>
   <li>Individual biases exist here like anywhere. But this place makes it possible for me to run tours where people go to the cenote <strong>in their bathing suits after top surgery, or in a bikini while keeping their beard</strong>, and just have an awesome day.</li>
-  <li>The <a href="/tours#tour1"><strong>Secret Cenote Tour</strong></a> is a great option for gender diverse people who want to feel completely at ease in their bathing suit: we get the <strong>cenote all to ourselves</strong>, and it's shaded from the sun.</li>
+  <li>The <a href="/tours/#tour1"><strong>Secret Cenote Tour</strong></a> is a great option for gender diverse people who want to feel completely at ease in their bathing suit: we get the <strong>cenote all to ourselves</strong>, and it's shaded from the sun.</li>
 </ul>
 
 ## A real conversation about language
@@ -88,7 +88,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/camp-queerness-picnic.jpg" alt="Queer travelers sharing a picnic and painting together in the jungle near Tulum" style="aspect-ratio:1/1;object-position:center 80%;">
-    <a href="/group-trips" class="post-photo-caption">See Queer Camp for Grownups →</a>
+    <a href="/group-trips/" class="post-photo-caption">See Queer Camp for Grownups →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -109,7 +109,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col post-two-col-reverse">
   <div>
     <img class="post-photo post-native" src="/images/la-guarida-workshop-group.jpg" alt="A community workshop at La Guarida, a queer-friendly cultural center in Tulum" style="aspect-ratio:1/1;object-position:center 45%;">
-    <a href="/tours#tour3" class="post-photo-caption">Stories Behind the Storefronts Tour: learn more about daily life in Tulum →</a>
+    <a href="/tours/#tour3" class="post-photo-caption">Stories Behind the Storefronts Tour: learn more about daily life in Tulum →</a>
   </div>
   <div>
     <p class="post-sub">Outside queer spaces, there's a high chance you'll be misgendered. Here's why</p>
@@ -200,7 +200,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/hero-grid-cenote-friends.jpg" alt="Queer friends laughing together at a cenote in Tulum, Mexico" style="aspect-ratio:1/1;object-position:center 85%;">
-    <a href="/tours#tour-intro-cenotes" class="post-photo-caption">Book the Intro to Cenotes Tour →</a>
+    <a href="/tours/#tour-intro-cenotes" class="post-photo-caption">Book the Intro to Cenotes Tour →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -227,12 +227,12 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col post-two-col-reverse">
   <div>
     <img class="post-photo post-native" src="/images/secret-cenote-cave.jpg" alt="Entering a secret cenote through the cave on a queer Tulum tour" style="aspect-ratio:1/1;object-position:center 80%;">
-    <a href="/tours#tour1" class="post-photo-caption">Book the Secret Cenote Tour →</a>
+    <a href="/tours/#tour1" class="post-photo-caption">Book the Secret Cenote Tour →</a>
   </div>
   <div>
     <ul class="post-bullets">
       <li>Since 2023, running queer and trans tours and group trips here, I've heard <strong>mostly great things</strong>, and lots of neutral things. People haven't made comments about the situation, in the airport or anywhere else.</li>
-      <li>The <a href="/tours#tour1"><strong>Secret Cenote Tour</strong></a> is a great option for gender diverse people who want to feel completely at ease in their bathing suit: we get the <strong>cenote all to ourselves</strong>, and it's shaded from the sun.</li>
+      <li>The <a href="/tours/#tour1"><strong>Secret Cenote Tour</strong></a> is a great option for gender diverse people who want to feel completely at ease in their bathing suit: we get the <strong>cenote all to ourselves</strong>, and it's shaded from the sun.</li>
       <li>Thinking about a queer destination wedding? Tulum is <strong>legally straightforward and stunning</strong>.</li>
     </ul>
   </div>
@@ -243,7 +243,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/pride-rainbow-fan.jpg" alt="A Pride parade attendee holding a rainbow fan and flag at Tulum Pride" style="aspect-ratio:1/1;object-position:center 20%;">
-    <a href="/group-trips" class="post-photo-caption">See Queer Camp for Grownups →</a>
+    <a href="/group-trips/" class="post-photo-caption">See Queer Camp for Grownups →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -259,7 +259,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col post-two-col-reverse">
   <div>
     <img class="post-photo post-native" src="/images/party-dancing-friends.jpg" alt="Queer and trans friends dancing together at a party in Tulum" style="aspect-ratio:1/1;object-position:center 38%;">
-    <a href="/blog/queer-tulum-recommendations" class="post-photo-caption">See the Free Tulum Guide →</a>
+    <a href="/blog/queer-tulum-recommendations/" class="post-photo-caption">See the Free Tulum Guide →</a>
   </div>
   <div>
     <p>Want our actual coffee shop, restaurant, and bar recommendations, plus the money tricks and how to get around, since <strong>Uber doesn't exist in Tulum</strong>? We don't repeat ourselves here, so it depends on how long you're staying:</p>
@@ -272,7 +272,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
   <p class="post-cta-text">Our free recommendations are perfect for a day trip in Tulum. Staying longer? The full guidebook has 3-4 days planned out, plus direct email access to me.</p>
   <blockquote class="post-cta-quote"><strong>They MADE my trip to Tulum.</strong> … The website and guide were super helpful.<cite>★★★★★ <a href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">Chashah Johnson, Google review</a></cite></blockquote>
   <div class="post-cta-btn-row">
-    <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Tulum Guide →</a>
+    <a href="/blog/queer-tulum-recommendations/" class="post-cta-btn">See the Free Tulum Guide →</a>
     <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-cta-btn">Get the Full Guidebook →</a>
   </div>
 </div>
@@ -346,7 +346,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
   <input type="checkbox" id="facc9" class="post-acc-toggle">
   <label for="facc9" class="post-acc-head"><span>What's the best tour for someone who's gender diverse and wants to feel super comfortable in their bathing suit?</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p><strong>The best option is the Secret Cenote Tour, because we get the cenote all to ourselves.</strong> <a href="/tours#tour1">See the Secret Cenote Tour →</a></p>
+    <p><strong>The best option is the Secret Cenote Tour, because we get the cenote all to ourselves.</strong> <a href="/tours/#tour1">See the Secret Cenote Tour →</a></p>
     <label for="facc9" class="post-acc-close">− Close</label>
   </div></div>
 </div>
@@ -366,7 +366,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
   <p class="post-cta-text">Small-group tours led by a queer, nonbinary Mexican local. Cenotes, local food, and the Tulum most visitors miss. <a class="post-cta-rating" href="https://maps.google.com/?cid=11156748373462575554" target="_blank" rel="noopener">★★★★★ 5.0 · 19 Google reviews</a></p>
   <blockquote class="post-cta-quote">It was also a gift to be guided in these experiences by another queer person as a queer couple.<cite>Madge Dietrich, Google review</cite></blockquote>
   <div class="post-cta-btn-row">
-    <a href="/tours" class="post-cta-btn">Book a Queer Tulum Tour →</a>
-    <a href="/group-trips" class="post-cta-btn">See Group Trips →</a>
+    <a href="/tours/" class="post-cta-btn">Book a Queer Tulum Tour →</a>
+    <a href="/group-trips/" class="post-cta-btn">See Group Trips →</a>
   </div>
 </div>

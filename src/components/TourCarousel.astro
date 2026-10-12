@@ -8,7 +8,7 @@ const list = tours.filter((t) => t.slug !== exclude);
   <h2>{heading}</h2>
   <div class="tc-track">
     {list.map((o) => (
-      <a class="tc-card" href={`/tours/${o.slug}`}>
+      <a class="tc-card" href={`/tours/${o.slug}/`}>
         <img src={o.photo} alt={o.alt} loading="eager" decoding="async" width="600" height="400" style={`object-position:${o.heroPos};`} />
         <span class="tc-name">{o.name}</span>
         <span class="tc-tag">{o.tag}</span>
