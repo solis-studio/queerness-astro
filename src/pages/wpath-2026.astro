@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import MediaStrip from '../components/MediaStrip.astro';
 const stripTulum = [
   { src: '/images/tulum-kayak-sunset-lagoon.jpg', alt: 'Two friends kayaking toward a bright orange sunset over the lagoon near Tulum' },
-  { src: '/images/tulum-lagoon-kayak-sunset-peace-sign.jpeg', alt: 'A kayaker raising both arms in a peace sign at sunset on the lagoon near Tulum' },
   { src: '/images/secret-cenote-entrance.jpg', alt: 'Climbing down the hidden entrance to the Secret Cenote near Tulum', pos: 'center 60%' },
   { src: '/images/secret-cenote-group.jpg', alt: 'Three queer friends laughing together by a cenote near Tulum', pos: 'center 35%' },
   { src: '/images/tulum-cenote-swing-camp-queerness.jpeg', alt: 'Swinging out over a cenote on a queer group trip in Tulum' },
@@ -122,13 +121,15 @@ const stripTulum = [
 
 <!-- WHO WE ARE -->
 <div class="wp-who">
-  <p class="wp-who-eyebrow">Who we are</p>
-  <p class="wp-who-text">Queerness Experiences creates travel for queer and trans people in Mexico City, Tulum and across Latin America. Queer, trans and Mexican-owned, rated 5.0★ on Google.</p>
-  <p class="wp-who-text">We run small-group tours and group trips for queer grown-ups, built so you feel at home from the first hello.</p>
-  <div class="wp-who-links">
-    <a href="/tours/">Queer Tulum tours →</a>
-    <a href="/group-trips/">Queer group trips in Tulum →</a>
+  <p class="wp-who-eyebrow">Why book with us</p>
+  <h2 class="wp-who-title">Mexico City with queer Mexican locals</h2>
+  <div class="wp-who-tiles">
+    <div class="wp-who-tile"><strong>Queer Mexican-run</strong><span>One of the very few tour companies in Mexico run by queer and trans Mexicans.</span></div>
+    <div class="wp-who-tile"><strong>Made for sapphic, queer and trans travelers</strong><span>Every stop chosen with you in mind, from the very first plan.</span></div>
+    <div class="wp-who-tile"><strong>Bilingual guides</strong><span>We navigate gendered Spanish with you, pronouns included.</span></div>
+    <div class="wp-who-tile"><strong>Fits your conference</strong><span>Steps from the Hyatt or a short ride away. Morning, afternoon or evening.</span></div>
   </div>
+  <p class="wp-who-text">Queerness Experiences creates tours and group trips for queer and trans people in Mexico City, Tulum and across Latin America. Rated 5.0★ on Google.</p>
 </div>
 
 <!-- RANGE INTRO -->
@@ -613,11 +614,15 @@ const stripTulum = [
   .wp-tulum-strip-text strong{color:rgba(255,255,255,0.85);}
   .wp-tulum-strip-link{font-size:14.5px;color:var(--wbrass-light);text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:1px;}
 
-  .wp-who{background:var(--wwhite);border-bottom:1px solid var(--wborder);padding:28px 24px;text-align:center;}
-  .wp-who-eyebrow{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);font-weight:600;margin:0 0 10px;}
-  .wp-who-text{font-size:17px;line-height:1.65;color:var(--wink-light);max-width:620px;margin:0 auto 10px;}
-  .wp-who-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;margin-top:14px;}
-  .wp-who-links a{font-size:14.5px;font-weight:500;color:var(--wblue);text-decoration:none;border-bottom:1px solid var(--wbrass);padding-bottom:1px;}
+  .wp-who{background:var(--wwhite);border-bottom:1px solid var(--wborder);padding:32px 20px 28px;text-align:center;}
+  .wp-who-eyebrow{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);font-weight:600;margin:0 0 8px;}
+  .wp-who-title{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,8vw,42px);font-weight:600;color:var(--wblue);line-height:1.15;margin:0 auto 20px;max-width:640px;}
+  .wp-who-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:760px;margin:0 auto 20px;text-align:left;}
+  .wp-who-tile{background:var(--wcream);border:1px solid var(--wborder);border-top:3px solid var(--wbrass);border-radius:4px;padding:14px 12px;}
+  .wp-who-tile strong{display:block;font-size:15.5px;color:var(--wblue);line-height:1.3;margin-bottom:6px;}
+  .wp-who-tile span{display:block;font-size:14.5px;color:var(--wink-light);line-height:1.5;}
+  .wp-who-text{font-size:16px;line-height:1.6;color:var(--wmuted);max-width:620px;margin:0 auto 6px;}
+  @media(min-width:720px){.wp-who-tiles{grid-template-columns:repeat(4,1fr);}}
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
   .wp-range-intro p.wp-range-talk{font-weight:700 !important;color:var(--wblue) !important;}
