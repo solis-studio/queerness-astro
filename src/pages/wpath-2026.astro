@@ -88,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="wp-hero-title">Explore</div>
       <div class="wp-hero-title-sub">Mexico City</div>
     </h1>
-    <p class="wp-hero-sub">Five curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
+    <p class="wp-hero-sub">Small-group experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
     <a href="#register" class="wp-hero-btn">Pre-register now, no cost</a>
     <div class="wp-hero-note">No cost to pre-register · Reserve your interest</div>
 
@@ -107,6 +107,17 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- WHO WE ARE -->
+<div class="wp-who">
+  <p class="wp-who-eyebrow">Who we are</p>
+  <p class="wp-who-text">Queerness Experiences creates travel for queer and trans people in Mexico City, Tulum and across Latin America. Queer, trans and Mexican-owned, rated 5.0★ on Google.</p>
+  <p class="wp-who-text">We run small-group tours and day camp style group trips for queer grown-ups, built so you feel at home from the first hello.</p>
+  <div class="wp-who-links">
+    <a href="/tours/">Queer Tulum tours →</a>
+    <a href="/group-trips/">Queer group trips in Tulum →</a>
   </div>
 </div>
 
@@ -189,7 +200,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="/images/negro-huitlacoche-taco-close.jpg" alt="Blue corn taco with fresh salsas on a clay plate, prehispanic Mexican food" style="object-position: center 60%;">
-      <div class="wp-card-tag">Walking food tour</div>
+      <div class="wp-card-tag">Food walk</div>
       <div class="wp-card-date">Any day</div>
     </div>
     <div class="wp-card-body">
@@ -531,7 +542,7 @@ import Layout from '../layouts/Layout.astro';
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap');
 
-  .wp-banner, .wp-hero, .wp-tulum-strip, .wp-retreat, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
+  .wp-banner, .wp-hero, .wp-who, .wp-tulum-strip, .wp-retreat, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
     --wblue: #2e3f52; --wblue-dark: #1e2d3d; --wblue-mid: #3d5068;
     --wbrass: #b8924a; --wbrass-light: #d4b06e; --wbrass-pale: #f0e6d3;
     --wcopper: #9e5a3a; --wcopper-light: #c07a52;
@@ -591,6 +602,11 @@ import Layout from '../layouts/Layout.astro';
   .wp-tulum-strip-text strong{color:rgba(255,255,255,0.85);}
   .wp-tulum-strip-link{font-size:14.5px;color:var(--wbrass-light);text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:1px;}
 
+  .wp-who{background:var(--wwhite);border-bottom:1px solid var(--wborder);padding:28px 24px;text-align:center;}
+  .wp-who-eyebrow{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);font-weight:600;margin:0 0 10px;}
+  .wp-who-text{font-size:17px;line-height:1.65;color:var(--wink-light);max-width:620px;margin:0 auto 10px;}
+  .wp-who-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;margin-top:14px;}
+  .wp-who-links a{font-size:14.5px;font-weight:500;color:var(--wblue);text-decoration:none;border-bottom:1px solid var(--wbrass);padding-bottom:1px;}
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
   .wp-range-intro p.wp-range-talk{font-weight:700 !important;color:var(--wblue) !important;}
