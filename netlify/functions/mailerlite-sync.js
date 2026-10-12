@@ -22,6 +22,7 @@ function wpathInterests(data) {
   const labels = {
     'date-cooking-class': 'Cooking class',
     'date-roma-condesa': 'Roma/Condesa',
+    'date-polanco-food': 'Polanco food tour',
     'date-san-angel': 'Market',
     'date-chapultepec': 'Chapultepec',
     'date-mezcal': 'Mezcal',

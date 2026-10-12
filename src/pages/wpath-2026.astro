@@ -15,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
     {
       "@type": "Question",
       "name": "What is the group minimum?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Polanco Walking Food Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest." }
     },
     {
       "@type": "Question",
@@ -57,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- BANNER -->
 <div class="wp-banner">
-  <div class="wp-banner-text">5 experiences · <strong>WPATH 2026 · Mexico City</strong></div>
+  <div class="wp-banner-text">6 experiences · <strong>WPATH 2026 · Mexico City</strong></div>
   <a href="#register" class="wp-banner-btn">Pre-register, no cost</a>
 </div>
 
@@ -178,6 +178,34 @@ import Layout from '../layouts/Layout.astro';
       <div class="wp-card-details">
         <p class="wp-card-desc">A taco at a stand with no English menu and it's the best thing you've had all year. A coffee in a courtyard. Neighborhoods that feel alive in a way that's hard to explain. By the end you've seen a side of this city most visitors never find.</p>
         <div class="wp-card-includes">✓ Food & non-alcoholic drink included<br>✓ Transport between stops included</div>
+      </div>
+      <div class="wp-card-footer">
+        <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
+        <a href="#register" class="wp-card-btn">Pre-register</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wp-card">
+    <div class="wp-card-photo-wrap">
+      <img class="wp-card-photo" loading="lazy" src="/images/negro-huitlacoche-taco-close.jpg" alt="Blue corn taco with fresh salsas on a clay plate, prehispanic Mexican food" style="object-position: center 60%;">
+      <div class="wp-card-tag">Walking food tour</div>
+      <div class="wp-card-date">Nov 10–12</div>
+    </div>
+    <div class="wp-card-body">
+      <div class="wp-card-title">Polanco Walking Food Tour</div>
+      <div class="wp-card-meta">
+        <div class="wp-card-meta-item">📅 Nov 10–12 · Morning, afternoon, or evening, date chosen with your group</div>
+        <div class="wp-card-meta-item">📍 Polanco · Steps from the conference hotel, all on foot</div>
+        <div class="wp-card-meta-item">⏱ ~2 hrs</div>
+        <div class="wp-card-meta-item">👥 Group minimum: 2 people. Tell us your date and we'll organize it</div>
+      </div>
+      <p class="wp-card-teaser">Step out of the conference and into two hours of Mexico City's best bites.</p>
+      <input type="checkbox" class="wp-card-toggle-check" id="t10">
+      <label class="wp-card-toggle-label" for="t10"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
+      <div class="wp-card-details">
+        <p class="wp-card-desc">Prehispanic flavors and classic Mexican dishes at our favorite Polanco stops, all walking distance from the Hyatt. A queer local tells you the story behind every bite. You walk back to the conference full, happy, and with new friends.</p>
+        <div class="wp-card-includes">✓ Tastings at every stop & non-alcoholic drink included<br>✓ All on foot, no transport needed</div>
       </div>
       <div class="wp-card-footer">
         <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
@@ -319,7 +347,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-faq-item">
     <input type="checkbox" id="wf-min" class="wp-faq-toggle">
     <label for="wf-min" class="wp-faq-question">What is the group minimum?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest.</div>
+    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Polanco Walking Food Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf2" class="wp-faq-toggle">
@@ -420,6 +448,16 @@ import Layout from '../layouts/Layout.astro';
             </select>
           </div>
           <div class="wp-exp-other" data-other-for="date-roma-condesa" hidden><input class="wp-fi" type="text" name="date-roma-condesa-other" placeholder="What date would work for you?"></div>
+
+          <div class="wp-exp-row">
+            <span class="wp-exp-name-flat">Polanco Walking Food Tour <small class="wp-exp-min">· 2+ people</small></span>
+            <select class="wp-fi wp-exp-select" name="date-polanco-food">
+              <option value="">Not interested</option>
+              <option value="Nov 10-12, any time of day, date to be chosen">Nov 10–12, morning, afternoon, or evening (date to be chosen)</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
+          </div>
+          <div class="wp-exp-other" data-other-for="date-polanco-food" hidden><input class="wp-fi" type="text" name="date-polanco-food-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Explore a Market in Mexico City <small class="wp-exp-min">· 2+ people</small></span>
