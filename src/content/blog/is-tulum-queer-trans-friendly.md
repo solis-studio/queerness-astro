@@ -6,7 +6,7 @@ keyword: "is tulum lgbtq friendly"
 pubDate: 2026-01-20
 updatedDate: 2026-10-09
 draft: false
-heroImage: "/images/friendly.jpeg"
+heroImage: "/images/is-tulum-lgbtq-friendly-queer-travelers-hero.jpeg"
 heroAlt: "Two queer travelers laughing and embracing while swimming near a dock in Tulum"
 heroPosition: "center 75%"
 heroCaption: "Queerness Experiences is a tour and group trip agency for sapphic, queer, and trans travelers in Tulum."
