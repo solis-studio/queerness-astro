@@ -1,5 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import MediaStrip from '../components/MediaStrip.astro';
+const stripTulum = [
+  { src: '/images/tulum-kayak-sunset-lagoon.jpg', alt: 'Two friends kayaking toward a bright orange sunset over the lagoon near Tulum' },
+  { src: '/images/secret-cenote-entrance.jpg', alt: 'Climbing down the hidden entrance to the Secret Cenote near Tulum', pos: 'center 60%' },
+  { src: '/images/secret-cenote-group.jpg', alt: 'Three queer friends laughing together by a cenote near Tulum', pos: 'center 35%' },
+  { src: '/images/tulum-cenote-swing-camp-queerness.jpeg', alt: 'Swinging out over a cenote on a queer group trip in Tulum' },
+  { src: '/images/tulum-mangrove-swim-friends.jpeg', alt: 'Friends swimming through the mangroves in Tulum' },
+  { src: '/images/party-dancing-friends.jpg', alt: 'Queer and trans friends dancing together at a party in Tulum', pos: 'center 38%' },
+];
 ---
 <Layout title="WPATH 2026 Mexico City: Queer & Trans Tours | Queerness Experiences" description={"Pre-register free for queer and trans tours in Mexico City during WPATH 2026: food, markets, Chapultepec, and more, led by a queer Mexican local."}>
 
@@ -336,6 +345,7 @@ import Layout from '../layouts/Layout.astro';
     <a class="wp-retreat-link" href="/group-trips/">Explore group trips →</a>
   </div>
 </section>
+<MediaStrip items={stripTulum} id="strip-wpath-tulum" label="Moments from our queer group trips in Tulum" />
 
 <!-- CTA STRIP -->
 <div class="wp-cta-strip">
