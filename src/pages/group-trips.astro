@@ -231,14 +231,14 @@ const stripAdventure = [
 <!-- "WHAT THESE TRIPS ACTUALLY ARE" — pulled 2026-09-12, written for multiple group trips, doesn't fit Camp Queerness alone. Full markup preserved in git history, may reuse pieces of this copy elsewhere later. -->
 
 <section class="bleed" id="activities" style="--bleed:var(--white);background:var(--white);padding:var(--s-sm) var(--s-sm) var(--s-sm);max-width:1120px;margin:0 auto;">
-  <p class="sec-eye">Step 2: Mix and match</p>
-  <h2>Pick your<br>activities</h2>
-  <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-top:var(--s-sm);">Mix and match across every camp. Here are a few examples.</p>
+  <p class="sec-eye">Pick what you love</p>
+  <h2>Options I can<br>connect you with</h2>
+  <p style="font-size:17px;line-height:1.65;color:var(--muted);max-width:640px;margin-top:var(--s-sm);">Choose what sounds like you. Every activity is optional, each one comes with a local who runs it, and every day has nap and chill time built in.</p>
 
   <div class="activity-group activity-group-do">
   <label for="act1" class="act-cover"><img src="/images/tulum-lagoon-kayak-sunset-peace-sign.jpeg" alt="A kayaker raising both arms in a peace sign at sunset on the lagoon near Tulum" style="object-position:center 55%;" loading="lazy"></label>
   <input type="checkbox" class="act-toggle" id="act1">
-  <label for="act1" class="activity-group-h">Things you'll do</label>
+  <label for="act1" class="activity-group-h">Get outside</label>
   <div class="activity-boxes">
     <div class="activity-box">Kayak at sunset on the lagoon</div>
     <div class="activity-box">Float through canals built by the ancient Maya</div>
@@ -246,27 +246,35 @@ const stripAdventure = [
     <div class="activity-box">Search for birds and monkeys in the jungle</div>
     <input type="checkbox" id="more-do" class="more-toggle">
     <div class="more-wrap">
-      <div class="activity-box">Learn new dance moves</div>
-      <div class="activity-box">Yoga</div>
-      <div class="activity-box">Pre-Hispanic cooking class &amp; mezcal tasting</div>
       <div class="activity-box">Rappel into a cenote</div>
       <div class="activity-box">Cliff jump into a cenote</div>
-      <div class="activity-box">Have picnics</div>
-      <div class="activity-box">Take naps</div>
       <div class="activity-box activity-box-custom">Custom: anything you want. Tell me and we'll build it in.</div>
     </div>
     <label for="more-do" class="more-btn"></label>
   </div>
   </div>
 
+  <div class="activity-group activity-group-do">
+  <label for="act4" class="act-cover"><img src="/images/dance-class-pose.jpg" alt="A dancer striking a pose in a dance class near Tulum" style="object-position:center 40%;" loading="lazy"></label>
+  <input type="checkbox" class="act-toggle" id="act4">
+  <label for="act4" class="activity-group-h">Move and slow down</label>
+  <div class="activity-boxes">
+    <div class="activity-box">Learn new dance moves</div>
+    <div class="activity-box">Yoga</div>
+    <div class="activity-box">Picnics</div>
+    <div class="activity-box">Nap and chill time, built into every day</div>
+    <div class="activity-box activity-box-custom">Custom: anything you want. Tell me and we'll build it in.</div>
+  </div>
+  </div>
+
   <div class="activity-group activity-group-eat">
   <label for="act2" class="act-cover act-cover-tall"><img src="/images/negro-huitlacoche-spread.jpg" alt="Grilled corn in a husk, a blue corn quesadilla and a pineapple cocktail on a wooden table at Negro Huitlacoche in Tulum" style="object-position:center 35%;"></label>
   <input type="checkbox" class="act-toggle" id="act2">
-  <label for="act2" class="activity-group-h">Things you'll eat</label>
+  <label for="act2" class="activity-group-h">Eat</label>
   <div class="activity-boxes">
     <div class="activity-box">Mexican and pre-Hispanic food</div>
-    <div class="activity-box">Stuff our faces with seasonal fruit</div>
-    <div class="activity-box">Meals created by an amazing private chef</div>
+    <div class="activity-box">Meals from a private chef</div>
+    <div class="activity-box">Pre-Hispanic cooking class &amp; mezcal tasting</div>
     <div class="activity-box activity-box-custom">Custom: anything you want. Tell me and we'll build it in.</div>
   </div>
   </div>
@@ -274,7 +282,7 @@ const stripAdventure = [
   <div class="activity-group activity-group-learn">
   <label for="act3" class="act-cover"><img src="/images/la-guarida-theater.jpg" alt="A cultural workshop at La Guarida in Tulum" style="object-position:center 50%;"></label>
   <input type="checkbox" class="act-toggle" id="act3">
-  <label for="act3" class="activity-group-h">Things you'll learn</label>
+  <label for="act3" class="activity-group-h">Learn</label>
   <div class="activity-boxes">
     <div class="activity-box">Get inspired by queer activism in Latin America</div>
     <div class="activity-box">Mexican music, art, and culture</div>
@@ -285,7 +293,7 @@ const stripAdventure = [
   <div class="activity-group activity-group-comfort comfort">
     <div class="act-cover"><img src="/images/tulum-live-drawing-session-comfort-zone.jpeg" alt="A friend posing while another sketches a live drawing in Tulum" style="object-position:center 44%;" loading="lazy"></div>
     <p class="comfort-h">Expand your comfort zone</p>
-    <p class="comfort-p">Totally optional. Try something new with your group, or keep it private.</p>
+    <p class="comfort-p">Totally optional. Try something new with friends or on your own, as private as you like.</p>
     <div class="stay-chips">
       <span class="stay-chip">Singing classes</span>
       <span class="stay-chip">Pose for a private live drawing session</span>
