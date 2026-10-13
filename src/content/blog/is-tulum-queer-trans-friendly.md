@@ -88,7 +88,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/camp-queerness-picnic.jpg" alt="Queer travelers sharing a picnic and painting together in the jungle near Tulum" style="aspect-ratio:1/1;object-position:center 80%;">
-    <a href="/group-trips/" class="post-photo-caption">See Queer Camp for Grownups →</a>
+    <a href="/group-trips/" class="post-photo-caption">See Queer Group Trips →</a>
   </div>
   <div>
     <ul class="post-bullets">
@@ -243,7 +243,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 <div class="post-two-col">
   <div>
     <img class="post-photo post-native" src="/images/pride-rainbow-fan.jpg" alt="A Pride parade attendee holding a rainbow fan and flag at Tulum Pride" style="aspect-ratio:1/1;object-position:center 20%;">
-    <a href="/group-trips/" class="post-photo-caption">See Queer Camp for Grownups →</a>
+    <a href="/group-trips/" class="post-photo-caption">See Queer Group Trips →</a>
   </div>
   <div>
     <ul class="post-bullets">
