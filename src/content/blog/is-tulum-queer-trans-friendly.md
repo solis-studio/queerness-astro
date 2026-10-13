@@ -262,7 +262,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
     <a href="/blog/queer-tulum-recommendations/" class="post-photo-caption">See the Free Tulum Guide →</a>
   </div>
   <div>
-    <p>Want our actual coffee shop, restaurant, and bar recommendations, plus the money tricks and how to get around, since <strong>Uber doesn't exist in Tulum</strong>? We don't repeat ourselves here, so it depends on how long you're staying:</p>
+    <p>Want our actual coffee shop, restaurant, and bar recommendations, plus the money tricks and how to get around, since <strong>Uber doesn't exist in Tulum</strong>? Start here:</p>
   </div>
 </div>
 
