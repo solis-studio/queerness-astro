@@ -101,7 +101,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 </div>
 
 <ul class="post-bullets">
-  <li>In queer spaces here, people <strong>generally use neutral language</strong>, even if a word occasionally slips into masculine or feminine.</li>
+  <li>Neutral language isn't the default in everyday Spanish, but queer spaces here are <strong>good about using it</strong>, even if a word occasionally slips into masculine or feminine.</li>
   <li>People outside the queer community are <strong>making an active effort</strong> too.</li>
   <li>It's a change in language, and <strong>change takes time</strong>.</li>
 </ul>
