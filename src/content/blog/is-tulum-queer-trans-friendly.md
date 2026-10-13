@@ -123,7 +123,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
       <span class="post-chip">Pronouns</span>
     </div>
     <div class="post-chips">
-      <span class="post-chip">Spanish is a second language for many local Mayan people</span>
+      <span class="post-chip">Spanish is a second language for many local Mayan people, and many come from towns where only Mayan is spoken</span>
       <span class="post-chip">Most people here who speak English come from countries where English isn't their first language either</span>
     </div>
     <ul class="post-bullets">
