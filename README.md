@@ -73,3 +73,5 @@ In Oct 2026 the site pivoted to itinerary planning ("Plan my Tulum trip"). The f
 - Git tag `group-trips-original` (last commit with the full original site)
 
 To bring it back, copy the archive file over `src/pages/group-trips.astro`, then update copy and prices. See `CLAUDE.md` for details.
+
+Hidden live copy of the original page (not indexed, not in sitemap): /vault-group-trips-e905d524eb/

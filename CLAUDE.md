@@ -8,6 +8,7 @@
 - Removed group prices (from $300/night, $500 plan, weekend/short/full trip prices) are in that archived file.
 - Verified Oct 2026: the archive file is byte-identical to the original page (md5 d4b9f13c0607904b9d3a502d5a8d13ad) and all 43 images it uses exist in public/images. NEVER delete images from public/images that the archive file references (grep /images/ in it before any image cleanup).
 - Also removed from the live page in Oct 2026 (all in the archive): camp styles, "Where you'll stay" villa, "We give back", partner/host section, Learn activities, picnics, 5 of 8 photo strips, group prices.
+- Hidden live copy of the original page (noindex, not in sitemap): https://queernessexperiences.com/vault-group-trips-e905d524eb/ (works after deploy). Use it to inspect the original visually or copy code.
 - To bring group trips back: copy the archive file over `src/pages/group-trips.astro` (or merge sections), then update copy and prices.
 
 ## Standing rules
