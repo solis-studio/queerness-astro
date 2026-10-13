@@ -65,3 +65,11 @@ The post auto-appears on `/blog` and gets its own page at `/blog/my-new-post`. I
 - `is-tulum-queer-trans-friendly.md`
 
 **Optional visual editor:** if writing Markdown + GitHub feels clunky, add Decap CMS later for a Ghost-like editor that saves into this repo. Ask Claude Code to set it up.
+
+## Archive: original group trips (saved for 2027)
+In Oct 2026 the site pivoted to itinerary planning ("Plan my Tulum trip"). The full original group trips page is saved here:
+- `src/archive/group-trips-2026-original.astro` (not built, not linked, not indexed)
+- `src/archive/home-group-trips-section-2026.html` (the old home page group section)
+- Git tag `group-trips-original` (last commit with the full original site)
+
+To bring it back, copy the archive file over `src/pages/group-trips.astro`, then update copy and prices. See `CLAUDE.md` for details.
