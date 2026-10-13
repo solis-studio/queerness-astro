@@ -24,7 +24,6 @@ function wpathInterests(data) {
     'date-roma-condesa': 'Roma/Condesa',
     'date-polanco-food': 'Polanco food tour',
     'date-san-angel': 'Market',
-    'date-chapultepec': 'Chapultepec',
     'date-mezcal': 'Mezcal',
     'date-sapphic-shopping': 'Sapphic shopping tour',
   };

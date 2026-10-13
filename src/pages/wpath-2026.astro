@@ -10,7 +10,7 @@ const stripTulum = [
   { src: '/images/party-dancing-friends.jpg', alt: 'Queer and trans friends dancing together at a party in Tulum', pos: 'center 38%' },
 ];
 ---
-<Layout title="WPATH 2026 Mexico City: Queer & Trans Tours | Queerness Experiences" description={"Pre-register free for queer and trans tours in Mexico City during WPATH 2026: food, markets, Chapultepec, and more, led by a queer Mexican local."}>
+<Layout title="WPATH 2026 Mexico City: Queer & Trans Tours | Queerness Experiences" description={"Pre-register free for queer and trans tours in Mexico City during WPATH 2026: food, markets, and more, led by a queer Mexican local."}>
 
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
@@ -24,7 +24,7 @@ const stripTulum = [
     {
       "@type": "Question",
       "name": "What is the group minimum?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Polanco Walking Food Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Most experiences need just 2 people: the Roma/Condesa Food & Culture Tour, the Polanco Walking Food Tour, the Market, and the Sapphic Shopping & Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest." }
     },
     {
       "@type": "Question",
@@ -267,34 +267,6 @@ const stripTulum = [
 
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/chapultepec-castle-malachite-hall.jpg" alt="Ornate hall with a malachite fountain and a stained glass skylight inside Chapultepec Castle in Mexico City">
-      <div class="wp-card-tag">Culture</div>
-      <div class="wp-card-date">Nov 10–14</div>
-    </div>
-    <div class="wp-card-body">
-      <div class="wp-card-title">Chapultepec Castle and Park</div>
-      <div class="wp-card-meta">
-        <div class="wp-card-meta-item">📅 Nov 10–14 · Morning, afternoon, or evening, date chosen with your group</div>
-        <div class="wp-card-meta-item">📍 Chapultepec Castle and Park · CDMX</div>
-        <div class="wp-card-meta-item">⏱ ~2–3 hrs</div>
-        <div class="wp-card-meta-item">👥 Group minimum: 2 people. Tell us your date and we'll organize it</div>
-      </div>
-      <p class="wp-card-teaser">A castle on a hill inside a giant city park.</p>
-      <input type="checkbox" class="wp-card-toggle-check" id="t9">
-      <label class="wp-card-toggle-label" for="t9"><span class="wp-toggle-icon">+</span><span class="wp-toggle-txt"></span></label>
-      <div class="wp-card-details">
-        <p class="wp-card-desc">The castle on the hill was once home to Mexico's emperor and empress in the 1860s. Today it's a museum, and the park around it is where local families spend their time. The park is the Bosque de Chapultepec, literally the Forest of Chapultepec: a forest inside one of the largest cities in Latin America. We explore both with a local guide, at an unhurried pace with local snacks along the way. Details are shared once the date is set.</p>
-        <div class="wp-card-includes">✓ Castle tickets included<br>✓ Local snacks included</div>
-      </div>
-      <div class="wp-card-footer">
-        <div class="wp-card-price">2,550–2,975 MXN<small>approx. $150–$175 USD</small></div>
-        <a href="#register" class="wp-card-btn">Pre-register</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wp-card">
-    <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="/images/wpath-sapphic-shopping.jpeg" alt="Sapphic shopping breakfast tour Mexico City">
       <div class="wp-card-tag">Sapphic tour</div>
       <div class="wp-card-date">Nov 13</div>
@@ -324,6 +296,20 @@ const stripTulum = [
 </div>
 </div>
 </div>
+
+<!-- SITES WE RECOMMEND -->
+<section class="wp-recs" aria-label="Mexico City sites we recommend">
+  <p class="wp-who-eyebrow">Sites we recommend</p>
+  <h2 class="wp-who-title">Five places in Mexico City worth your free afternoon</h2>
+  <div class="wp-who-tiles wp-recs-tiles">
+    <div class="wp-who-tile"><strong>Chapultepec Castle</strong><span>The hilltop castle that was home to Mexico's emperor and empress in the 1860s, with city views from the terraces.</span></div>
+    <div class="wp-who-tile"><strong>Chapultepec Park</strong><span>The Bosque de Chapultepec: a forest inside one of Latin America's largest cities, where local families spend their weekends.</span></div>
+    <div class="wp-who-tile"><strong>National Museum of Anthropology</strong><span>Inside Chapultepec Park. Home to the Aztec Sun Stone and the world's best look at Mexico's ancient cultures.</span></div>
+    <div class="wp-who-tile"><strong>Frida Kahlo Museum</strong><span>The Blue House in Coyoacán where Frida was born, painted and lived. Book tickets ahead; they sell out.</span></div>
+    <div class="wp-who-tile"><strong>Templo Mayor</strong><span>The Aztec temple ruins in the middle of downtown, right beside the Zócalo and the cathedral.</span></div>
+  </div>
+  <p class="wp-who-text">Want a local to point you to the best hour to go? Ask us when you pre-register.</p>
+</section>
 
 <!-- ALSO BY QUEERNESS EXPERIENCES -->
 <section class="wp-retreat" id="retreats" aria-label="Queer group trips in Tulum">
@@ -371,7 +357,7 @@ const stripTulum = [
   <div class="wp-faq-item">
     <input type="checkbox" id="wf-min" class="wp-faq-toggle">
     <label for="wf-min" class="wp-faq-question">What is the group minimum?<span class="wp-faq-icon">+</span></label>
-    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Polanco Walking Food Tour, the Market, Chapultepec Castle and Park, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest.</div>
+    <div class="wp-faq-answer">Most experiences need just 2 people: the Roma/Condesa Food &amp; Culture Tour, the Polanco Walking Food Tour, the Market, and the Sapphic Shopping &amp; Breakfast Tour. The Prehispanic Cooking Class needs 6. Not there yet? Tell us your date and we'll combine interest.</div>
   </div>
   <div class="wp-faq-item">
     <input type="checkbox" id="wf2" class="wp-faq-toggle">
@@ -496,16 +482,6 @@ const stripTulum = [
           <div class="wp-exp-other" data-other-for="date-san-angel" hidden><input class="wp-fi" type="text" name="date-san-angel-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
-            <span class="wp-exp-name-flat">Chapultepec Castle and Park <small class="wp-exp-min">· 2+ people</small></span>
-            <select class="wp-fi wp-exp-select" name="date-chapultepec">
-              <option value="">Not interested</option>
-              <option value="Nov 10-14, any time of day, date to be chosen">Nov 10–14, morning, afternoon, or evening (date to be chosen)</option>
-              <option value="other">Other date (tell us below)</option>
-            </select>
-          </div>
-          <div class="wp-exp-other" data-other-for="date-chapultepec" hidden><input class="wp-fi" type="text" name="date-chapultepec-other" placeholder="What date would work for you?"></div>
-
-          <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour <small class="wp-exp-min">· 2+ people</small></span>
             <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
               <option value="">Not interested</option>
@@ -555,7 +531,7 @@ const stripTulum = [
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap');
 
-  .wp-banner, .wp-hero, .wp-who, .wp-tulum-strip, .wp-retreat, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
+  .wp-banner, .wp-hero, .wp-who, .wp-recs, .wp-tulum-strip, .wp-retreat, .wp-range-intro, .wp-section-label, .wp-cards-list, .wp-card, .wp-cta-strip, .wp-faq, .wp-how, .wp-form {
     --wblue: #2e3f52; --wblue-dark: #1e2d3d; --wblue-mid: #3d5068;
     --wbrass: #b8924a; --wbrass-light: #d4b06e; --wbrass-pale: #f0e6d3;
     --wcopper: #9e5a3a; --wcopper-light: #c07a52;
@@ -623,7 +599,8 @@ const stripTulum = [
   .wp-who-tile strong{display:block;font-size:15.5px;color:var(--wblue);line-height:1.3;margin-bottom:6px;}
   .wp-who-tile span{display:block;font-size:14.5px;color:var(--wink-light);line-height:1.5;}
   .wp-who-text{font-size:16px;line-height:1.6;color:var(--wmuted);max-width:620px;margin:0 auto 6px;}
-  @media(min-width:720px){.wp-who-tiles{grid-template-columns:repeat(4,1fr);}}
+  @media(min-width:720px){.wp-who-tiles{grid-template-columns:repeat(4,1fr);}.wp-recs-tiles{grid-template-columns:repeat(3,1fr);}}
+  .wp-recs{background:var(--wwhite);border-bottom:1px solid var(--wborder);padding:32px 20px 28px;text-align:center;}
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
   .wp-range-intro p.wp-range-note{font-size:15px;font-style:italic;}
