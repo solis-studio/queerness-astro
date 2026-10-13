@@ -229,6 +229,41 @@ const stripAdventure = [
 <!-- LUXURY LESBIANS — paused for now, focusing on Camp Queerness. Card removed 2026-09-11, full markup preserved in git history if reviving later. -->
 
 <!-- FAQ -->
+<section class="sample-days" id="sample-plan" aria-label="A sample 3-day plan">
+  <p class="sec-eye">What your days can look like</p>
+  <h2>A sample 3-day plan</h2>
+  <div class="sd-grid">
+    <div class="sd-card">
+      <span class="sd-day">Day 1</span><span class="sd-theme">Adventure</span>
+      <ul>
+        <li><strong>Morning:</strong> Dance class</li>
+        <li><strong>Midday:</strong> Cenote snorkel</li>
+        <li><strong>Afternoon:</strong> Nap and chill time</li>
+        <li><strong>Evening:</strong> A dinner you'll talk about for years</li>
+      </ul>
+    </div>
+    <div class="sd-card">
+      <span class="sd-day">Day 2</span><span class="sd-theme">Slow</span>
+      <ul>
+        <li><strong>Morning:</strong> Slow coffee at a little café</li>
+        <li><strong>Midday:</strong> Time to journal, read, or do nothing</li>
+        <li><strong>Afternoon:</strong> Nap and chill time</li>
+        <li><strong>Sunset:</strong> Kayak in the biosphere</li>
+      </ul>
+    </div>
+    <div class="sd-card">
+      <span class="sd-day">Day 3</span><span class="sd-theme">Culture</span>
+      <ul>
+        <li><strong>Morning:</strong> Float through canals built by the ancient Maya</li>
+        <li><strong>Afternoon:</strong> Nap and chill time</li>
+        <li><strong>Evening:</strong> Pre-Hispanic cooking class and mezcal tasting</li>
+      </ul>
+    </div>
+  </div>
+  <p class="sd-note">Every plan is built around your energy and what you love. This is just a taste.</p>
+  <a href="/book/" class="btn-groups plan-btn">Plan my Tulum trip →</a>
+</section>
+
 <section class="faq" id="faq">
   <p class="sec-eye">Before you book</p>
   <h2>Questions about<br>group trips</h2>
@@ -466,6 +501,15 @@ section#reviews .scroll-hint{color:var(--muted) !important;}
 }
 .policy-link{margin-top:var(--s-md);font-size:15px;font-weight:700;}
 .policy-link a{color:var(--magenta);}
+.sample-days{background:var(--white);padding:var(--s-md) var(--s-sm);text-align:center;max-width:1120px;margin:0 auto;}
+.sd-grid{display:grid;gap:14px;margin:var(--s-sm) auto;max-width:900px;text-align:left;}
+.sd-card{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:18px;}
+.sd-day{display:block;font-family:var(--ff);font-size:26px;line-height:1;color:var(--dark);text-transform:uppercase;}
+.sd-theme{display:block;font-weight:700;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin:4px 0 10px;}
+.sd-card ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;line-height:1.5;}
+.sample-days .sec-eye::after{left:50%;transform:translateX(-50%);}
+.sd-note{max-width:560px;margin:0 auto var(--s-sm);line-height:1.6;}
+@media(min-width:760px){.sd-grid{grid-template-columns:repeat(3,1fr);}.sample-days{padding:var(--s-lg) 40px;}}
 .plan-prices{background:var(--bone);padding:var(--s-md) var(--s-sm);text-align:center;border-bottom:3px solid var(--dark);}
 .plan-prices .sec-eye::after{left:50%;transform:translateX(-50%);}
 .plan-prices h2{margin:0 0 4px;}
