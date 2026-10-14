@@ -43,11 +43,11 @@ const stripTulum = [
 </div>
 
 <script is:inline>
-  // Reply time: 24 to 48 hours normally, "a couple of hours" only during WPATH week (Nov 10-14, 2026)
+  // Reply time: 24 to 48 hours normally, "2 to 4 hours" only during WPATH week (Nov 10-14, 2026)
   (function () {
     var d = new Date();
     if (d.getFullYear() === 2026 && d.getMonth() === 10 && d.getDate() >= 10 && d.getDate() <= 14) {
-      document.querySelectorAll('[data-reply]').forEach(function (e) { e.textContent = 'a couple of hours'; });
+      document.querySelectorAll('[data-reply]').forEach(function (e) { e.textContent = '2 to 4 hours'; });
     }
   })();
 </script>
