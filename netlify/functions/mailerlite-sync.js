@@ -23,7 +23,7 @@ function wpathInterests(data) {
     'date-cooking-class': 'Cooking class',
     'date-roma-condesa': 'Roma/Condesa',
     'date-polanco-food': 'Polanco food tour',
-    'date-san-angel': 'Market',
+    'date-market': 'Market',
     'date-mezcal': 'Mezcal',
     'date-sapphic-shopping': 'Sapphic shopping tour',
   };

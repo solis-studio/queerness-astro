@@ -239,7 +239,7 @@ const stripTulum = [
 
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
-      <img class="wp-card-photo" loading="lazy" src="/images/wpath-san-angel.jpg" alt="Market day in Mexico City" style="object-position: 15% center;">
+      <img class="wp-card-photo" loading="lazy" src="/images/wpath-market.jpg" alt="Market day in Mexico City" style="object-position: 15% center;">
       <div class="wp-card-tag">Culture</div>
       <div class="wp-card-date">Nov 10–14</div>
     </div>
@@ -340,7 +340,7 @@ const stripTulum = [
 <div class="wp-cta-strip">
   <div class="wp-cta-strip-eyebrow">Ready to explore?</div>
   <div class="wp-cta-strip-title">Reserve your spot below</div>
-  <div class="wp-cta-strip-sub">No cost to pre-register · I reply within a couple of hours · Spots confirmed once minimum group size is reached</div>
+  <div class="wp-cta-strip-sub">No cost to pre-register · I reply within <span data-reply>24 to 48 hours</span> · Spots confirmed once minimum group size is reached</div>
   <a href="#register" class="wp-cta-strip-btn">Pre-register now, no cost</a>
 </div>
 
@@ -473,13 +473,13 @@ const stripTulum = [
 
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Explore a Market in Mexico City <small class="wp-exp-min">· 2+ people</small></span>
-            <select class="wp-fi wp-exp-select" name="date-san-angel">
+            <select class="wp-fi wp-exp-select" name="date-market">
               <option value="">Not interested</option>
               <option value="Nov 10-14, any time of day, date to be chosen">Nov 10–14, morning, afternoon, or evening (date to be chosen)</option>
               <option value="other">Other date (tell us below)</option>
             </select>
           </div>
-          <div class="wp-exp-other" data-other-for="date-san-angel" hidden><input class="wp-fi" type="text" name="date-san-angel-other" placeholder="What date would work for you?"></div>
+          <div class="wp-exp-other" data-other-for="date-market" hidden><input class="wp-fi" type="text" name="date-market-other" placeholder="What date would work for you?"></div>
 
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour <small class="wp-exp-min">· 2+ people</small></span>
@@ -526,6 +526,15 @@ const stripTulum = [
   </div>
 </div>
 
+<script is:inline>
+  // Reply time: 24 to 48 hours normally, "a couple of hours" only during WPATH week (Nov 10-14, 2026)
+  (function () {
+    var d = new Date();
+    if (d.getFullYear() === 2026 && d.getMonth() === 10 && d.getDate() >= 10 && d.getDate() <= 14) {
+      document.querySelectorAll('[data-reply]').forEach(function (e) { e.textContent = 'a couple of hours'; });
+    }
+  })();
+</script>
 </Layout>
 
 <style is:global>

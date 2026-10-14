@@ -16,7 +16,7 @@ const stripTulum = [
   <div class="wpt-inner">
     <p class="wpt-eyebrow">You're on the list</p>
     <h1 class="wpt-title">Thank you for<br>pre-registering.</h1>
-    <p class="wpt-body">I'll get back to you within a couple of hours to plan your experience. No payment is due until your group is confirmed.</p>
+    <p class="wpt-body">I'll get back to you within <span data-reply>24 to 48 hours</span> to plan your experience. No payment is due until your group is confirmed.</p>
     <p class="wpt-body">Questions or a change of plans? Just reply to the confirmation email.</p>
 
     <div class="wpt-tulum">
@@ -42,6 +42,15 @@ const stripTulum = [
   <a href="/tours/" class="wpt-next-link">See queer Tulum tours →</a>
 </div>
 
+<script is:inline>
+  // Reply time: 24 to 48 hours normally, "a couple of hours" only during WPATH week (Nov 10-14, 2026)
+  (function () {
+    var d = new Date();
+    if (d.getFullYear() === 2026 && d.getMonth() === 10 && d.getDate() >= 10 && d.getDate() <= 14) {
+      document.querySelectorAll('[data-reply]').forEach(function (e) { e.textContent = 'a couple of hours'; });
+    }
+  })();
+</script>
 </Layout>
 
 <style is:global>
