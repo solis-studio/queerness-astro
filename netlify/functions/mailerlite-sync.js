@@ -6,7 +6,7 @@
 // Custom fields used below (tour, trip, wpath_interests) must exist in
 // MailerLite first — Subscribers > Fields > add a field with that exact
 // key — otherwise MailerLite will reject or silently drop unknown fields.
-const SYNCED_FORMS = new Set(['contact', 'camp-queerness-waitlist', 'work-with-me', 'wpath-2026', 'wpath-camp-info', 'join-activity']);
+const SYNCED_FORMS = new Set(['contact', 'camp-queerness-waitlist', 'work-with-me', 'wpath-2026', 'wpath-camp-info', 'wpath-guidebook', 'join-activity']);
 
 // Group IDs each form's subscribers get added to, so MailerLite automations
 // (triggered on "subscriber joins group") can send the right thank-you email.
@@ -15,6 +15,7 @@ const FORM_GROUPS = {
   'camp-queerness-waitlist': ['198417408306709811'], // Camp Queerness Waitlist
   'wpath-2026': ['197907562547381585'], // WPATH Inquiries
   'wpath-camp-info': ['200837699321464245'], // WPATH Camp Interest
+  'wpath-guidebook': ['200837699321464245'], // WPATH attendees who want the free Tulum guidebook code (same group for now)
   'join-activity': ['201059260753249618'], // Activity Invites
 };
 
