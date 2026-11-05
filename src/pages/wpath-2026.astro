@@ -10,7 +10,7 @@ const stripTulum = [
   { src: '/images/party-dancing-friends.jpg', alt: 'Queer and trans friends dancing together at a party in Tulum', pos: 'center 38%' },
 ];
 ---
-<Layout image="https://queernessexperiences.com/images/wpath-og-sweets-stall.jpg" title="WPATH 2026 Mexico City: Queer & Trans Tours | Queerness Experiences" description={"Pre-register free for queer and trans tours in Mexico City during WPATH 2026: food, markets, and more, led by a queer Mexican local."}>
+<Layout image="https://queernessexperiences.com/images/wpath-og-sweets-stall.jpg" title="Mexico City Tours for WPATH 2026 Attendees | Queerness Experiences" description={"Small-group Mexico City tours Nov 10 to 15, created for WPATH 2026 attendees: food, markets, and more, led by Santi Solis. Pre-register free."}>
 
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
@@ -332,6 +332,7 @@ const stripTulum = [
       <p class="wp-retreat-msg" role="status" hidden>Thank you! I'll email you your free code for the guidebook.</p>
     </form>
     <a class="wp-retreat-link" href="/guidebook/">See what's inside →</a>
+    <p class="wp-retreat-help">Want to meet up, have a question, or need a recommendation while you're in Mexico City or Tulum? <a href="mailto:info@queernessexperiences.com">Reach out to me anytime</a>.</p>
   </div>
 </section>
 <MediaStrip items={stripTulum} id="strip-wpath-tulum" label="Moments from our queer group trips in Tulum" />
@@ -593,6 +594,8 @@ const stripTulum = [
   .wp-retreat-btn{background:var(--wbrass);color:var(--wmahogany);border:0;border-radius:2px;padding:15px 24px;font-size:14px;font-weight:500;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;}
   .wp-retreat-btn:hover{background:var(--wbrass-light);}
   .wp-retreat-msg{margin:12px 0 0;text-align:center;color:var(--wbrass-light);font-size:16px;}
+  .wp-retreat-help{margin:22px auto 0;max-width:520px;font-size:15.5px;line-height:1.6;color:rgba(255,255,255,0.78);}
+  .wp-retreat-help a{color:var(--wbrass-light);text-decoration:none;border-bottom:1px solid var(--wbrass);}
   .wp-retreat-link{font-size:14.5px;color:var(--wbrass-light);text-decoration:none;border-bottom:1px solid var(--wbrass);}
   @media(min-width:720px){.wp-retreat{padding:64px 48px;}.wp-retreat-row{flex-direction:row;}.wp-retreat-input{flex:1;}.wp-retreat-btn{white-space:nowrap;}}
   .wp-tulum-strip{background:var(--wblue-dark);border-top:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center;}
