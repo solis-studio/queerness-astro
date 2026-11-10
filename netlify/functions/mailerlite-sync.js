@@ -22,7 +22,7 @@ const FORM_GROUPS = {
 function wpathInterests(data) {
   const labels = {
     'date-cooking-class': 'Cooking class',
-    'date-roma-condesa': 'Roma/Condesa',
+    'date-roma-condesa': 'Roma market and queer lunch',
     'date-polanco-food': 'Polanco food tour',
     'date-market': 'Market',
     'date-mezcal': 'Mezcal',
