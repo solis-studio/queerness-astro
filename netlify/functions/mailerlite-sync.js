@@ -26,7 +26,8 @@ function wpathInterests(data) {
     'date-polanco-food': 'Polanco food tour',
     'date-market': 'Market',
     'date-mezcal': 'Mezcal',
-    'date-sapphic-shopping': 'Sapphic shopping tour',
+    'date-sapphic-shopping': 'Sapphic brunch',
+    'date-custom': 'Custom tour',
   };
   return Object.entries(labels)
     .filter(([key]) => data[key])
