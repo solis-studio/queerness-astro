@@ -26,7 +26,7 @@ function wpathInterests(data) {
     'date-polanco-food': 'Polanco food tour',
     'date-market': 'Market',
     'date-mezcal': 'Mezcal',
-    'date-sapphic-shopping': 'Sapphic brunch',
+    'date-sapphic-shopping': 'Sapphic, trans and non-binary brunch',
     'date-custom': 'Custom tour',
   };
   return Object.entries(labels)
