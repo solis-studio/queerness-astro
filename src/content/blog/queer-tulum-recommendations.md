@@ -42,7 +42,7 @@ I lead queer and trans travelers around the town I actually live in. These are <
       <span class="post-chip">Favorite Mexican restaurants</span>
       <span class="post-chip">Specialty coffee</span>
       <span class="post-chip">A café/bar/cultural center</span>
-      <span class="post-chip">Uber is here, plus Hotel Zone taxi options</span>
+      <span class="post-chip">Uber is here, but not everywhere: taxi options</span>
       <span class="post-chip">How to avoid ATM rip-offs</span>
     </div>
   </div>
@@ -141,8 +141,8 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <label for="racc4" class="post-acc-head"><span>Getting around Tulum: rideshare and taxis</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <ul class="post-bullets">
-      <li><strong>Uber now works in Tulum town.</strong> Open the app before you land</li>
-      <li>Most rideshare apps can't pick you up in the Hotel Zone, so line up a ride for the beach road ahead of time</li>
+      <li><strong>Uber is here, but it doesn't work in a large part of Tulum.</strong> Rideshare apps mostly can't pick you up in the Hotel Zone</li>
+      <li>Line up a taxi or a pickup time ahead of time for the beach road</li>
       <li><strong>inDrive</strong> and <strong>Eiby</strong> show you the price before you ride, so you skip the tourist markup</li>
       <li>Heading somewhere remote, like a cenote out of town? <strong>Message a taxi driver beforehand</strong> and arrange a pickup time</li>
       <li>I recommend <strong>Carlos</strong>, who runs a taxi service: <strong><a href="https://wa.me/529842136381" style="color:var(--magenta);font-weight:700;">+52 984 213 6381</a></strong></li>
