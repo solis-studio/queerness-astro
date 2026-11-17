@@ -1,10 +1,10 @@
 ---
 title: "Free LGBTQ+ Tulum Guide: Local Recommendations From the Founder of a Queer Tour Agency"
 seoTitle: "Free LGBTQ+ Tulum Guide: Local Tips"
-description: "Free LGBTQ+ Tulum recommendations from a queer local: a pre-Hispanic restaurant, specialty coffee, a queer-friendly bar and how to get around."
+description: "Free LGBTQ+ Tulum recommendations from a queer local: two favorite Mexican restaurants, specialty coffee, a queer-friendly bar and how to get around."
 keyword: "lgbtq tulum"
 pubDate: 2026-01-25
-updatedDate: 2026-10-09
+updatedDate: 2026-11-17
 draft: false
 heroImage: "/images/story-horse-group-coffee.jpg"
 heroAlt: "Santi and friends sharing coffee and food together at a cafe table in Tulum"
@@ -39,10 +39,10 @@ I lead queer and trans travelers around the town I actually live in. These are <
   <div>
     <p class="post-chips-k">Free guide: recommendations for a day in Tulum</p>
     <div class="post-chips">
-      <span class="post-chip">Pre-Hispanic / Mexican food</span>
+      <span class="post-chip">Favorite Mexican restaurants</span>
       <span class="post-chip">Specialty coffee</span>
       <span class="post-chip">A café/bar/cultural center</span>
-      <span class="post-chip">No Uber in Tulum: how to get around</span>
+      <span class="post-chip">Uber is here, plus Hotel Zone taxi options</span>
       <span class="post-chip">How to avoid ATM rip-offs</span>
     </div>
   </div>
@@ -79,6 +79,19 @@ I lead queer and trans travelers around the town I actually live in. These are <
       <li>One of our favorite restaurants in Tulum. <strong>Go hungry.</strong></li>
     </ul>
     <label for="racc1" class="post-acc-close">− Close</label>
+  </div></div>
+</div>
+
+<div class="post-acc-item">
+  <input type="checkbox" id="racc9" class="post-acc-toggle">
+  <label for="racc9" class="post-acc-head"><span>La Norteña — a Mexican restaurant worth planning your weekend around</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p><strong>Mexican food · Open on the weekends</strong></p>
+    <ul class="post-bullets">
+      <li>One of our favorite Mexican restaurants in Tulum</li>
+      <li>Open on the weekends, so plan your visit for a Saturday or Sunday</li>
+    </ul>
+    <label for="racc9" class="post-acc-close">− Close</label>
   </div></div>
 </div>
 
@@ -125,12 +138,12 @@ I lead queer and trans travelers around the town I actually live in. These are <
 
 <div class="post-acc-item">
   <input type="checkbox" id="racc4" class="post-acc-toggle">
-  <label for="racc4" class="post-acc-head"><span>No Uber in Tulum: how to get around</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
+  <label for="racc4" class="post-acc-head"><span>Getting around Tulum: rideshare and taxis</span><span class="post-acc-plus"><span class="pa-more">More info</span><span class="pa-less">Less info</span> <span class="post-acc-plus-icon">+</span></span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <ul class="post-bullets">
-      <li><strong>There's no Uber in Tulum.</strong> It catches almost everyone off guard, so set this up before you land</li>
-      <li>Locals use an app called <strong>Eiby</strong>. Download it before you need it for fair prices instead of the tourist markup</li>
-      <li>Eiby doesn't always work outside Tulum Center and the Hotel Zone</li>
+      <li><strong>Uber now works in Tulum town.</strong> Open the app before you land</li>
+      <li>Most rideshare apps can't pick you up in the Hotel Zone, so line up a ride for the beach road ahead of time</li>
+      <li><strong>inDrive</strong> and <strong>Eiby</strong> show you the price before you ride, so you skip the tourist markup</li>
       <li>Heading somewhere remote, like a cenote out of town? <strong>Message a taxi driver beforehand</strong> and arrange a pickup time</li>
       <li>I recommend <strong>Carlos</strong>, who runs a taxi service: <strong><a href="https://wa.me/529842136381" style="color:var(--magenta);font-weight:700;">+52 984 213 6381</a></strong></li>
     </ul>
